@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../css/main.css" rel="stylesheet">
+    <link href="../../css/media.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="../js/html5shiv.min.js"></script>
+    <script src="../js/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="top-title login-top">
+    <a href="#" class="back-btn" onclick="history.go(-1)"></a>
+        <span>个人手机绑定</span>
+</div>
+<div class="main-content login-content">
+    <form class="all-login">
+        <div class="form-group num-inp top-login">
+            <img src="../../images/phone.png" alt="">
+            <input type="number" class="form-control inp1 shop-in" placeholder="请输入手机号\商家账号">
+        </div>
+        <div class="form-group num-inp">
+            <img src="../../images/code_login.png" alt="">
+            <input type="text" class="form-control inp1 co-so" placeholder="请输入验证码">
+            <a href="" class="code-get">获取验证码</a> 
+        </div>
+        <div class="form-group num-inp">
+            <img src="../../images/lock.png" alt="">
+            <!--暗文密码输入框-->
+            <div class="input_block" id="psw_invisible">
+                <input type="password" class="form-control inp1 hidden-pass" id="input_invisible" placeholder="请输入密码">
+                <img src="../../images/login_close_eyes.png" onclick="showPsw()" alt="" class="eye-login">
+            </div>
+            <!--明文密码输入框-->
+            <div class="input_block" id="psw_visible" style="display: none;">
+                <input type="text" id="input_visible" class="form-control inp1 hidden-pass" placeholder="请输入密码">
+                <img src="../../images/login_open_eyes.png" onclick="hidePsw()" alt="" class="eye-login">
+            </div>
+        </div>
+        <button type="submit" class="btn btn-default login-btn">确定</button>
+        <div class="login-forget login-agree">
+            <span>注册即表示同意<a href="">《极成注册服务条约》</a></span>
+        </div>    
+    </form>
+</div>
+<script src="../../js/jquery.min.js"></script>
+<script src="../../js/bootstrap.min.js"></script>
+</body>
+</html>
+<script type="text/javascript">
+    var visible=document.getElementById('psw_visible');//text block
+    var invisible=document.getElementById('psw_invisible');//password block
+    var inputVisible = document.getElementById('input_visible');
+    var inputInVisible = document.getElementById('input_invisible');
+    //隐藏text block，显示password block
+    function showPsw(){
+        var val = inputInVisible.value;//将password的值传给text
+        inputVisible.value = val;
+        invisible.style.display = "none";  
+        visible.style.display = "";  
+    }
+    //隐藏password，显示text  
+    function hidePsw(){
+        var val=inputVisible.value;//将text的值传给password  
+        inputInVisible.value = val; 
+        invisible.style.display = "";  
+        visible.style.display = "none";  
+    }
+</script>

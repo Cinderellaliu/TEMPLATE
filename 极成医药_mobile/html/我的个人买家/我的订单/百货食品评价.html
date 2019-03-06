@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link href="../../../css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../../../css/webuploader.css" />
+    <link href="../../../css/main.css" rel="stylesheet">
+    <link href="../../../css/media.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="../../js/html5shiv.min.js"></script>
+    <script src="../../js/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body class="grey-bg">
+<div class="title-top clearfix">
+    <a href="#"  class="pull-left left" ><img src="../../../images/top_left_arrow.png" alt=""></a>
+    <span>发表评价</span>
+</div>
+<div class="main-content no-padding main-content-bg no-margin">
+    <div class="evaluate-box">
+        <div class="evaluate-top clearfix">
+            <div class="pull-left box-left">
+                <img src="../../../images/cate_pic01.png" alt="">
+            </div>
+            <div class="pull-left box-right clearfix">
+                <div class="all-star-box pull-left">
+                    <img src="../../../images/star01.png" alt="">
+                    <img src="../../../images/star01.png" alt="">
+                    <img src="../../../images/star01.png" alt="">
+                    <img src="../../../images/star01.png" alt="">
+                    <img src="../../../images/star01.png" alt="">
+                </div>
+                <span class="pull-left">非常满意</span>
+            </div>
+        </div>
+        <textarea class="evalu-text" placeholder="商品是否给力？快来评价一下吧～" rows="5"></textarea>
+        <div class="complaint clearfix evaluate-upload">
+            <div id="pic-list" class="pull-left"></div>
+            <div id="add-pic" class="pull-left"><img src="../../../images/upload_img02.png" class="main-up-add pull-left" alt="添加图片"></div>  
+        </div>
+    </div>
+    <div class="evaluate-t01"></div>
+    <div class="evaluate-box">
+        <div class="evaluate-top clearfix">
+            <div class="pull-left box-left">
+                <img src="" alt="">
+            </div>
+            <div class="pull-left box-right clearfix">
+                <span class="no-margin">该宝贝无法进行评价~</span>
+            </div>
+        </div>
+    </div>
+    <div class="evaluate-t01"></div>
+    <div class="evaluate-box">
+        <div class="evaluate-top clearfix">
+            <div class="pull-left box-left">
+                <img src="" alt="">
+            </div>
+            <div class="pull-left box-right clearfix">
+                <div class="all-star-box all-star-box2 pull-left">
+                    <img src="../../../images/star01.png" alt="">
+                    <img src="../../../images/star01.png" alt="">
+                    <img src="../../../images/star01.png" alt="">
+                    <img src="../../../images/star02.png" alt="">
+                    <img src="../../../images/star02.png" alt="">   
+                </div>
+                <span class="pull-left">一般</span>
+            </div>
+        </div>
+        <div class="person-evaluate">
+            <h2>这个商品的保质期不新鲜，我不是很满意，给个中评吧！</h2>
+            <div class="reply">
+                <span>卖家回复：</span>
+                <em>亲～批次都是最新鲜的噢～，您可以在包装处进行查看哟～</em>
+            </div>
+        </div>
+    </div>
+    <div class="evaluate-t01"></div>
+    <div class="evaluate-box">
+        <div class="describe-box clearfix">
+            <div class="pull-left des-img">   
+                <img src="../../../images/describe.png" alt="">
+            </div>
+            <span class="pull-left">描述相符</span>
+        </div>
+        <div class="describe-box clearfix">
+            <span class="pull-left">描述相符</span>
+            <div class="all-star-box all-star-box1 pull-left">
+                <img src="../../../images/star01.png" alt="">
+                <img src="../../../images/star01.png" alt="">
+                <img src="../../../images/star01.png" alt="">
+                <img src="../../../images/star01.png" alt="">
+                <img src="../../../images/star02.png" alt="">
+            </div>
+        </div>
+        <div class="describe-box clearfix">
+            <span class="pull-left">物流服务</span>
+            <div class="all-star-box all-star-box1 pull-left">
+                <img src="../../../images/star01.png" alt="">
+                <img src="../../../images/star01.png" alt="">
+                <img src="../../../images/star01.png" alt="">
+                <img src="../../../images/star01.png" alt="">
+                <img src="../../../images/star02.png" alt="">
+            </div>
+        </div>
+        <div class="describe-box clearfix">
+            <span class="pull-left">服务态度</span>
+            <div class="all-star-box all-star-box1 pull-left">
+                <img src="../../../images/star01.png" alt="">
+                <img src="../../../images/star01.png" alt="">
+                <img src="../../../images/star01.png" alt="">
+                <img src="../../../images/star01.png" alt="">
+                <img src="../../../images/star02.png" alt="">
+            </div>
+        </div>
+    </div>
+    <input type="submit" class="evaluate-sub">
+</div>
+<script src="../../../js/jquery.min.js"></script>
+<script src="../../../js/bootstrap.min.js"></script>
+<script src="../../../js/webuploader.min.js" type="text/javascript"></script>
+<script>
+    $(function(){
+        $(".all-star-box img").click(function(){
+            $(this).prevAll().attr('src','../../../images/star01.png');
+            $(this).attr('src','../../../images/star01.png');
+            $(this).nextAll().attr('src','../../../images/star02.png');
+        })
+        $('.all-star-box img').eq(0).click(function(){
+            $(this).parent().next('span').text('非常差');
+
+        })
+        $('.all-star-box img').eq(1).click(function(){
+            $(this).parent().next().text('差');
+
+        })
+        $('.all-star-box img').eq(2).click(function(){
+            $(this).parent().next().text('一般');
+
+        })
+        $('.all-star-box img').eq(3).click(function(){
+            $(this).parent().next().text('满意');
+
+        })
+        $('.all-star-box img').eq(4).click(function(){
+            $(this).parent().next().text('非常满意');
+
+        })
+        $('.all-star-box2 img').eq(0).click(function(){
+            $(this).parent().next('span').text('非常差');
+
+        })
+        $('.all-star-box2 img').eq(1).click(function(){
+            $(this).parent().next().text('差');
+
+        })
+        $('.all-star-box2 img').eq(2).click(function(){
+            $(this).parent().next().text('一般');
+
+        })
+        $('.all-star-box2 img').eq(3).click(function(){
+            $(this).parent().next().text('满意');
+
+        })
+        $('.all-star-box2 img').eq(4).click(function(){
+            $(this).parent().next().text('非常满意');
+
+        })
+
+})
+
+    $(function(){
+        var num = 0;
+        var uploader = WebUploader.create({
+            auto:true,
+            swf: '../../css/Uploader.swf',
+            // server: '../js/up.php',
+            pick: '#add-pic',
+            resize: false,
+            fileNumLimit: 5,
+            duplicate:true
+        });
+    
+        //上传时显示文件信息
+       uploader.on( 'fileQueued', function( file ) {
+           var item =$('<div class="main-up-box pull-left"><div id="'+file.id+'"class="file-item thumbnail">'+'<img class="main-up-pic">'+'<img src="../../../images/delete_img.png" class="delete-img">'+'</div></div>');
+            var img = item.find('img');
+            uploader.makeThumb(file,function(error,src){
+                str = file.name;
+                if (str != "") {
+                    var pos = "." + str.replace(/.+\./, "");
+                    if(pos == '.gif'||pos == '.jpg'||pos =='.jpeg'||pos =='.bmp'||pos =='.png'){
+                        img[0].src=src;
+                    }
+                    else{
+                        img[0].src= "../images/book_pic.png";
+                    }     
+                }  
+            },80,80);//图片尺寸
+            $('#add-pic').before(item);
+            $('.complaint .delete-img').click(function(){
+                $(this).parent().remove();
+                uploader.removeFile(file);
+            })   
+        }); 
+    });
+</script>
+</body>
+</html>

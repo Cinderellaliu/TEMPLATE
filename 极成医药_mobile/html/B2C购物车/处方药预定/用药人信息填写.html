@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link href="../../../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../../css/swiper.min.css" rel="stylesheet">
+    <link href="../../../css/city.min.css" rel="stylesheet">
+    <link href="../../../js/icheck/skins/all.css" rel="stylesheet" type="text/css" />
+    <link href="../../../js/bootstrap-touchspin/bootstrap.touchspin.css" type="text/css" />
+    <link href="../../../css/webuploader.css" rel="stylesheet"/>
+    <link href="../../../css/LCalendar.css" rel="stylesheet"/>
+    <link href="../../../css/LCalendar02.css" rel="stylesheet"/>
+    <link href="../../../css/main.css" rel="stylesheet">
+    <link href="../../../css/media.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="../../../js/html5shiv.min.js"></script>
+    <script src="../../../js/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body class="grey-bg">
+<div class="top-title02 text-center bgf4">
+    <a href="#" class="back-btn" onclick="history.go(-1)"></a>用药人信息<a href="#" class="car-save">保存</a>
+</div>
+<div class="main-content04 no-padding ">
+    <div class="bill">
+        <form class="white-bg clearfix">
+            <div class="form-group clearfix">
+                <label for="input01">*用药人</label>
+                <input type="text" class="form-control text-left" id="input01" placeholder="请输入用药人真实姓名">
+            </div>
+            <div class="form-group clearfix">
+                <label for="input02">*性别</label>
+                <input type="text" class="bill-type form-control" id="input02" placeholder="请选择" data-toggle="modal" data-target=".sex-modal" readonly>
+            </div>
+            <div class="form-group clearfix">
+                <label for="input03">*出生日期</label>
+                <input type="text" class="form-control" id="input03" placeholder="请选择" name="date" data-toggle="modal" data-target=".date-modal" readonly>
+            </div>
+            <div class="form-group clearfix">
+                <label for="input04">*手机号码</label>
+                <input type="text" class="form-control" id="input04" placeholder="请输入用药人手机">
+            </div>
+            <div class="form-group clearfix">
+                <label for="input05">*身份证号</label>
+                <input type="text" class="form-control" id="input05" placeholder="请正确填写用药人身份证号码">
+            </div>
+            <div class="form-group clearfix">
+                <label for="input06">*处方号</label>
+                <input type="text" class="form-control" id="input06" placeholder="请输入处方号">
+            </div>
+             <div class="form-group clearfix">
+                <label for="input07">*医师证号</label>
+                <input type="text" class="form-control" id="input07" placeholder="请输入医师证号">
+            </div>
+        </form>
+        <div class="human-box white-bg clearfix">
+            <h2>上传处方</h2>
+            <div class="complaint human-up clearfix">
+                <div class="add-pic pull-left"><img src="../../../images/car_add.png" class="main-up-add pull-left" alt="添加图片"></div>   
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="modal fade bs-example-modal-sm bill-modal sex-modal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+  <div class="modal-dialog modal-sm" role="document">
+    <div class="modal-content">
+        <ul>
+            <li>男</li>
+            <li>女</li>
+        </ul>
+        <button data-dismiss="modal" aria-label="Close">取消</button>
+    </div>
+  </div>
+</div>
+<div class="modal fade bs-example-modal-sm state-modal " tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+  <div class="modal-dialog modal-sm" >
+    <div class="modal-content">
+        <img src="../../../images/cate_big.png">
+    </div>
+    <div class="modal-footer">
+        <textarea>添加说明</textarea>
+    </div>
+  </div>
+</div>
+<script src="../../../js/jquery.min.js"></script>
+<script src="../../../js/bootstrap.min.js"></script>
+<script src="../../../js/menu.js"></script>
+<script src="../../../js/city.js"></script>
+<script src="../../../js/app.min.js"></script>
+<script src="../../../js/icheck/icheck.min.js"></script>
+<script src="../../../js/form-icheck.min.js"></script>
+<script src="../../../js/bootstrap-touchspin/bootstrap.touchspin.js"></script>
+<script src="../../../js/components-bootstrap-touchspin.min.js"></script>
+<script src="../../../js/webuploader.min.js" type="text/javascript"></script>
+<script src="../../../js/LCalendar.js" type="text/javascript"></script>
+
+
+<script>
+    $(function(){
+        $('.bill-modal ul').on('click','li',function(){
+            $('.bill-type').val($(this).text())
+            $('.bill-modal').modal('hide');
+        })
+        $('.state-modal .modal-sm').on('click',function(){
+            $('.state-modal').modal('hide');
+        })
+        var uploader = WebUploader.create({
+            auto:true,
+            swf: '../../../css/Uploader.swf',
+            // server: '../js/up.php',
+            pick: '.add-pic',
+            resize: false,
+            fileNumLimit: 5,
+            accept: {
+                title: 'Images',
+                extensions: 'jpg,png',
+                mimeTypes: 'image/*'
+            },
+            duplicate:true
+        }); 
+        //上传时显示文件信息
+        uploader.on( 'fileQueued', function( file ) {
+        var item =$('<div class="main-up-box pull-left"><div id="'+file.id+'"class="file-item thumbnail" >'+'<img class="main-up-pic">'+'<div class="write" data-toggle="modal" data-target=".state-modal"><span>添加说明</span></div>'+'<img src="../../../images/delete_img.png" class="delete-img">'+'</div></div>');
+        var img = item.find('img');
+        uploader.makeThumb(file,function(error,src){
+            img[0].src=src;
+        },80,80);//图片尺寸
+            $('.add-pic').before(item);
+            $('.join-up .delete-img').click(function(){
+                $(this).parent().remove();
+                uploader.removeFile(file);
+            })    
+        }); 
+
+        var calendar = new LCalendar();
+        calendar.init({
+            'trigger': '#input03', //标签id
+            'type': 'date', //date 调出日期选择 datetime 调出日期时间选择 time 调出时间选择 ym 调出年月选择,
+            'minDate': (new Date().getFullYear()-10) + '-' + 1 + '-' + 1, //最小日期
+            'maxDate': (new Date().getFullYear()) + '-' + 12 + '-' + 31 //最大日期
+        });
+        
+    })
+    
+</script>
+</body>
+</html>

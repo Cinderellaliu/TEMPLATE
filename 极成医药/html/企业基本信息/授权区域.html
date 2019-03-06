@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../js/bootstrap-select/css/bootstrap-select.min.css" rel="stylesheet" type="text/css" />
+    <link href="../../js/bootstrap-touchspin/bootstrap.touchspin.css" rel="stylesheet" type="text/css" />
+    <!--点击变换数字-->
+    <!--复选框样式开始-->
+    <link href="../../js/icheck/skins/all.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="../../css/swiper.min.css">
+    <!--复选框样式结束-->
+    <link href="../../css/main.css" rel="stylesheet">
+    <link href="../../css/media.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="../../js/html5shiv.min.js"></script>
+    <script src="../../js/respond.min.js"></script>
+    <![endif]-->
+</head>
+<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+  Launch demo modal
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content author-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">授权区域</h4>
+            </div>
+            <div class="modal-body">
+                <div class="all-list clearfix">
+                    <div class="hav-cho clearfix">
+                        <i>*</i><span>已选择</span>
+                    </div>
+                    <div class="can-cho clearfix">
+                    	<div class="can-del">
+                            <span class="text-del">哈尔滨市</span>
+                            <img src="../../images/dis_x.png" alt="">
+                        </div>
+                    	<div class="can-del margin-del">
+                            <span class="text-del">齐齐哈尔市</span>
+                            <img src="../../images/dis_x.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="all-list clearfix">
+                  	<div class="hav-cho clearfix"><i>*</i><span>可选择省</span></div>
+                    <div class="can-cho clearfix">
+                    	<div class="address-select"><input class="input" type="text" placeholder="请选择"/><s></s>
+                        </div>
+                    </div>
+                </div>
+                <div class="all-list clearfix">
+                    <div class="hav-cho clearfix">
+                        <i>*</i><span>可选择市</span>
+                    </div>
+                    <div class="can-cho all-inp clearfix">
+                        <label><input type="checkbox" class="icheck" data-checkbox="icheckbox_square-red"><span class="all-goods">全选</span></label>
+                        <label><input type="checkbox" class="icheck" data-checkbox="icheckbox_square-red"><span class="all-goods">哈尔滨市</span></label>
+                        <label><input type="checkbox" class="icheck" data-checkbox="icheckbox_square-red"><span class="all-goods">牡丹江市</span></label>
+                        <label><input type="checkbox" class="icheck" data-checkbox="icheckbox_square-red"><span class="all-goods">佳木斯市</span></label>
+                        <label><input type="checkbox" class="icheck" data-checkbox="icheckbox_square-red"><span class="all-goods">大庆市</span></label>
+                        <label><input type="checkbox" class="icheck" data-checkbox="icheckbox_square-red"><span class="all-goods">鸡西市</span></label>
+                        <label><input type="checkbox" class="icheck" data-checkbox="icheckbox_square-red"><span class="all-goods">双鸭山市</span></label>
+                        <label><input type="checkbox" class="icheck" data-checkbox="icheckbox_square-red"><span class="all-goods">伊春市</span></label>
+                        <label><input type="checkbox" class="icheck" data-checkbox="icheckbox_square-red"><span class="all-goods">七台河市</span></label>
+                        <label><input type="checkbox" class="icheck" data-checkbox="icheckbox_square-red"><span class="all-goods">鹤兰市</span></label>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary">保存</button>
+            </div>
+        </div>
+    </div>
+</div>
+<body>
+<script src="../../js/jquery.min.js"></script>
+<script src="../../js/bootstrap.min.js"></script>
+<script src="../../js/top_menu.js"></script>
+<!--复选框插件开始-->
+<script src="../../js/icheck/icheck.min.js" type="text/javascript"></script>
+<script src="../../js/form-icheck.min.js" type="text/javascript"></script>
+<!--复选框插件结束-->
+<!--下拉菜单-->
+<script src="../../js/app.min.js"></script>
+<script src="../../js/bootstrap-select/js/bootstrap-select.min.js" type="text/javascript"></script>
+<script src="../../js/components-bootstrap-select.min.js" type="text/javascript"></script>
+<!--下拉菜单-->
+<!--城市选择插件-->
+<script type="text/javascript" src="../../js/fixdiv.js"></script>
+<script type="text/javascript" src="../../js/address.js"></script>
+<!--城市选择插件-->
+<!--点击变换数字-->
+<script src="../../js/bootstrap-touchspin/bootstrap.touchspin.js" type="text/javascript"></script>
+<script src="../../js/components-bootstrap-touchspin.min.js" type="text/javascript"></script>
+<script>
+    $('.can-del img').on('click',function(){
+        $(this).parent().remove();
+    });
+</script>
+</body>
+</html>

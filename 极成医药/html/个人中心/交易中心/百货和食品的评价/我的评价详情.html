@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link href="../../../../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../../../js/bootstrap-select/css/bootstrap-select.min.css" rel="stylesheet" type="text/css" />
+    <link href="../../../../js/bootstrap-fileinput/bootstrap-fileinput.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../../css/banner.css" />
+     <!-- 上传图片 -->
+    <link rel="stylesheet" type="text/css" href="../../../../css/webuploader.css" />
+    <link href="../../../../css/main.css" rel="stylesheet">
+    <link href="../../../../css/media.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="../../js/html5shiv.min.js"></script>
+    <script src="../../js/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body class="bg-f">
+<div class="right-nav-box">
+	<div class="right-nav">
+		<a href="#" class="right-nav01"></a>
+		<a href="#" class="right-nav02"><span>0</span></a>
+		<a href="#" class="right-nav03"></a>
+		<a href="#" class="right-nav04"></a>
+		<a href="#" class="right-nav05"></a>
+		<a href="#top" class="right-nav06"></a>
+	</div>
+</div>
+<div class="top-section" id="top">
+	<div class="container">
+		<div class="top-left pull-left">
+			<div class="logo clearfix">
+				<img src="../../../../images/logo.png">
+				<span>极成订购</span>
+			</div>
+			<p class="logo-url">www.jichengdg.com</p>
+		</div>
+		<div class="top-center pull-left">
+			<div class="clearfix">
+				<div class="top-center-left pull-left">
+					<div class="select-city pull-left">
+						<input type="text" value="南京市 [选择城市]" size="15" id="getcity_name" name="getcity_name" mod="address|notice" mod_address_source="hotel" mod_address_suggest="@Beijing|北京|53@Shanghai|上海|321@Shenzhen|深圳|91@Guangzhou|广州|80@Qingdao|青岛|292@Chengdu|成都|324@Hangzhou|杭州|383@Wuhan|武汉|192@Tianjin|天津|343@Dalian|大连|248@Xiamen|厦门|61@Chongqing|重庆|394@" mod_address_reference="getcityid" />
+						<input id="getcityid" name="getcityid" type="hidden" value="{$getcityid}" />
+					</div>
+					<div id="jsContainer" class="jsContainer" style="height:0">
+					    <div id="tuna_alert" style="display:none;position:absolute;z-index:999;overflow:hidden;"></div>
+					    <div id="tuna_jmpinfo" style="visibility:hidden;position:absolute;z-index:120;"></div>
+					</div>
+					<div class="top-login pull-left"><span class="cutline">|</span>欢迎来到极成，请<a data-toggle="modal" href="#myModal">登录</a> / <a data-toggle="modal" href="#myModalRegister">免费注册</a></div>
+				</div>
+				<div class="top-center-right pull-right">
+					<a href="#">我的订单</a>
+					<a href="#">购物车</a>	
+					<a href="#">我的账户</a>			
+					<a href="#" class="myaccount-btn">网站导航</a>
+					<div class="myaccount-content clearfix">	
+						<span class="bot"></span>  
+						<span class="top"></span>
+						<div class="myaccount-item clearfix">
+							<div class="myaccount-option clearfix">
+								<h1>健康咨询</h1>
+								<a href="#">医药咨询</a>
+								<a href="#">疾病知识</a>
+								<a href="#">用药指导</a>
+							</div>
+							<div class="myaccount-option clearfix">
+								<h1>特色服务</h1>
+								<a href="#">健康百科</a>
+								<a href="#">医院大全</a>
+								<a href="#">用药指导</a>
+								<a href="#">健康问答</a>
+							</div>
+						</div>  				
+					</div>
+				</div>
+			</div>
+			<div class="search-box clearfix">
+				<select class="bs-select form-control">
+					<option>商品</option>
+					<option>店铺</option>
+				</select>  
+				<input type="text" placeholder="输入搜索内容" />
+				<button class="btn search-btn">搜索</button>
+			</div>
+		</div>
+		<div class="top-right pull-left">
+			<div class="code-box pull-left text-center">
+				<img src="../../../../images/code.png" />
+				<p>关注微信</p>
+			</div>
+			<div class="code-box pull-right text-center">
+				<img src="../../../../images/code.png" />
+				<p>扫码下载APP</p>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="main-section-person clearfix">
+	<div class="container">
+		<div class="section-per-left pull-left clearfix">
+	    	<span class="pull-left">个人中心</span>
+	    	<a href="#" class="pull-left">返回极成首页</a>
+	    </div>
+		<ul class="section-per-ul pull-left  clearfix">
+			<li><a href="#">首页</a></li>
+			<li class="account-set" id="li1">
+				<a href="#">账户设置<img src="../../../../images/arrow_down.png" alt=""></a>
+				<div class="acc-box" id="div1">
+					<a href="#">地址管理</a>
+					<a href="#">安全设置</a>
+					<a href="#">修改头像</a>
+				</div>
+			</li>
+			<li><a href="#">消息</a></li>
+		</ul>
+		<div class="section-per-right pull-right clearfix">
+			<input type="" name="" value="阿莫西林" class="pull-left">
+			<button type="button" class="pull-left per-ser">搜索</button>
+		</div>	
+	</div>
+</div>
+<div class="main-content">
+	<div class="container">
+		<div class="my-order01">
+			<span>首页</span>
+			<i>></i>
+			<span>我的评价</span>
+        </div>
+        <div class="evaluate">
+        	<div class="evaluate-top">
+        		<span>订单编号：<em>20180909874547575637</em></span>
+        	</div>
+        	<div class="evaluate-box">
+        		<div class="evaluate-item-box clearfix">
+        		    <div class="evaluate-left pull-left">
+        		    	<img src="../../../../images/mj01.png" alt="">
+        		    	<p>婴儿纯棉毛巾</p>
+        		    	<span>纯棉制造</span>
+        		    </div>
+        		    <div class="evaluate-right pull-left">
+        		    	<div class="box-top">
+        		    		<span>评分：</span>
+        		    		<img src="../../../../images/star01.png" alt="">
+        		    		<img src="../../../../images/star01.png" alt="">
+        		    		<img src="../../../../images/star01.png" alt="">
+        		    		<img src="../../../../images/star01.png" alt="">
+        		    		<img src="../../../../images/star01.png" alt="">
+        		    		<em>非常满意</em>
+        		    	</div>
+        		    	<textarea class="evaluate-text" placeholder="商品是否给力？快来分享你的购买心得吧~"></textarea>
+        		    	<span>0/300</span>
+        		    	<div class="evaluate-up-box clearfix">
+        		    		<div class="list evaluate-up clearfix pull-left">
+					            <div class="pic-list main-up-list pull-left"></div>
+					            <div class="add-pic pull-left"><img src="../../../../images/upload_img.png" class="main-up-add pull-left" alt="添加图片"></div>
+					        </div>
+					        <span class="pull-left"><i class="evaluate-num">0</i>/5</span>
+					        <button type="button" class="pull-right ok-sub" >提交</button>
+        		    	</div>
+        		    </div>
+        		</div>
+        		<div class="evaluate-item-box no-evaluate clearfix">
+        		    <div class="evaluate-left pull-left">
+        		    	<img src="../../../../images/mj01.png" alt="">
+        		    	<p>婴儿纯棉毛巾</p>
+        		    	<span>纯棉制造</span>
+        		    </div>
+        		    <div class="evaluate-right pull-left">
+        		    	<span>该宝贝无法进行评价~</span>
+        		    </div>
+        		</div>
+        		<div class="evaluate-item-box clearfix">
+        		    <div class="evaluate-left pull-left">
+        		    	<img src="../../../../images/mj01.png" alt="">
+        		    	<p>婴儿纯棉毛巾</p>
+        		    	<span>纯棉制造</span>
+        		    </div>
+        		    <div class="evaluate-right pull-left">
+        		    	<div class="box-top">
+        		    		<span>评分：</span>
+        		    		<img src="../../../../images/star01.png" alt="">
+        		    		<img src="../../../../images/star01.png" alt="">
+        		    		<img src="../../../../images/star01.png" alt="">
+        		    		<img src="../../../../images/star02.png" alt="">
+        		    		<img src="../../../../images/star02.png" alt="">
+        		    		<em>一般</em>
+        		    	</div>
+        		    	<textarea class="evaluate-text">这个商品的保质期不新鲜，我不是很满意，给个中评吧！</textarea>
+        		    	<span>0/300</span>
+        		    	<div class="evaluate-up-box clearfix">
+        		    		<div class="list evaluate-up clearfix pull-left">
+					            <div class="pic-list1 main-up-list pull-left"></div>
+					            <div class="add-pic1 pull-left"><img src="../../../../images/upload_img.png" class="main-up-add pull-left" alt="添加图片"></div>
+					        </div>
+					        <span class="pull-left"><i class="evaluate-num1">0</i>/5</span>
+					        <button type="button" class="pull-right no-sub" >提交</button>
+        		    	</div>
+        		    	<div class="sell-reply">
+        		    		<p><em>卖家回复：</em><i>亲～药品的批次都是最新鲜的噢～，您可以在药品包装处进行查看哟～</i></p>
+        		    	</div>
+        		    </div>
+        		</div>
+        		<!-- <div class="evaluate-item-box clearfix">
+        		    <div class="evaluate-left pull-left">
+        		    	<div class="active-title">店铺动态评分</div>
+        		    </div>
+        		    <div class="evaluate-right pull-left">
+        		    	<div class="active-evaluate">
+        		    		<span>宝贝与描述相符：</span>
+        		    		<img src="../../../../images/star01.png" alt="">
+        		    		<img src="../../../../images/star01.png" alt="">
+        		    		<img src="../../../../images/star01.png" alt="">
+        		    		<img src="../../../../images/star01.png" alt="">
+        		    		<img src="../../../../images/star01.png" alt="">
+        		    		<em>5星</em>
+        		    		<button class="pull-right" type="">提交</button>
+        		    	</div>
+        		        <div class="active-evaluate">
+        		        	<span>卖家的服务态度：</span>
+        		    		<img src="../../../../images/star01.png" alt="">
+        		    		<img src="../../../../images/star01.png" alt="">
+        		    		<img src="../../../../images/star01.png" alt="">
+        		    		<img src="../../../../images/star01.png" alt="">
+        		    		<img src="../../../../images/star01.png" alt="">
+        		    		<em>5星</em>
+        		        </div>
+        		        <div class="active-evaluate">
+        		        	<span>物流的服务质量：</span>
+        		    		<img src="../../../../images/star01.png" alt="">
+        		    		<img src="../../../../images/star01.png" alt="">
+        		    		<img src="../../../../images/star01.png" alt="">
+        		    		<img src="../../../../images/star01.png" alt="">
+        		    		<img src="../../../../images/star01.png" alt="">
+        		    		<em>5星</em>
+        		        </div>
+        		    </div>
+        		</div> -->
+        	</div>
+        </div>
+    </div>
+</div>
+<div class="bottom-section01">
+	<div class="container clearfix">
+		<div class="icon-text pull-left">创业到极成</div>
+		<div class="pull-right icon-box-right">
+			<div class="icon-box pull-left clearfix">
+				<img src="../../../../images/bottom_icon01.png" class="pull-left" />
+				<h1 class="pull-left"><span>安全</span><p>商信可鉴 体制安全</p></h1>
+			</div>
+			<div class="icon-box pull-left clearfix">
+				<img src="../../../../images/bottom_icon02.png" class="pull-left" />
+				<h1 class="pull-left"><span>省钱</span><p>核算精细 费用最低</p></h1>
+			</div>
+			<div class="icon-box pull-left clearfix">
+				<img src="../../../../images/bottom_icon03.png" class="pull-left" />
+				<h1 class="pull-left"><span>方便</span><p>共享资源 先进高效</p></h1>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="bottom-section02">
+	<div class="container clearfix">
+		<div class="left-menu pull-left">
+			<div class="left-menu-list pull-left">
+				<h1>购物指南</h1>
+				<a href="#">购物流程</a>
+				<a href="#">用户协议</a>
+				<a href="#">会员规则</a>
+				<a href="#">订单状态</a>
+				<a href="#">常见问题</a>				
+			</div>
+			<div class="left-menu-list pull-left">
+				<h1>配送方式</h1>
+				<a href="#">快递服务</a>
+				<a href="#">上门服务</a>
+				<a href="#">门店自取</a>			
+			</div>
+			<div class="left-menu-list pull-left">
+				<h1>支付方式</h1>
+				<a href="#">货到付款</a>
+				<a href="#">在线支付</a>
+				<a href="#">银行转账</a>
+				<a href="#">支票付款</a>			
+			</div>
+			<div class="left-menu-list pull-left">
+				<h1>售后服务</h1>
+				<a href="#">接收验货</a>
+				<a href="#">申请退款</a>
+				<a href="#">退换货规则</a>			
+			</div>
+			<div class="left-menu-list pull-left">
+				<h1>个性服务</h1>
+				<a href="#">医师服务</a>
+				<a href="#">药师服务</a>
+			</div>
+			<div class="left-menu-list pull-left">
+				<h1>企业服务</h1>
+				<a href="#">厂商合作</a>
+				<a href="#">厂商入口</a>
+				<a href="#">厂商入驻</a>
+			</div>
+		</div>
+		<div class="right-tel pull-right">
+			<div class="tel-box clearfix">
+				<h2 class="pull-left"><img src="../../../../images/bottom_icon04.png" /></h2>
+				<h1 class="pull-left"><span>加盟热线(固话)</span><span>400-123-6789</span></h1>
+			</div>
+			<div class="tel-box clearfix">
+				<h2 class="pull-left"><img src="../../../../images/bottom_icon05.png" /></h2>
+				<h1 class="pull-left">
+					<span>招商热线(手机)</span>
+					<span>曾先生：13998986666</span>
+					<span>朱先生：13998986666</span>
+					<span>朱先生：13998986666</span>
+				</h1>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="bottom-section03">
+	<div class="container bottom-menu clearfix">
+		<a href="#">关于我们</a>
+		<span>|</span>
+		<a href="#">联系我们</a>
+		<span>|</span>
+		<a href="#">联系客服</a>
+		<span>|</span>
+		<a href="#">合作招商</a>
+		<span>|</span>
+		<a href="#">商家帮助</a>
+		<span>|</span>
+		<a href="#">友情链接</a>
+		<span>|</span>
+		<a href="#">商家入驻</a>
+	</div>
+	<p><span>ICP 备案号：苏02-12345678号</span><span>苏公网安备：310115020022155号</span><span>增值电信业务经营许可证：浙B2-20080224</span></p>
+	<p><span>Copyright  2018-2047 南京极成信息公司版权所有，并保留一切权利</span><span>公司地址：江苏省秦淮区弓箭坊020号</span></p>
+	<div class="link-img">
+		<div class="container text-center">
+			<a href="#"><img src="../../../../images/bottom_link_pic01.png" /></a>
+			<a href="#"><img src="../../../../images/bottom_link_pic02.png" /></a>
+			<a href="#"><img src="../../../../images/bottom_link_pic03.png" /></a>
+			<a href="#"><img src="../../../../images/bottom_link_pic04.png" /></a>
+			<a href="#"><img src="../../../../images/bottom_link_pic05.png" /></a>
+			<a href="#"><img src="../../../../images/bottom_link_pic06.png" /></a>
+		</div>
+	</div>
+</div>
+<script src="../../../../js/jquery.min.js"></script>
+<script src="../../../../js/bootstrap.min.js"></script>
+<script src="../../../../js/top_menu.js"></script>
+<!--城市选择插件-->
+<script src="../../../../js/app.min.js"></script>
+<script type="text/javascript" src="../../../../js/fixdiv.js"></script>
+<script type="text/javascript" src="../../../../js/address.js"></script>
+<!--城市选择插件-->
+<!--下拉菜单-->
+<script src="../../../../js/bootstrap-select/js/bootstrap-select.min.js" type="text/javascript"></script>
+<script src="../../../../js/components-bootstrap-select.min.js" type="text/javascript"></script>
+<!--下拉菜单-->
+<!-- 上传图片 -->
+<script src="../../../../js/webuploader.min.js" type="text/javascript"></script>
+<script src="../../../../js/bootstrap-fileinput/bootstrap-fileinput.js"></script>
+<script>
+	$(window).scroll(function(){
+	  if($(document).scrollTop()>=660){
+	    $(".right-nav").addClass("fixednav"); 
+	  }else{
+	   $(".right-nav").removeClass("fixednav");
+	  }
+	})
+	$(function(){
+		$('a.delete01').click(function(){
+			$(this).parent().parent().remove();
+		})
+	})  
+	window.onload=function(){
+		var oLi=document.getElementById('li1');
+		var oDiv=document.getElementById('div1');
+		var timer;
+
+		oLi.onmouseover=oDiv.onmouseover=function(){
+			clearTimeout(timer);
+			oDiv.style.display='block';
+		};
+		oLi.onmouseout=function(){
+			timer=setTimeout(function(){
+				oDiv.style.display='none';
+			},200);
+		};
+	}
+
+	$(function(){
+		var num = 0;
+        var uploader = WebUploader.create({
+            auto:true,
+            swf: '../../css/Uploader.swf',
+            // server: '../js/up.php',
+            pick: '.add-pic',
+            resize: false,
+            fileNumLimit: 5,
+        });
+    
+        //上传时显示文件信息
+       uploader.on( 'fileQueued', function( file ) {
+        var item =$('<div class="main-up-box merch-box pull-left"><div id="'+file.id+'"class="file-item thumbnail">'+'<img class="main-up-pic">'+'</div></div>');
+        var img = item.find('img');
+        uploader.makeThumb(file,function(error,src){
+            str = file.name;
+            if (str != "") {
+                var pos = "." + str.replace(/.+\./, "");
+                if(pos == '.gif'||pos == '.jpg'||pos =='.jpeg'||pos =='.bmp'||pos =='.png'){
+                    img[0].src=src;
+                }
+                else{
+                    img[0].src= "../images/book_pic.png";
+                }
+            }
+            console.log(img)
+            
+        },70,70);//图片尺寸
+            $('.pic-list').append(item);
+        });
+    	uploader.on( 'uploadComplete', function( file ) {
+        $('.evaluate-num').text(++num);//上传增加图片
+    	})
+    	var num1 = 0;
+        var uploader1 = WebUploader.create({
+            auto:true,
+            swf: '../../css/Uploader.swf',
+            // server: '../js/up.php',
+            pick: '.add-pic1',
+            resize: false,
+            fileNumLimit: 5,
+        });
+    
+        //上传时显示文件信息
+       uploader1.on( 'fileQueued', function( file ) {
+        var item =$('<div class="main-up-box merch-box pull-left"><div id="'+file.id+'"class="file-item thumbnail">'+'<img class="main-up-pic">'+'</div></div>');
+        var img = item.find('img');
+        uploader.makeThumb(file,function(error,src){
+            str = file.name;
+            if (str != "") {
+                var pos = "." + str.replace(/.+\./, "");
+                if(pos == '.gif'||pos == '.jpg'||pos =='.jpeg'||pos =='.bmp'||pos =='.png'){
+                    img[0].src=src;
+                }
+                else{
+                    img[0].src= "../images/book_pic.png";
+                }
+            }
+            console.log(img)
+            
+        },70,70);//图片尺寸
+            $('.pic-list1').append(item);
+        });
+    	uploader1.on( 'uploadComplete', function( file ) {
+        $('.evaluate-num1').text(++num1);//上传增加图片
+    	})
+      
+    });
+	
+</script>
+</body>
+</html>

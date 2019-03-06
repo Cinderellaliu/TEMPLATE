@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link href="../../../css/bootstrap.min.css" rel="stylesheet">
+    <!-- 上传图片 -->
+    <link rel="stylesheet" href="../../../css/webuploader.css">
+    <!-- 上传图片 -->
+    <!-- 加减 -->
+    <link href="../../../js/bootstrap-select/css/bootstrap-select.min.css" rel="stylesheet" type="text/css" />
+    <link href="../../../js/bootstrap-touchspin/bootstrap.touchspin.css" rel="stylesheet" type="text/css" />
+    <!-- 加减 -->
+    <link href="../../../css/main.css" rel="stylesheet">
+    <link href="../../../css/media.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="../js/html5shiv.min.js"></script>
+    <script src="../js/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body class="grey-bg">
+<div class="top-title login-top hav-bo">
+    <a href="#" class="back-btn" onclick="history.go(-1)"></a>
+        <span>退款详情</span>
+</div>
+<div class="return-content">
+    <div class="return-goods good-pad good-bg clearfix">
+        <div class="turn-sucess clearfix">
+            <p class="seller-deal"><span>退款成功</span></p>
+        </div>
+        <div class="tu-mon clearfix">
+            <p class="histo">退款金额<span class="mo-co">¥ <i>590.00</i></span></p>
+            <a href="" class="histo">协商历史<div class="tu-his"><img src="../../../images/right_arr.png" alt=""></div></a>
+        </div>
+        <div class="tong all-tail clearfix">
+            <p class="return-inf">退款信息</p>
+            <div class="left-tong">
+                <img src="../../../images/six_pic03.png" alt="">
+            </div>
+            <div class="right-tong">
+                <h3 class="now-pa">同仁堂  六味地黄丸</h3>
+                <p class="size all-si">0.33gX12片版</p>
+                <p class="total all-mo">总金额：¥ <span>590</span></p>
+            </div>
+        </div>
+        <div class="small-box hav-bgf clearfix">
+           <div class="unbox clearfix">
+                <span class="sprice">拆零单价：￥<i>30.00</i></span>
+                <span class="order">订购量<i>3</i>盒</span>
+            </div>
+            <div class="unbox-money clearfix">
+                金额：¥ <span>90.00</span>
+            </div> 
+        </div>
+        <div class="big-box hav-bgf clearfix">
+           <div class="unbox clearfix">
+                <span class="sprice">整包单价：￥<i>28.00</i></span>
+                <span class="order">订购量<i>10</i>盒</span>
+            </div>
+            <div class="unbox-money">
+                金额：¥ <span>90.00</span>
+            </div> 
+        </div>
+    </div>
+    <div class="turn-about clearfix">
+        <span>退款编号：20180394857586769797</span>
+        <span>申请时间：2018-03-04  15:00:00</span>
+        <span>退款原因：</span>
+        <span>退款件数：1 件</span>
+        <span>退款金额：¥ 590.00</span>
+    </div>
+    <div class="can-see-tu clearfix">
+        <a href="" class="see-it">查看退款</a>
+    </div>
+</div>
+<script src="../../../js/jquery.min.js"></script>
+<script src="../../../js/bootstrap.min.js"></script>
+<!-- 上传图片 -->
+<script src="../../../js/webuploader.min.js"></script>
+<!-- 上传图片 -->
+<!-- 加减 -->
+<script src="../../../js/bootstrap-touchspin/bootstrap.touchspin.js" type="text/javascript"></script>
+<script src="../../../js/components-bootstrap-touchspin.min.js" type="text/javascript"></script>
+<!-- 加减 -->
+</body>
+</html>
+<script type="text/javascript">
+   $(function(){
+            var num = 0;
+            var uploader = WebUploader.create({
+            auto:true,
+            swf: '../../../css/Uploader.swf',
+            // server: '../js/up.php',
+            pick: '#add-pic',
+            resize: false,
+            fileNumLimit: 5, 
+            duplicate:true,
+            accept: {
+            title: 'Images',
+            extensions: 'jpg,png',
+            mimeTypes: 'image/*'
+        }
+        });
+        //上传时显示文件信息
+       uploader.on( 'fileQueued', function( file ) {
+         var item =$('<div class="main-up-box pull-left"><div id="'+file.id+'"class="file-item thumbnail">'+'<img class="main-up-pic">'+'<div class="write"><span>添加说明</span></div>'+'<img src="../../../images/delete_img.png" class="delete-img">'+'</div></div>');
+        var img = item.find('img');
+        uploader.makeThumb(file,function(error,src){
+            str = file.name;
+             if (str != "") {
+                var pos = "." + str.replace(/.+\./, "");
+                if(pos == '.gif'||pos == '.jpg'||pos =='.jpeg'||pos =='.bmp'||pos =='.png'){
+                    img[0].src=src;
+                }
+                else{
+                    img[0].src= "../images/book_pic.png";
+                } 
+            }
+            
+        },80,80);//图片尺寸
+            $('#pic-list').before(item);
+            $('.delete-img').click(function(){
+                $(this).parent().remove();
+                uploader.removeFile(file);
+            })
+        });
+        uploader.on('uploadComplete', function( file ) {
+        $('.main-upload-num').text(++num);//上传增加图片
+        })
+    });
+</script>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../css/swiper.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../../css/webuploader.css" />
+    <link href="../../css/main.css" rel="stylesheet">
+    <link href="../../css/media.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="../../js/html5shiv.min.js"></script>
+    <script src="../../js/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body class="grey-bg">
+<div class="title-top clearfix">
+    <a href="#"  class="pull-left left" ><img src="../../images/top_left_arrow.png" alt=""></a>
+    <span>投诉中心</span>
+</div>
+<div class="main-content no-padding no-margin">
+    <div class="complaint-box">
+        <div class="item-box clearfix">
+            <span class="pull-left">投诉类型</span>
+            <input class="pull-left" type="text">
+        </div>
+        <div class="item-box clearfix">
+            <span class="pull-left">投诉标题</span>
+            <input class="pull-left" type="text">
+        </div>
+        <div class="item-box clearfix">
+            <span class="pull-left">投诉内容</span>
+            <input class="pull-left" type="text">
+        </div>
+        <div class="item-box clearfix">
+            <span class="pull-left">投诉凭证</span>
+        </div>
+        <div class="complaint margin clearfix pull-left">
+            <div id="pic-list" class="pull-left"></div>
+            <div id="add-pic" class="pull-left"><img src="../../images/upload_photo.png" class="main-up-add pull-left" alt="添加图片"></div>  
+        </div>
+    </div>
+</div>
+
+<script src="../../js/jquery.min.js"></script>
+<script src="../../js/bootstrap.min.js"></script>
+<!-- 上传图片 -->
+<script src="../../js/webuploader.min.js" type="text/javascript"></script>
+
+<script>
+$(function(){
+        var num = 0;
+        var uploader = WebUploader.create({
+            auto:true,
+            swf: '../../css/Uploader.swf',
+            // server: '../js/up.php',
+            pick: '#add-pic',
+            resize: false,
+            fileNumLimit: 5,
+			duplicate:true
+        });
+    
+        //上传时显示文件信息
+       uploader.on( 'fileQueued', function( file ) {
+		   var item =$('<div class="main-up-box pull-left"><div id="'+file.id+'"class="file-item thumbnail">'+'<img class="main-up-pic">'+'<div class="write"><span>添加说明</span></div>'+'<img src="../../images/delete_img.png" class="delete-img">'+'</div></div>');
+        	var img = item.find('img');
+        	uploader.makeThumb(file,function(error,src){
+            	str = file.name;
+             	if (str != "") {
+                	var pos = "." + str.replace(/.+\./, "");
+                	if(pos == '.gif'||pos == '.jpg'||pos =='.jpeg'||pos =='.bmp'||pos =='.png'){
+                    	img[0].src=src;
+                	}
+                	else{
+                    	img[0].src= "../images/book_pic.png";
+                	}     
+            	}  
+        	},80,80);//图片尺寸
+            $('#add-pic').before(item);
+            $('.complaint .delete-img').click(function(){
+                $(this).parent().remove();
+				uploader.removeFile(file);
+            })   
+        }); 
+    });
+
+</script>
+</body>
+</html>

@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../js/bootstrap-select/css/bootstrap-select.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="../../css/banner.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/webuploader.css" />
+    <!-- 上传图片 -->
+    <link href="../../css/main.css" rel="stylesheet">
+    <link href="../../css/media.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="../../js/html5shiv.min.js"></script>
+    <script src="../../js/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="right-nav-box">
+	<div class="right-nav nav-near">
+		<a href="#" class="right-nav01"></a>
+		<a href="#" class="right-nav02"><span>0</span></a>
+		<a href="#" class="right-nav03"></a>
+		<a href="#" class="right-nav04"></a>
+		<a href="#" class="right-nav05"></a>
+		<a href="#top" class="right-nav06"></a>
+	</div>
+</div>
+<div class="top-section" id="top">
+	<div class="container">
+		<div class="top-left pull-left">
+			<div class="logo clearfix">
+				<img src="../../images/logo.png">
+				<span>极成订购</span>
+			</div>
+			<p class="logo-url">www.jichengdg.com</p>
+		</div>
+		<div class="top-center pull-left">
+			<div class="clearfix">
+				<div class="top-center-left pull-left">
+					<div class="find-forget">
+						<h4 class="order-pag">预约页</h4>
+					</div>
+				</div>
+				<div class="top-center-right pull-right">	
+					<a href="#">客服中心</a>	
+					<a href="#" class="myaccount-btn">网站导航</a>
+					<div class="myaccount-content clearfix">	
+						<span class="bot"></span>  
+						<span class="top"></span>
+						<div class="myaccount-item clearfix">
+							<div class="myaccount-option clearfix">
+								<h1>健康咨询</h1>
+								<a href="#">医药咨询</a>
+								<a href="#">疾病知识</a>
+								<a href="#">用药指导</a>
+							</div>
+							<div class="myaccount-option clearfix">
+								<h1>特色服务</h1>
+								<a href="#">健康百科</a>
+								<a href="#">医院大全</a>
+								<a href="#">用药指导</a>
+								<a href="#">健康问答</a>
+							</div>
+						</div>  				
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="top-right pull-left">
+			<div class="code-box pull-left text-center">
+				<img src="../../images/code.png" />
+				<p>关注微信</p>
+			</div>
+			<div class="code-box pull-right text-center">
+				<img src="../../images/code.png" />
+				<p>扫码下载APP</p>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="main-content">
+	<div class="container main-per-box">
+		<div class="top-submission">
+			<img src="../../images/submission.png" alt="">
+			<p>
+				<span>提交</span>
+				<span class="margin-all">审核</span>
+				<span>通过</span>
+			</p>
+			
+		</div>
+		<div class="per-box">
+			<div class="per-box-top detail-top">
+				<span>收货信息</span>
+			</div>
+			<div class="per-box-content all-adders clearfix">
+				<div class="per-con-left pull-left">
+					<div class="con-top left-top">
+						<span>默认地址</span>
+						<button>修改</button>
+					</div>
+					<div class="clearfix add space">
+						<span class="pull-left">收货人：</span>
+						<em class="pull-left">饶慧媛</em>
+					</div>
+					<div class="clearfix add">
+						<span class="pull-left">联系方式：</span>
+					    <em class="pull-left">182****5796</em>
+					</div>
+					<div class="clearfix add">
+						<span class="pull-left">收货地址：</span>
+						<em class="pull-left">江苏省南京市江宁区将军大道6号J6软件园6栋307</em>
+					</div>
+				</div>
+				<div class="per-con-right pull-right">
+					<div class="add-box">
+						<a href="#">地址切换</a>
+					    <button type="button">新建地址</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="per-box">
+			<div class="per-box-top detail-top">
+				<span>用药信息</span>
+				<i class="small-use">为了您的用药安全，请完善用药人本人真实信息，信息不全可能会被药师驳回!</i>
+			</div>
+			<div class="drug-use">
+				<div class="item-box mar-on clearfix">
+					<label for=""><i>*</i><span class="li-sp">用药人</span></label>
+					<div class="inp-bo">
+						<input type="text" placeholder="请填写用药人真实行姓名">
+					</div>
+				</div>
+				<div class="item-box mar-item clearfix">
+					<label for=""><i>*</i><span class="li-sp">性别</span></label>
+					<span class="man"><i class="circular-bo bo1"></i>男</span>
+					<span class="women"><i class="circular-bo bo2"></i>女</span>
+				</div>
+				<div class="item-box mar-item clearfix">
+					<label for=""><i>*</i><span class="li-sp">出生日期</span></label>
+					<div class="inp-bo">
+						<input type="text" placeholder="请填写出生日期">
+						<img src="../../images/data_birth.png" alt="">
+					</div>
+				</div>
+				<div class="item-box mar-item clearfix">
+					<label for=""><i>*</i><span class="li-sp">手机</span></label>
+					<div class="inp-bo">
+						<input type="text" placeholder="请输入手机号">
+					</div>
+				</div>
+				<div class="item-box mar-item clearfix">
+					<label for=""><i>*</i><span class="li-sp">身份证</span></label>
+					<div class="inp-bo wid-bo">
+						<input type="text" placeholder="请正确填写用药人省份证号">
+					</div>
+				</div>
+				<div class="item-box mar-item clearfix">
+					<label for=""><i>*</i><span class="li-sp">处方号</span></label>
+					<div class="inp-bo wid-bo">
+						<input type="text" placeholder="请输入处方号">
+					</div>
+				</div>
+				<div class="item-box mar-item clearfix">
+					<label for=""><i>*</i><span class="li-sp">医师证号</span></label>
+					<div class="inp-bo wid-bo">
+						<input type="text" placeholder="请输入医师证号">
+					</div>
+				</div>
+				<div class="list main-up clearfix">
+		            <div id="pic-list" class="main-up-list pull-left"><label for=""><i>*</i><span class="li-sp">上传处方</span></label></div>
+		            <div id="add-pic" class="pull-left"><button class="btn-no main-up-add pull-left">立刻上传图片</button></div><span class="exp-li">支持jpg、png、gif，大小不超过5MB，最多5张处方单</span>
+		        </div>
+			</div>
+		</div>
+		<div class="table-reponsive sub-order-content">
+			<div class="per-box-top detail-top">
+				<span>订单信息</span>
+			</div>
+			<div class="order-con-top01 clearfix">
+				<span class="sub-order-space01 pull-left">商品信息</span>
+				<span class="sub-order-space04 pull-right">金额</span>
+				<span class="sub-order-space03 pull-right">数量</span>
+				<span class="sub-order-space02 pull-right">价格</span>	
+			</div>
+		    <div class="order-con-top02 clearfix">
+				<span class="pull-left">极成医药</span>
+				<span class="pull-left">店铺:集成大医药</span>
+				<a href=""><img src="../../images/kf01.png" alt="" class="pull-left"></a>
+			</div>
+			<table class="table sub-table">
+				<tbody>
+					<tr>
+						<td class="sub-order-space01 clearfix">
+							<img class="pull-left"  src="../../images/sanjiu.png" alt="">
+							<div class="pull-left goods-info">
+	                			<h4>三九感冒灵颗粒</h4>
+	                			<p>风寒感冒 0.33x12 片版</p>
+	                		</div>
+						</td>
+						<td class="sub-order-space02">
+							<h5 class="margin01">拆零单价：<i>&yen; 30.00</i></h5>
+	                        <h5>中包单价：<i>&yen; 28.00</i></h5>
+						</td>
+						<td class="sub-order-space03">
+							<h5 class="margin01">订购量 <em>3</em>盒</h5>
+	                        <h5>订购量 <em>10</em>盒</h5>
+						</td>
+						<td class="sub-order-space04 clearfix">
+							<div class="pull-left">
+								<h5 class="margin01">金额：<i>&yen; 90.00</i></h5>
+								<h5>金额：<i>&yen; 280.00</i></h5>
+							</div>
+							<div class="pull-right">
+								<h4>总金额：<i>&yen; 370</i></h4>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td class="sub-order-space01 clearfix">
+							<img class="pull-left"  src="../../images/sanjiu.png" alt="">
+							<div class="pull-left goods-info">
+	                			<h4>三九感冒灵颗粒</h4>
+	                			<p>风寒感冒 0.33x12 片版</p>
+	                		</div>
+						</td>
+						<td class="sub-order-space02">
+							<h5 class="margin02">拆零单价：<i>&yen; 30.00</i></h5>
+						</td>
+						<td class="sub-order-space03">
+							<h5 class="margin02">订购量 <em>3</em>盒</h5>
+						</td>
+						<td class="sub-order-space04 clearfix">
+							<div class="pull-right">
+								<h4>总金额：<i>&yen; 90</i></h4>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td class="sub-order-space01 clearfix">
+							<img class="pull-left"  src="../../images/sanjiu.png" alt="">
+							<div class="pull-left goods-info">
+	                			<h4>三九感冒灵颗粒</h4>
+	                			<p>风寒感冒 0.33x12 片版</p>
+	                		</div>
+						</td>
+						<td class="sub-order-space02">
+							<h5 class="margin02">中包单价：<i>&yen; 30.00</i></h5>
+						</td>
+						<td class="sub-order-space03">
+							<h5 class="margin02">订购量 <em>10</em>盒</h5>
+						</td>
+						<td class="sub-order-space04 clearfix">
+							<div class="pull-right">
+								<h4>总金额：<i>&yen; 280</i></h4>
+							</div>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<div class="way-box spe-box clearfix">
+				<span class="pull-left">发票信息</span>
+				<img src="../../images/way.png" alt="" class="pull-left">
+			    <div class="invoice tick-list clearfix">
+	                <input type="checkbox" checked="checked" id="radio-add" class="radio-add1">
+	                <label for="radio-add"><span>我要开发票</span></label>
+	            </div>	   
+			</div>		
+			<div class="way-box clearfix">
+				<span class="pull-left">配送方式</span>
+				<img src="../../images/way.png" alt="" class="pull-left">
+				<button type="button" class="pull-left red-text">配送到家</button>
+				<button type="button" class="pull-left">快递</button>
+				<button type="button" class="pull-left">到店自提</button>
+				<em class="pull-right">10.00</em>
+			</div>
+			<div class="way-box clearfix">
+				<span class="pull-left">配送方式</span>
+				<img src="../../images/way.png" alt="" class="pull-left">
+				<button type="button" class="pull-left red-text">线上支付</button>
+				<button type="button" class="pull-left">线下支付</button>
+				<button type="button" class="pull-left">支票付款</button>
+			</div>
+			<div class="way-box way-box01">
+				<span>店铺金额（含运费）：<em>&yen;370.00</em></span>
+			</div>
+		</div>
+		<div class="table-reponsive sub-order-content">
+		    <div class="order-con-top02 clearfix">
+				<span class="pull-left">极成医药</span>
+				<span class="pull-left">店铺:吉林制药</span>
+				<a href=""><img src="../../images/kf01.png" alt="" class="pull-left"></a>
+			</div>
+			<table class="table sub-table">
+				<tbody>
+					<tr>
+						<td class="sub-order-space01 clearfix">
+							<img class="pull-left"  src="../../images/sanjiu.png" alt="">
+							<div class="pull-left goods-info">
+	                			<h4>三九感冒灵颗粒</h4>
+	                			<p>风寒感冒 0.33x12 片版</p>
+	                		</div>
+						</td>
+						<td class="sub-order-space02">
+							<h5 class="margin01">拆零单价：<i>&yen; 30.00</i></h5>
+	                        <h5>中包单价：<i>&yen; 28.00</i></h5>
+						</td>
+						<td class="sub-order-space03">
+							<h5 class="margin01">订购量 <em>3</em>盒</h5>
+	                        <h5>订购量 <em>10</em>盒</h5>
+						</td>
+						<td class="sub-order-space04 clearfix">
+							<div class="pull-left">
+								<h5 class="margin01">金额：<i>&yen; 90.00</i></h5>
+								<h5>金额：<i>&yen; 280.00</i></h5>
+							</div>
+							<div class="pull-right">
+								<h4>总金额：<i>&yen; 370</i></h4>
+							</div>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<div class="way-box spe-box clearfix">
+				<span class="pull-left">发票信息</span>
+				<img src="../../images/way.png" alt="" class="pull-left">
+			    <div class="invoice tick-list clearfix">
+	                <input type="checkbox" checked="checked" id="radio-add" class="radio-add1">
+	                <label for="radio-add"><span>我要开发票</span></label>
+	            </div>	   
+			</div>
+			<div class="way-box clearfix">
+				<span class="pull-left">配送方式</span>
+				<img src="../../images/way.png" alt="" class="pull-left">
+				<button type="button" class="pull-left red-text">配送到家</button>
+				<button type="button" class="pull-left">快递</button>
+				<button type="button" class="pull-left">到店自提</button>
+				<em class="pull-right">10.00</em>
+			</div>
+			<div class="way-box clearfix">
+				<span class="pull-left">配送方式</span>
+				<img src="../../images/way.png" alt="" class="pull-left">
+				<button type="button" class="pull-left red-text">线上支付</button>
+				<button type="button" class="pull-left">线下支付</button>
+				<button type="button" class="pull-left">支票付款</button>
+			</div>
+			<div class="way-box way-box01">
+				<span>店铺金额（含运费）：<em>&yen;370.00</em></span>
+			</div>
+		</div>
+		<div class="clearfix">
+			<div class="pull-right accept-add">
+				<h4>实付款 <i>&yen; </i><em>2338.00</em></h4>
+				<h5>收货人：<em>饶慧媛 182****5796</em></h5>
+				<p>收货地址：<em>江苏省 南京市 江宁区将军大道6号J6软件园6栋307</em></p>
+			</div>
+		</div>
+		<div class="clearfix">
+			<div class="pull-right submit-ord">
+				<a href=""><< 返回预定清单</a>
+				<button type="button">立即预约</button>
+			</div>		
+		</div>	
+	</div>
+</div>
+<div class="bottom-section01">
+	<div class="container clearfix">
+		<div class="icon-text pull-left"><img src="../../images/bt_ti.png" /></div>
+		<div class="pull-left icon-box-right">
+			<div class="icon-box pull-left clearfix">
+				<img src="../../images/bottom_icon01.png" class="pull-left" />
+				<h1 class="pull-left"><span>安全</span><p>商信可鉴 体制安全</p></h1>
+			</div>
+			<div class="icon-box pull-left clearfix">
+				<img src="../../images/bottom_icon02.png" class="pull-left" />
+				<h1 class="pull-left"><span>省钱</span><p>核算精细 费用最低</p></h1>
+			</div>
+			<div class="icon-box pull-left clearfix">
+				<img src="../../images/bottom_icon03.png" class="pull-left" />
+				<h1 class="pull-left"><span>方便</span><p>共享资源 先进高效</p></h1>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="bottom-section02">
+	<div class="container clearfix">
+		<div class="left-menu pull-left">
+			<div class="left-menu-list pull-left">
+				<h1>购物指南</h1>
+				<a href="#">购物流程</a>
+				<a href="#">用户协议</a>
+				<a href="#">会员规则</a>
+				<a href="#">订单状态</a>
+				<a href="#">常见问题</a>				
+			</div>
+			<div class="left-menu-list pull-left">
+				<h1>配送方式</h1>
+				<a href="#">快递服务</a>
+				<a href="#">上门服务</a>
+				<a href="#">门店自取</a>			
+			</div>
+			<div class="left-menu-list pull-left">
+				<h1>支付方式</h1>
+				<a href="#">货到付款</a>
+				<a href="#">在线支付</a>
+				<a href="#">银行转账</a>
+				<a href="#">支票付款</a>			
+			</div>
+			<div class="left-menu-list pull-left">
+				<h1>售后服务</h1>
+				<a href="#">接收验货</a>
+				<a href="#">申请退款</a>
+				<a href="#">退换货规则</a>			
+			</div>
+			<div class="left-menu-list pull-left">
+				<h1>个性服务</h1>
+				<a href="#">医师服务</a>
+				<a href="#">药师服务</a>
+			</div>
+			<div class="left-menu-list pull-left">
+				<h1>企业服务</h1>
+				<a href="#">厂商合作</a>
+				<a href="#">厂商入口</a>
+				<a href="#">厂商入驻</a>
+			</div>
+		</div>
+		<div class="right-tel pull-right">
+			<div class="tel-box clearfix">
+				<h2 class="pull-left"><img src="../../images/bottom_icon04.png" /></h2>
+				<h1 class="pull-left"><span>加盟热线(固话)</span><span>400-123-6789</span></h1>
+			</div>
+			<div class="tel-box clearfix">
+				<h2 class="pull-left"><img src="../../images/bottom_icon05.png" /></h2>
+				<h1 class="pull-left">
+					<span>招商热线(手机)</span>
+					<span>曾先生：13998986666</span>
+					<span>朱先生：13998986666</span>
+					<span>朱先生：13998986666</span>
+				</h1>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="bottom-section03">
+	<div class="container bottom-menu clearfix">
+		<a href="#">关于我们</a>
+		<span>|</span>
+		<a href="#">联系我们</a>
+		<span>|</span>
+		<a href="#">联系客服</a>
+		<span>|</span>
+		<a href="#">合作招商</a>
+		<span>|</span>
+		<a href="#">商家帮助</a>
+		<span>|</span>
+		<a href="#">友情链接</a>
+		<span>|</span>
+		<a href="#">商家入驻</a>
+	</div>
+	<p><span>ICP 备案号：苏02-12345678号</span><span>苏公网安备：310115020022155号</span><span>增值电信业务经营许可证：浙B2-20080224</span></p>
+	<p><span>Copyright  2018-2047 南京极成信息公司版权所有，并保留一切权利</span><span>公司地址：江苏省秦淮区弓箭坊020号</span></p>
+	<div class="link-img">
+		<div class="container text-center">
+			<a href="#"><img src="../../images/bottom_link_pic01.png" /></a>
+			<a href="#"><img src="../../images/bottom_link_pic02.png" /></a>
+			<a href="#"><img src="../../images/bottom_link_pic03.png" /></a>
+			<a href="#"><img src="../../images/bottom_link_pic04.png" /></a>
+			<a href="#"><img src="../../images/bottom_link_pic05.png" /></a>
+			<a href="#"><img src="../../images/bottom_link_pic06.png" /></a>
+		</div>
+	</div>
+</div>
+<script src="../../js/jquery.min.js"></script>
+<script src="../../js/bootstrap.min.js"></script>
+<script src="../../js/top_menu.js"></script>
+<!--城市选择插件-->
+<script type="text/javascript" src="../../js/fixdiv.js"></script>
+<script type="text/javascript" src="../../js/address.js"></script>
+<!--城市选择插件-->
+<!-- 上传图片 -->
+<script src="../../js/webuploader.min.js" type="text/javascript"></script>
+<script>
+	$(window).scroll(function(){
+	  if($(document).scrollTop()>=260){
+	    $(".right-nav").addClass("fixednav"); 
+	  }else{
+	   $(".right-nav").removeClass("fixednav");
+	  }
+	})
+	$(function(){
+    		var num = 0;
+            var uploader = WebUploader.create({
+            auto:true,
+            swf: '../../css/Uploader.swf',
+            // server: '../js/up.php',
+            pick: '#add-pic',
+            resize: false,
+            fileNumLimit: 5,
+        });
+    
+        //上传时显示文件信息
+       uploader.on( 'fileQueued', function( file ) {
+        var item =$('<div class="main-up-box pull-left"><div id="'+file.id+'"class="file-item thumbnail">'+'<img class="main-up-pic">'+'</div>'+'<div class="info text-center">'+file.name+'</div><span class="del">删除</span></div>');
+        var img = item.find('img');
+        uploader.makeThumb(file,function(error,src){
+            str = file.name;
+             if (str != "") {
+                var pos = "." + str.replace(/.+\./, "");
+                if(pos == '.gif'||pos == '.jpg'||pos =='.jpeg'||pos =='.bmp'||pos =='.png'){
+                    img[0].src=src;
+                }
+                else{
+                    img[0].src= "../images/book_pic.png";
+                }
+                
+            }
+            
+        },30,30);//图片尺寸
+            $('#pic-list').append(item);
+        });
+    	uploader.on( 'uploadComplete', function( file ) {
+        $('.main-upload-num').text(++num);//上传增加图片 
+        $('.main-up-box .del').on('click',function(){
+        	$(this).parent().remove();
+        })
+    	});
+		$('.bo1').addClass('color-blue');
+		$('.drug-use .man').on('click',function(){
+		  	$('.bo1').addClass('color-blue');
+		  	$('.bo2').removeClass('color-blue');
+		  })
+		$('.drug-use .women').on('click',function(){
+		  	$('.bo2').addClass('color-blue');
+		  	$('.bo1').removeClass('color-blue');
+	  	})
+	});
+</script>
+</body>
+</html>

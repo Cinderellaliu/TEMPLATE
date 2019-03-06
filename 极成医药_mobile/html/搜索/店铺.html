@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../css/main.css" rel="stylesheet">
+    <link href="../../css/media.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="../js/html5shiv.min.js"></script>
+    <script src="../js/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body class="grey-bg">
+<div class="top-title top-gr">
+    <a href="#" class="back-btn" onclick="history.go(-1)"></a>
+    <div class="search-shop">
+        <input type="text" class="form-group shop-se" placeholder="三九胃泰">
+    </div>
+    <a href="#" class="msg-btn" onclick=""></a>
+</div>
+<div class="bs-example bs-example-tabs shop-tab">
+    <div id="myTabs" class="nav nav-tabs">
+        <a href="">商品</a>
+        <a href="#" class="active">店铺</a></li>
+    </div>
+    <div class="store-content">
+        <div class="shop-list">
+            <div class="shop-list-top clearfix">
+                <img src="../../images/shop_logo_pic.png" alt="" class="shop-logo">
+                <span class="kz-hospital">康泽大药房</span>
+                <a href="" class="go-into">进店</a>
+            </div>
+            <div class="shop-list-pic clearfix">
+                <div class="hos-store">
+                    <a href=""><img src="../../images/list_pic01.png" alt=""></a>
+                </div>   
+                <div class="hos-store">
+                    <a href=""><img src="../../images/list_pic02.png" alt=""></a>
+                </div>
+                <div class="hos-store">
+                    <a href=""><img src="../../images/list_pic03.png" alt=""></a>
+                </div>
+            </div>   
+        </div>
+        <div class="shop-list">
+            <div class="shop-list-top clearfix">
+                <img src="../../images/shop_logo_pic.png" alt="" class="shop-logo">
+                <span class="kz-hospital">康泽大药房</span>
+                <a href="" class="go-into">进店</a>
+            </div>
+            <div class="shop-list-pic clearfix">
+                <div class="hos-store">
+                    <a href=""><img src="../../images/list_pic01.png" alt=""></a>
+                </div>
+                <div class="hos-store">
+                    <a href=""><img src="../../images/list_pic02.png" alt=""></a>
+                </div>
+                <div class="hos-store">
+                    <a href=""><img src="../../images/list_pic03.png" alt=""></a>
+                </div>
+            </div>   
+        </div>
+    </div>
+</div>
+<script src="../../js/jquery.min.js"></script>
+<script src="../../js/bootstrap.min.js"></script>
+</body>
+</html>
+<script>
+    $('.all-red.left-comp').addClass('text-red');
+    $('.all-red').on('click',function(){
+        $(this).addClass('text-red');
+        $(this).siblings().removeClass('text-red');
+    })
+    $(window).scroll(function(){
+      if($(document).scrollTop()>=1){
+        $('.top-title').css('position','absolute')
+        $('.shop-tab .nav-tabs').css('position','absolute')
+      }else{
+       $('.top-title').css('position','fixed')
+       $('.shop-tab .nav-tabs').css('position','fixed')
+      };
+      if($(document).scrollTop()>=82){
+        $(".goods-list-top").css({
+            position:"fixed",
+            top:0,
+        })
+        }else{
+          $(".goods-list-top").css({
+            position:"relative",
+            width:"100%"
+            });  
+        }
+    });
+    $('.call-back').on('click',function(){
+        $('body,html').animate({scrollTop:0},500)
+    });
+</script>

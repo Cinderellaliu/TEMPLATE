@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../css/swiper.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/city.min.css">
+    <link href="../../css/main.css" rel="stylesheet">
+    <link href="../../css/media.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="../../js/html5shiv.min.js"></script>
+    <script src="../../js/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body class="grey-bg">
+<div class="main-content no-padding no-margin vendor">
+    <div class="main-person-top">
+        <div class="person-top-content">
+            <div class="person-set">
+                <a><img src="../../images/set01.png" alt=""></a>
+                <a><img src="../../images/info01.png" class="left-margin" alt=""></a>
+            </div>
+            <div class="person-top-middle">
+                <a class="person-top-t">
+                    <img src="../../images/person_img.png" alt="">
+                    <span>用户的昵称</span>
+                </a>
+                <div class="person-top-txt clearfix">
+                    <a class="pull-left item-box">
+                        <em>0</em>
+                        <h3>收藏</h3>
+                    </a>
+                    <a class="pull-left item-box">
+                        <em>5</em>
+                        <h3>关注</h3>
+                    </a>
+                    <a class="pull-left item-box">
+                        <em>42</em>
+                        <h3>足迹</h3>
+                    </a>
+                    <a class="pull-left item-box">
+                        <em >低</em>
+                        <h3>安全</h3>
+                    </a>
+                </div>
+                <div class="person-top-b clearfix">
+                    <a class="pull-left item-box">
+                        <em>保证金</em>
+                        <h3><span>2300.00</span></h3>
+                    </a>
+                    <a class="pull-left item-box">
+                        <em>余额 <img src="../../images/vendor_icon02.png"></em>
+                        <h3><span>2300.00</span></h3>
+                    </a>
+                    <a class="pull-left item-box">
+                        <em>可用 <img src="../../images/vendor_icon02.png"></em>
+                        <h3><span>2200.00</span></h3>
+                    </a>
+                </div>
+            </div>  
+        </div>
+    </div>
+    <div class="main-person-center">
+        <a class="person-con-top clearfix">
+            <span class="pull-left">我的订单</span>
+            <span class="pull-right all">查看全部<img src="../../images/right_arrow.png" alt=""></span>
+        </a>
+        <div class="clearfix person-con-top1">
+            <a class="pull-left item">
+                <img src="../../images/per01.png" alt="">
+                <h2>待发货</h2>
+            </a>
+            <a class="pull-left item">
+                <img src="../../images/per02.png" alt="">
+                <h2>已发货</h2>
+            </a>
+            <a class="pull-left item">
+                <img src="../../images/per03.png" alt="">
+                <h2>待退款</h2>
+            </a>
+            <a class="pull-left item">
+                <img src="../../images/per04.png" alt="">
+                <h2>已退款</h2>
+            </a>
+            <a class="pull-left item">
+                <img src="../../images/per05.png" alt="">
+                <h2>拒绝退款</h2>
+            </a>
+        </div>
+    </div>
+    <div class="main-person-center main-person-center1">
+        <a class="item-box clearfix">
+            <span class="pull-left left" ><img src="../../images/per_icon04.png" alt="">安全设置</span>
+            <span class="pull-right right" ><img src="../../images/right_arrow.png" alt=""></span>
+        </a>
+         <a class="item-box clearfix">
+            <span class="pull-left left" ><img src="../../images/per_icon08.png" alt="">关于我们</span>
+            <span class="pull-right right" ><img src="../../images/right_arrow.png" alt=""></span>
+        </a>
+        <a class="item-box clearfix">
+            <span class="pull-left left" ><img src="../../images/per_icon05.png" alt="">资产中心</span>
+            <span class="pull-right right" ><img src="../../images/right_arrow.png" alt=""></span>
+        </a>
+        <a class="item-box clearfix">
+            <span class="pull-left left" ><img src="../../images/per_icon07.png" alt="">投诉中心</span>
+            <span class="pull-right right" ><img src="../../images/right_arrow.png" alt=""></span>
+        </a>
+        
+    </div>
+</div>
+<div class="bottom-menu clearfix">
+    <a href="#" ><img src="../../images/menu_icon01.png" /><span>首页</span></a>
+    <a href="#"><img src="../../images/menu_icon02.png" /><span>分类</span></a>
+    <a href="#"><img src="../../images/menu_icon03.png" /><span>搜索</span></a>
+    <a href="#"><img src="../../images/menu_icon04.png" /><span>购物车</span></a>
+    <a href="#" class="active"><img src="../../images/menu_icon05_on.png" /><span>我的</span></a>
+</div>
+<script src="../../js/jquery.min.js"></script>
+<script src="../../js/bootstrap.min.js"></script>
+<script src="../../js/menu.js"></script>
+<script src="../../js/city.js"></script>
+<script src="../../js/scrolltopcontrol.js"></script>
+<script>
+    $('.vendor  .person-top-b .item-box i').hide();
+    $('.vendor  .person-top-b .item-box').on('click','img',function(){
+        $(this).parent().next().find('span').hide();
+        $(this).parent().next().append('i').text('*******')
+    })
+</script>
+</body>
+</html>

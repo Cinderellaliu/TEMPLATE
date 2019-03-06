@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link href="../../../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../../css/main.css" rel="stylesheet">
+    <link href="../../../css/media.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="../js/html5shiv.min.js"></script>
+    <script src="../js/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body class="grey-bg">
+<div class="top-title top-bg-wh">
+    <a href="#" class="back-btn" onclick="history.go(-1)"></a>
+    <span class="shop-intr">店铺简介</span>
+    <a href="#" class="msg-btn" onclick=""></a>
+    <div class="all-list-mess">
+        <div class="triangle_border_up"><span></span></div>
+        <div class="about-shop-mess">
+            <a href=""><img src="../../../images/mess01.png" alt=""><span>消息</span></a>
+            <a href=""><img src="../../../images/mess02.png" alt=""><span>首页</span></a>
+            <a href=""><img src="../../../images/mess03.png" alt=""><span>分享</span></a>
+            <a href="" class="no-bo"><span>店铺详情</span></a>
+        </div>
+    </div>
+</div>
+<div class="shop-introduction-content">
+    <div class="new-bg-bl">关注成功</div>
+    <div class="new-bg-sn">取消关注成功</div>
+    <div class="shop-inf-top shop-intr-about clearfix">
+        <div class="left-inf left-about pull-left">
+            <img src="../../../images/logo_ge.png" alt="">
+        </div> 
+        <div class="midd-inf midd-about pull-left">
+            <h4>仁和大药房</h4>
+            <p>总关注：<span>1234</span></p>
+        </div>  
+        <div class="right-inf margin-no pull-right">
+            <img src="../../../images/star.png" alt="">
+            <span>关注</span>
+        </div>
+        <div class="right-se margin-no-new pull-right btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-sm">
+            <span>已关注</span>
+        </div> 
+    </div>
+    <div class="in-shop-int">
+        康泽大药房位于山东省菏泽市东南部，地理位置相对比较好，附近居民也比较多，药店面积较大，药品种类齐全。 主要经营外用药OTC、呼吸系统OTC、感冒专柜、内分泌、心脑血管、消化系统、消化道、肝胆用药、妇科用药。
+    </div>
+    <div class="sever-shop">
+        <a class="clearfix" href=""><span class="open-left pull-left">客服</span><span class="open-right pull-right"><img src="../../../images/ser_pic.png" alt=""></span></a>
+        <p class="clearfix"><span class="open-left pull-left">联系方式</span><span class="open-right pull-right">123456789910</span></p>
+    </div>
+    <div class="sever-shop">
+        <p class="clearfix"><span class="open-left pull-left">开店时间</span><span class="open-right pull-right">2018-03-04</span></p>
+        <a class="clearfix" href=""><span class="open-left pull-left">销售品牌</span><span class="open-right pull-right"><img src="../../../images/right_arr.png" alt=""></span></a>
+    </div>
+    <div class="sever-shop">
+        <a class="clearfix" href=""><span class="open-left pull-left">店铺二维码</span><span class="open-right pull-right"><img src="../../../images/right_arr.png" alt=""></span></a>
+    </div>
+</div>
+<div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" id="myModal">
+    <div class="modal-dialog modal-sm modal-shopin" role="document">
+        <div class="modal-content modal-shopin-content">
+            <span class="sure-can">取消关注</span>
+            <span class="sure-think">容我想想</span>
+        </div>
+    </div>
+</div>
+<script src="../../../js/jquery.min.js"></script>
+<script src="../../../js/bootstrap.min.js"></script>
+</body>
+</html>
+<script>
+    $('.right-se').hide();
+    $('.new-bg-bl').hide();
+    $('.new-bg-sn').hide();
+    $('.right-inf').on('click',function(){
+        $(this).hide();
+        $('.new-bg-bl').show();
+         $('.right-se').show();
+         setTimeout(function(){
+            $('.new-bg-bl').hide();
+         },3000);
+    });
+    $('.right-se').on('click',function(){
+         $('.new-bg-bl').hide(); 
+    });
+    $('.sure-can').on('click',function(){
+        $('#myModal').modal('hide');
+        $('.right-se').hide();
+        $('.right-inf').show();
+        setTimeout(function(){
+            $('.new-bg-sn').show();
+         },500);
+         setTimeout(function(){
+            $('.new-bg-sn').hide();
+         },3000);
+
+    })
+    $('.sure-think').on('click',function(){
+        $('#myModal').modal('hide');
+        $('.right-se').show();
+    })
+    $('.all-list-mess').hide();
+    $('.msg-btn').on('click',function(){
+        $('.all-list-mess').toggle();
+    })
+</script>

@@ -1,0 +1,1026 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../js/bootstrap-select/css/bootstrap-select.min.css" rel="stylesheet" type="text/css" />
+     <link href="../../js/bootstrap-touchspin/bootstrap.touchspin.css" rel="stylesheet" type="text/css" />
+     <link rel="stylesheet" type="text/css" href="../../css/jqzoom.css">
+    <link rel="stylesheet" href="../../css/banner.css" />
+    <link href="../../css/main.css" rel="stylesheet">
+    <link href="../../css/media.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="../../js/html5shiv.min.js"></script>
+    <script src="../../js/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body  data-spy="scroll" data-target="#myScrollspy">
+<div class="right-nav-box">
+	<div class="right-nav">
+		<a href="#" class="right-nav01"></a>
+		<a href="#" class="right-nav02"><span>0</span></a>
+		<a href="#" class="right-nav03"></a>
+		<a href="#" class="right-nav04"></a>
+		<a href="#" class="right-nav05"></a>
+		<a href="#top" class="right-nav06"></a>
+	</div>
+</div>
+<div class="top-section" id="top">
+	<div class="container">
+		<div class="top-left pull-left">
+			<div class="logo clearfix">
+				<img src="../../images/logo.png">
+				<span>极成医药</span>
+			</div>
+			<p class="logo-url">www.jichengdg.com</p>
+		</div>
+		<div class="top-center pull-left">
+			<div class="clearfix">
+				<div class="top-center-left pull-left">
+					<div class="select-city pull-left">
+						<input type="text" value="南京市 [选择城市]" size="15" id="getcity_name" name="getcity_name" mod="address|notice" mod_address_source="hotel" mod_address_suggest="@Beijing|北京|53@Shanghai|上海|321@Shenzhen|深圳|91@Guangzhou|广州|80@Qingdao|青岛|292@Chengdu|成都|324@Hangzhou|杭州|383@Wuhan|武汉|192@Tianjin|天津|343@Dalian|大连|248@Xiamen|厦门|61@Chongqing|重庆|394@" mod_address_reference="getcityid" />
+						<input id="getcityid" name="getcityid" type="hidden" value="{$getcityid}" />
+					</div>
+					<div id="jsContainer" class="jsContainer" style="height:0">
+					    <div id="tuna_alert" style="display:none;position:absolute;z-index:999;overflow:hidden;"></div>
+					    <div id="tuna_jmpinfo" style="visibility:hidden;position:absolute;z-index:120;"></div>
+					</div>
+					<div class="top-login pull-left"><span class="cutline">|</span>欢迎来到极成，请<a data-toggle="modal" href="#myModal">登录</a> / <a data-toggle="modal" href="#myModalRegister">免费注册</a></div>
+				</div>
+				<div class="top-center-right pull-right">
+					<a href="#">我的订单</a>
+					<a href="#">购物车</a>	
+					<a href="#">我的账户</a>			
+					<a href="#" class="myaccount-btn">网站导航</a>
+					<div class="myaccount-content clearfix">	
+						<span class="bot"></span>  
+						<span class="top"></span>
+						<div class="myaccount-item clearfix">
+							<div class="myaccount-option clearfix">
+								<h1>健康咨询</h1>
+								<a href="#">医药咨询</a>
+								<a href="#">疾病知识</a>
+								<a href="#">用药指导</a>
+							</div>
+							<div class="myaccount-option clearfix">
+								<h1>特色服务</h1>
+								<a href="#">健康百科</a>
+								<a href="#">医院大全</a>
+								<a href="#">用药指导</a>
+								<a href="#">健康问答</a>
+							</div>
+						</div>  				
+					</div>
+				</div>
+			</div>
+			<div class="search-box clearfix">
+				<select class="bs-select form-control">
+					<option>商品</option>
+					<option>店铺</option>
+				</select>  
+				<input type="text" placeholder="输入搜索内容" />
+				<button class="btn search-btn">搜索</button>
+			</div>
+		</div>
+		<div class="top-right pull-left">
+			<div class="code-box pull-left text-center">
+				<img src="../../images/code.png" />
+				<p>关注微信</p>
+			</div>
+			<div class="code-box pull-right text-center">
+				<img src="../../images/code.png" />
+				<p>扫码下载APP</p>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="menu-section menu-section02">
+	<ul class="container clearfix">
+		<li class="category-menu">
+			<a href="#" class="first-menu red-text">全部商品分类</a>
+			<ul class="sub-menu">
+				<li>
+					<a href="#">女装</a>
+					<ul>
+						<li class="recommend-menu clearfix"><a href="">推荐品牌1</a><a href="">推荐品牌2</a><a href="">推荐品牌3</a></li>
+						<li>
+							<span>二级分类1</span>
+							<ul>
+								<li class="clearfix">
+									<a href="#">T恤</a>
+									<a href="#">牛仔裤</a>
+									<a href="#">休闲裤</a>
+									<a href="#">衬衫</a>
+									<a href="#">短裤</a>
+									<a href="#">夹克</a>
+									<a href="#">卫衣</a>
+									<a href="#">毛呢大衣</a>
+									<a href="#">大码男装</a>
+									<a href="#">西装套装</a>	
+								</li>
+							</ul>
+						</li>
+						<li>
+							<span>二级分类2</span>
+							<ul>
+								<li class="clearfix">
+									<a href="#">T恤</a>
+									<a href="#">牛仔裤</a>
+									<a href="#">休闲裤</a>
+									<a href="#">衬衫</a>
+									<a href="#">短裤</a>
+									<a href="#">夹克</a>
+									<a href="#">卫衣</a>
+									<a href="#">毛呢大衣</a>
+									<a href="#">大码男装</a>
+									<a href="#">西装套装</a>	
+								</li>
+							</ul>
+						</li>							
+					</ul>						
+				</li>					
+				<li>
+					<a href="#">男装</a>
+					<ul>
+						<li class="recommend-menu clearfix"><a href="">推荐品牌1</a><a href="">推荐品牌2</a><a href="">推荐品牌3</a></li>
+						<li>
+							<span>二级分类01</span>
+							<ul>
+								<li class="clearfix">
+									<a href="#">T恤</a>
+									<a href="#">牛仔裤</a>
+									<a href="#">休闲裤</a>
+									<a href="#">衬衫</a>
+									<a href="#">短裤</a>
+									<a href="#">夹克</a>
+									<a href="#">卫衣</a>
+									<a href="#">毛呢大衣</a>
+									<a href="#">大码男装</a>
+									<a href="#">西装套装</a>	
+								</li>
+							</ul>
+						</li>
+						<li>
+							<span>二级分类02</span>
+							<ul>
+								<li class="clearfix">
+									<a href="#">T恤</a>
+									<a href="#">牛仔裤</a>
+									<a href="#">休闲裤</a>
+									<a href="#">衬衫</a>
+									<a href="#">短裤</a>
+									<a href="#">夹克</a>
+									<a href="#">卫衣</a>
+									<a href="#">毛呢大衣</a>
+									<a href="#">大码男装</a>
+									<a href="#">西装套装</a>	
+								</li>
+							</ul>
+						</li>
+						
+					</ul>						
+				</li>					
+				<li>
+					<a href="#">童装</a>
+					<ul>
+						<li class="recommend-menu clearfix"><a href="">推荐品牌1</a><a href="">推荐品牌2</a><a href="">推荐品牌3</a></li>
+						<li>
+							<span>二级分类03</span>
+							<ul>
+								<li class="clearfix">
+									<a href="#">T恤</a>
+									<a href="#">牛仔裤</a>
+									<a href="#">休闲裤</a>
+									<a href="#">衬衫</a>
+									<a href="#">短裤</a>
+									<a href="#">夹克</a>
+									<a href="#">卫衣</a>
+									<a href="#">毛呢大衣</a>
+									<a href="#">大码男装</a>
+									<a href="#">西装套装</a>	
+								</li>
+							</ul>
+						</li>
+						<li>
+							<span>二级分类03</span>
+							<ul>
+								<li class="clearfix">
+									<a href="#">T恤</a>
+									<a href="#">牛仔裤</a>
+									<a href="#">休闲裤</a>
+									<a href="#">衬衫</a>
+									<a href="#">短裤</a>
+									<a href="#">夹克</a>
+									<a href="#">卫衣</a>
+									<a href="#">毛呢大衣</a>
+									<a href="#">大码男装</a>
+									<a href="#">西装套装</a>	
+								</li>
+							</ul>
+						</li>							
+					</ul>						
+				</li>					
+				<li>
+					<a href="#">内衣</a>
+					<ul>
+						<li class="recommend-menu clearfix"><a href="">推荐品牌1</a><a href="">推荐品牌2</a><a href="">推荐品牌3</a></li>
+						<li>
+							<span>二级分类04</span>
+							<ul>
+								<li class="clearfix">
+									<a href="#">T恤</a>
+									<a href="#">牛仔裤</a>
+									<a href="#">休闲裤</a>
+									<a href="#">衬衫</a>
+									<a href="#">短裤</a>
+									<a href="#">夹克</a>
+									<a href="#">卫衣</a>
+									<a href="#">毛呢大衣</a>
+									<a href="#">大码男装</a>
+									<a href="#">西装套装</a>	
+								</li>
+							</ul>
+						</li>
+						<li>
+							<span>二级分类04</span>
+							<ul>
+								<li class="clearfix">
+									<a href="#">T恤</a>
+									<a href="#">牛仔裤</a>
+									<a href="#">休闲裤</a>
+									<a href="#">衬衫</a>
+									<a href="#">短裤</a>
+									<a href="#">夹克</a>
+									<a href="#">卫衣</a>
+									<a href="#">毛呢大衣</a>
+									<a href="#">大码男装</a>
+									<a href="#">西装套装</a>	
+								</li>
+							</ul>
+						</li>							
+					</ul>						
+				</li>					
+				<li>
+					<a href="#">母婴</a>
+					<ul>
+						<li class="recommend-menu clearfix"><a href="">推荐品牌1</a><a href="">推荐品牌2</a><a href="">推荐品牌3</a></li>
+						<li>
+							<span>二级分类05</span>
+							<ul>
+								<li class="clearfix">
+									<a href="#">T恤</a>
+									<a href="#">牛仔裤</a>
+									<a href="#">休闲裤</a>
+									<a href="#">衬衫</a>
+									<a href="#">短裤</a>
+									<a href="#">夹克</a>
+									<a href="#">卫衣</a>
+									<a href="#">毛呢大衣</a>
+									<a href="#">大码男装</a>
+									<a href="#">西装套装</a>	
+								</li>
+							</ul>
+						</li>
+						<li>
+							<span>二级分类05</span>
+							<ul>
+								<li class="clearfix">
+									<a href="#">T恤</a>
+									<a href="#">牛仔裤</a>
+									<a href="#">休闲裤</a>
+									<a href="#">衬衫</a>
+									<a href="#">短裤</a>
+									<a href="#">夹克</a>
+									<a href="#">卫衣</a>
+									<a href="#">毛呢大衣</a>
+									<a href="#">大码男装</a>
+									<a href="#">西装套装</a>	
+								</li>
+							</ul>
+						</li>							
+					</ul>						
+				</li>					
+				<li>
+					<a href="#">运动/户外</a>
+					<ul>
+						<li class="recommend-menu clearfix"><a href="">推荐品牌1</a><a href="">推荐品牌2</a><a href="">推荐品牌3</a></li>
+						<li>
+							<span>二级分类06</span>
+							<ul>
+								<li class="clearfix">
+									<a href="#">T恤</a>
+									<a href="#">牛仔裤</a>
+									<a href="#">休闲裤</a>
+									<a href="#">衬衫</a>
+									<a href="#">短裤</a>
+									<a href="#">夹克</a>
+									<a href="#">卫衣</a>
+									<a href="#">毛呢大衣</a>
+									<a href="#">大码男装</a>
+									<a href="#">西装套装</a>	
+								</li>
+							</ul>
+						</li>
+						<li>
+							<span>二级分类06</span>
+							<ul>
+								<li class="clearfix">
+									<a href="#">T恤</a>
+									<a href="#">牛仔裤</a>
+									<a href="#">休闲裤</a>
+									<a href="#">衬衫</a>
+									<a href="#">短裤</a>
+									<a href="#">夹克</a>
+									<a href="#">卫衣</a>
+									<a href="#">毛呢大衣</a>
+									<a href="#">大码男装</a>
+									<a href="#">西装套装</a>	
+								</li>
+							</ul>
+						</li>							
+					</ul>						
+				</li>					
+				<li>
+					<a href="#">男鞋/女鞋</a>
+					<ul>
+						<li class="recommend-menu clearfix"><a href="">推荐品牌1</a><a href="">推荐品牌2</a><a href="">推荐品牌3</a></li>
+						<li>
+							<span>二级分类07</span>
+							<ul>
+								<li class="clearfix">
+									<a href="#">T恤</a>
+									<a href="#">牛仔裤</a>
+									<a href="#">休闲裤</a>
+									<a href="#">衬衫</a>
+									<a href="#">短裤</a>
+									<a href="#">夹克</a>
+									<a href="#">卫衣</a>
+									<a href="#">毛呢大衣</a>
+									<a href="#">大码男装</a>
+									<a href="#">西装套装</a>	
+								</li>
+							</ul>
+						</li>
+						<li>
+							<span>二级分类07</span>
+							<ul>
+								<li class="clearfix">
+									<a href="#">T恤</a>
+									<a href="#">牛仔裤</a>
+									<a href="#">休闲裤</a>
+									<a href="#">衬衫</a>
+									<a href="#">短裤</a>
+									<a href="#">夹克</a>
+									<a href="#">卫衣</a>
+									<a href="#">毛呢大衣</a>
+									<a href="#">大码男装</a>
+									<a href="#">西装套装</a>	
+								</li>
+							</ul>
+						</li>							
+					</ul>						
+				</li>					
+			</ul>
+		</li>
+		<li><a href="/">首页</a><span></span></li>
+		<li>
+			<a href="#">极成订购药房</a>
+			<ul class="sub-menu">
+				<li class="container">
+					<ul class="sub-menu-list">
+						<li><a href="#">处方药品</a></li>
+						<li><a href="#">进口药品</a></li>
+				        <li><a href="#">常见疾病</a></li>
+				        <li><a href="#">慢性疾病</a></li>
+				        <li><a href="#">重大疾病</a></li>
+				        <li><a href="#">进口保健品</a></li>
+				        <li><a href="#">滋补保健</a></li>
+				        <li><a href="#">健康护理</a></li>
+				        <li><a href="#">康乐情趣</a></li>
+					</ul>						
+				</li>					
+			</ul>
+		</li>
+		<li><a href="#">药房联盟</a></li>
+		<li><a href="#">食品超市</a></li>
+		<li><a href="#">百货超市</a></li>
+		<li><a href="#">医药采购</a></li>
+		<li><a href="#">药师咨询</a></li>
+		<li><a href="#">医师资询</a></li>
+		<li><a href="#">质量公告</a></li>
+		<li><a href="#">行业资讯</a></li>
+	</ul>		
+</div>
+<div class="main-content">
+	<div class="recipe container">
+		<ol class="breadcrumb main-crumb">
+		    <li><a href="javascript:void(0)">极成医药</a></li>
+		    <li><a href="javascript:void(0)">昌盛大药房</a></li>
+		    <li><a href="javascript:void(0)">消化系统</a></li>
+		    <li><a href="javascript:void(0)">胃药用药</a></li>
+		    <li class="active">三九胃泰颗粒</li>
+	    </ol>
+	    <div class="recipe-detail clearfix">
+	    	<div class="recipe-left pull-left">
+	    		<div class="recipe-img pull-left">
+	    			<div class="recipe-big">
+	    				<div class="jqzoom">
+	    					<img src="../../images/recipe_big.png" jqimg="../../images/recipe_big.png">
+	    				</div>
+	    				<div class="recipe-big-glass">
+	    					<img src="../../images/repice_glass.png" >
+	    				</div>
+	    			</div>
+	    			<ul class="recipe-small clearfix">
+	    				<li class="active"><img src="../../images/recipe_big.png"></li>
+	    				<li><img src="../../images/recipe_big.png"></li>
+	    				<li><img src="../../images/recipe_big.png"></li>
+	    				<li><img src="../../images/recipe_big.png"></li>
+	    				<li><img src="../../images/recipe_big.png"></li>
+	    			</ul>
+	    			<div class="recipe-share clearfix">
+	    				<p class="recipe-like pull-left"><img src="../../images/att_star.png"><img src="../../images/att_star_red.png"><span>收藏商品</span></p>
+	    				<p class="pull-right"><img src="../../images/recipe_share.png"><span>分享</span></p>
+	    			</div>
+	    			<div class="recipe-delace clearfix">
+	    				<h5 class="pull-left">郑重声明 ： </h5>
+	    				<div class="recipe-delace-txt pull-left">
+	    					<p class="pull-left active">尊敬的顾客，极成医药受各门店委托为其发布药品等等等等等扽等尊敬的顾客，极成医药受各门店委托为其发布药品等等等等等扽等尊敬的顾客，极成医药受各门店委托为其发布药品等等等等等扽等尊敬的顾客，极成医药受各门店委托为其发布药品等等等等等扽等<b class="recipe-delace-up">收起</b></p>
+	    					<div class="recipe-delace-down pull-left">全部</div>
+	    				</div>
+	    				
+	    			</div>
+	    		</div>
+	    		<div class="recipe-info pull-left">
+	    			<h2>999 三九胃泰颗粒</h2>
+	    			<p>功能主治：清热燥湿，行气活血，柔肝止痛，消炎止痛，理气健脾。用于上腹隐痛，饱胀反酸，恶心，呕吐，纳减，心口嘈杂。</p>
+	    			<ul class="recipe-txt">
+	    				<li><span>商品编码：</span>120804</li>
+	    				<li><span>商品规格：</span>2.5g*6袋/盒</li>
+	    				<li><span>批准文号：</span>国药准字Z44020705(<a href="#">国家食药局查询</a>)</li>
+	    				<li><span>生产厂家：</span>三九医药股份有限公司(深圳)</li>
+	    				<li>*本品为处方药，如需预定请咨询客服</li>
+	    			</ul>
+	    			<div class="recipe-dress clearfix">
+	    				<span class="pull-left">配送</span>
+	    				<div class="recipe-dress-box pull-left">
+		    				<div class="address-select pull-right">
+		    					<input class="input" name="" id="city" type="text" placeholder="" autocomplete="off" readonly="true"/>
+		    				
+		    				</div> 
+		    				<img src="../../images/recipe_down.png" class="pull-right">
+	    				</div>
+	    			</div>
+	    			<div class="recipe-unit clearfix">
+	    				<div class="recipe-unit-item clearfix">
+	    					<p class="pull-left">拆零单价: <span>&yen;30.00</span></p>
+	    					<p class="pull-left">起订量<b>2</b>盒</p>
+	    					<div class="recipe-unit-num pull-left">
+	    						<p class="pull-left">订购量</p>
+	    						<div class="num-box pull-left">
+                                    <input class="touchspin_5" type="text" value="1" name="demo3_21">
+                                </div>
+	    						<span class="pull-left"><b>3</b>盒</span>
+	    					</div>
+	    					<p class="pull-left">金额： <span>&yen;90.00</span></p>
+	    				</div>
+	    				<div class="recipe-unit-item clearfix">
+	    					<p class="pull-left">中包单价: <span>&yen;28.00</span></p>
+	    					<p class="pull-left">起订量<b>10</b>盒</p>
+	    					<div class="recipe-unit-num pull-left">
+	    						<p class="pull-left">订购量</p>
+	    						<div class="num-box pull-left">
+                                    <input class="touchspin_5" type="text" value="1" name="demo3_21">
+                                </div>
+	    						<span class="pull-left"><b>10</b>盒</span>
+	    					</div>
+	    					<p class="pull-left">金额： <span>&yen;280.00</span></p>
+	    				</div>
+	    			</div>
+	    			<div class="recipe-money clearfix">
+	    				<span class="pull-left">总金额</span>
+	    				<p class="pull-left">&yen; 370</p>
+	    			</div>
+	    			<div class="recipe-btn">
+	    				<button class="recipe-btn-red">预定咨询</button>
+	    				<button>加入预定列表</button>
+	    			</div>
+	    		</div>
+	    	</div>
+	    	<div class="recipe-right pull-right">
+	    		<div class="recipe-shop">
+	    			<div class="recipe-shop-top">
+	    				<img src="../../images/recipe_shop.png">
+	    			</div>
+	    			<div class="recipe-shop-content">
+	    				<div class="recipe-shop-box">
+		    				<div class="recipe-name">
+		    					昌盛大药房 <img src="../../images/recipe_down02.png">
+		    				</div>
+		    				<div class="recipe-name-info">
+		    					<ul class="recipe-icon clearfix">
+		    						<li><img src="../../images/recipe_icon01.png"></li>
+		    						<li><img src="../../images/recipe_icon02.png"></li>
+		    						<li><img src="../../images/recipe_icon03.png"></li>
+		    						<li><img src="../../images/recipe_icon04.png"></li>
+		    					</ul>
+		    					<ul class="recipe-recard">
+			    					<li><span>营业执照：</span><b>911016545465448</b></li>
+			    					<li><span>GSP证号：</span><b>苏DA02141005</b></li>
+			    					<li><span>经营许可证：</span><b>经营许可证</b></li>
+			    				</ul>
+		    				</div>
+		    			</div>
+	    				<ul class="recipe-name-txt">
+	    					<li><span>营业时间：</span>9:00-12:00</li>
+	    					<li><span>所在地：</span>江苏省 南京市</li>
+	    					<li><span>联系：</span><a href="#">联系客服 <img src="../../images/recipe_server.png"></a></li>
+	    				</ul>
+	    				<div class="recipe-name-btn">
+	    					<a href="#">进店逛逛</a>
+	    					<a href="#">关注店铺</a>
+	    				</div>
+	    			</div>
+	    		</div>
+	    	</div>
+	    </div>
+	    <div class="recipe-new clearfix">
+	    	<h2>新品推荐</h2>
+	    	<ul>
+	    		<li class="clearfix">
+	    			<div class="recipe-new-img">
+	    				<img src="../../images/recipe_pic01.png">
+	    			</div>
+	    			<div class="recipe-new-txt">
+	    				<h4>999 三九胃泰颗粒</h4>
+	    				<p>零钱单价<span>&yen;88888</span></p>
+	    				<p>中包单价<span>&yen;88888</span></p>
+	    			</div>
+	    		</li>
+	    		<li class="clearfix">
+	    			<div class="recipe-new-img">
+	    				<img src="../../images/recipe_pic01.png">
+	    			</div>
+	    			<div class="recipe-new-txt">
+	    				<h4>999 三九胃泰颗粒</h4>
+	    				<p>零钱单价<span>&yen;88888</span></p>
+	    				<p>中包单价<span>&yen;88888</span></p>
+	    			</div>
+	    		</li>
+	    		<li class="clearfix">
+	    			<div class="recipe-new-img">
+	    				<img src="../../images/recipe_pic01.png">
+	    			</div>
+	    			<div class="recipe-new-txt">
+	    				<h4>999 三九胃泰颗粒</h4>
+	    				<p>零钱单价<span>&yen;88888</span></p>
+	    				<p>中包单价<span>&yen;88888</span></p>
+	    			</div>
+	    		</li>
+	    		<li class="clearfix">
+	    			<div class="recipe-new-img">
+	    				<img src="../../images/recipe_pic01.png">
+	    			</div>
+	    			<div class="recipe-new-txt">
+	    				<h4>999 三九胃泰颗粒</h4>
+	    				<p>零钱单价<span>&yen;88888</span></p>
+	    				<p>中包单价<span>&yen;88888</span></p>
+	    			</div>
+	    		</li>
+	    		<li class="clearfix">
+	    			<div class="recipe-new-img">
+	    				<img src="../../images/recipe_pic01.png">
+	    			</div>
+	    			<div class="recipe-new-txt">
+	    				<h4>999 三九胃泰颗粒</h4>
+	    				<p>零钱单价<span>&yen;88888</span></p>
+	    				<p>中包单价<span>&yen;88888</span></p>
+	    			</div>
+	    		</li>
+	    	</ul>
+	    </div>
+	    <div class="recipe-group clearfix">
+	    	<div class="recipe-group-left pull-left">
+	    		<div class="inside-shop">
+					<div class="right-menu-box pull-left">
+						<ul>
+							<li><a href="javascript:void(0)" class="title">店内分类</a>
+							</li>		
+							<li><a href="javascript:void(0)" class="inactive">家居家纺</a>
+								<ul>
+									<li><a href="javascript:void(0)">菜单一</a></li> 
+									<li><a href="javascript:void(0)">菜单二</a></li> 
+								</ul>
+							</li>
+							<li><a href="javascript:void(0)" class="inactive">服装服饰</a>
+								<ul> 
+									<li><a href="javascript:void(0)">菜单一</a></li> 
+									<li><a href="javascript:void(0)">菜单二</a></li>
+								</ul>
+							</li>
+							<li><a href="javascript:void(0)" class="inactive">工匠定制</a>
+								<ul>
+									<li><a href="javascript:void(0)">菜单一</a></li> 
+									<li><a href="javascript:void(0)">菜单二</a></li> 
+								</ul>
+							</li>
+							<li><a href="javascript:void(0)" class="inactive inactives">智能电器</a>
+								<ul style="display: block;">
+									<li><a href="javascript:void(0)" class="active">智能电视</a></li> 
+									<li><a href="javascript:void(0)">安防</a></li> 
+									<li><a href="javascript:void(0)">路由器</a></li>
+									<li><a href="javascript:void(0)">网关</a></li>
+								</ul>
+							</li>			
+						</ul>
+					</div>
+					<div class="hot">
+						<p class="title">店铺热销产品</p>
+						<div class="girl">
+							<img src="../../images/index_pic01.png" alt="">
+							<p class="pri">￥239</p>
+							<p class="ti">90分银离子抗菌T恤</p>
+							<p class="line"></p>
+						</div>
+						<div class="girl">
+							<img src="../../images/index_pic01.png" alt="">
+							<p class="pri">￥239</p>
+							<p class="ti">90分银离子抗菌T恤</p>
+							<p class="line"></p>
+						</div>
+						<div class="girl">
+							<img src="../../images/index_pic01.png" alt="">
+							<p class="pri">￥239</p>
+							<p class="ti">90分银离子抗菌T恤</p>
+							<p class="line"></p>
+						</div>
+						<div class="girl">
+							<img src="../../images/index_pic01.png" alt="">
+							<p class="pri">￥239</p>
+							<p class="ti">90分银离子抗菌T恤</p>
+							<p class="line"></p>
+						</div>
+						<div class="girl">
+							<img src="../../images/index_pic01.png" alt="">
+							<p class="pri">￥239</p>
+							<p class="ti">90分银离子抗菌T恤</p>
+						</div>
+					</div>
+					<div class="hot">
+						<p class="title">热门关注产品</p>
+						<div class="girl">
+							<img src="../../images/index_pic01.png" alt="">
+							<p class="pri">￥239</p>
+							<p class="ti">90分银离子抗菌T恤</p>
+							<p class="line"></p>
+						</div>
+						<div class="girl">
+							<img src="../../images/index_pic01.png" alt="">
+							<p class="pri">￥239</p>
+							<p class="ti">90分银离子抗菌T恤</p>
+							<p class="line"></p>
+						</div>
+						<div class="girl">
+							<img src="../../images/index_pic01.png" alt="">
+							<p class="pri">￥239</p>
+							<p class="ti">90分银离子抗菌T恤</p>
+							<p class="line"></p>
+						</div>
+						<div class="girl">
+							<img src="../../images/index_pic01.png" alt="">
+							<p class="pri">￥239</p>
+							<p class="ti">90分银离子抗菌T恤</p>
+							<p class="line"></p>
+						</div>
+						<div class="girl">
+							<img src="../../images/index_pic01.png" alt="">
+							<p class="pri">￥239</p>
+							<p class="ti">90分银离子抗菌T恤</p>
+						</div>
+					</div>
+				</div>
+	    	</div>
+	    	<div class="recipe-group-right pull-left">
+	    		<div class="bs-example bs-example-tabs introduction" data-example-id="togglable-tabs">
+					<ul id="myTabs" class="nav nav-tabs" role="tablist">
+					    <li role="presentation" class="active"><a href="#tab01" id="home-tab" role="tab" data-toggle="tab" aria-controls="home" aria-expanded="true"><img src="../../images/recipe_red.png">商品说明书</a></li>
+					    <li role="presentation"><a href="#tab02" role="tab" id="profile-tab" data-toggle="tab" aria-controls="profile"><img src="../../images/recipe_red.png">售后说明</a></li> 
+					</ul>
+					<div id="myTabContent" class="tab-content">
+					    <div role="tabpanel" class="tab-pane fade in active" id="tab01" aria-labelledby="home-tab">
+					        <div class="recipe-state">
+					        	<div class="table-responsive">
+					        		<table class="table">
+					        			<tr>
+					        				<td>商品名称：</td>
+					        				<td>三九/999三九胃泰</td>
+					        			</tr>
+					        			<tr>
+					        				<td>商品关键字：</td>
+					        				<td>饱胀反酸、恶心呕吐、胃炎、慢性胃炎、999</td>
+					        			</tr>
+					        			<tr>
+					        				<td>品牌：</td>
+					        				<td>999</td>
+					        			</tr>
+					        			<tr>
+					        				<td>成份：</td>
+					        				<td>三叉苦、九里香、两面针、木香、黄芩、茯苓、地黄、白芍、辅料为蔗糖粉</td>
+					        			</tr>
+					        			<tr>
+					        				<td>性状：</td>
+					        				<td>本品为棕色颗粒；味甜而苦</td>
+					        			</tr>
+					        			<tr>
+					        				<td>功能主治：</td>
+					        				<td>清热燥湿,行气活血,柔肝止痛,消炎止痛,理气健胃,用于上腹隐痛,饱胀,反酸,恶心,呕吐,纳减,心口嘈杂。</td>
+					        			</tr>
+					        			<tr>
+					        				<td>用法用量：</td>
+					        				<td>用开水冲服,一次1袋,一日2次</td>
+					        			</tr>
+					        			<tr>
+					        				<td>不良反应：</td>
+					        				<td>尚不明确</td>
+					        			</tr>
+					        			<tr>
+					        				<td>禁忌：</td>
+					        				<td>尚不明确</td>
+					        			</tr>
+					        			<tr>
+					        				<td>药理作用：</td>
+					        				<td>本品为胃脘痛类非处方药药品,1.三九清热燥湿,行气活血,柔肝止痛,消炎止痛,理气健胃,用于上腹隐痛,饱胀,反酸,恶心,呕吐,纳减,心口嘈杂。</td>
+					        			</tr>
+					        			<tr>
+					        				<td>药理相互作用：</td>
+					        				<td>如与其他药物同事使用可能会发生药物相互作用,详情请咨询医师或药师。</td>
+					        			</tr>
+					        			<tr>
+					        				<td>注意事项：</td>
+					        				<td>1.如与其他药物同事使用可能会发生药物相互作用,详情请咨询医师或药师。2.如与其他药物同事使用可能会发生药物相互作用,详情请咨询医师或药师。</td>
+					        			</tr>
+					        			<tr>
+					        				<td>孕妇及哺乳期妇女用药：</td>
+					        				<td></td>
+					        			</tr>
+					        			<tr>
+					        				<td>儿童用药：</td>
+					        				<td></td>
+					        			</tr>
+					        			<tr>
+					        				<td>老年用药：</td>
+					        				<td></td>
+					        			</tr>
+					        			<tr>
+					        				<td>贮藏：</td>
+					        				<td></td>
+					        			</tr>
+					        			<tr>
+					        				<td>一盒可用天数：</td>
+					        				<td></td>
+					        			</tr>
+					        			<tr>
+					        				<td>说明书图解：</td>
+					        				<td><img src="../../images/recipe_state.png"></td>
+					        			</tr>
+					        		</table>
+					        	</div>
+					        	<div class="recipe-state-img">
+					        		<img src="../../images/recipe_ad.png">
+					        	</div>
+					        </div>
+					    </div>
+					    <div role="tabpanel" class="tab-pane fade" id="tab02" aria-labelledby="profile-tab">
+					        <div class="recipe-after">
+					        	<div class="recipe-after-txt">
+					        		<h4>售后服务</h4>
+					        		<p>根据国家相关法律规定，此类商品属于特殊商品，一经售出，非质量为题，概不退换，请见谅！</p>
+					        	</div>
+					        	<div class="recipe-after-txt">
+					        		<h4>极成医药服务承诺</h4>
+					        		<p>极成医药网向您保证所售商品均为正规商品，可提供机打发票，与商品一起寄送。凭质保证书及发票，可享受全国联保服务，与您亲临药店选购的商品享受相同的质量保证，与商品一起寄送。凭质保证书及发票，可享受全国联保服务，与您亲临药店选购的商品享受相同的质量保证</p>
+					        	</div>
+					        	<div class="recipe-after-txt">
+					        		<h4>售后服务</h4>
+					        		<p>极成医药网向您保证所售商品均为正规商品，可提供机打发票，与商品一起寄送。凭质保证书及发票，可享受全国联保服务，与您亲临药店选购的商品享受相同的质量保证，与商品一起寄送。凭质保证书及发票，可享受全国联保服务，与您亲临药店选购的商品享受相同的质量保证。与商品一起寄送。凭质保证书及发票，可享受全国联保服务，与您亲临药店选购的商品享受相同的质量保证</p>
+					        	</div>
+					        </div>
+					    </div>  
+					</div>			
+				</div>
+			</div>
+		</div>
+	</div>	
+</div>
+<div class="bottom-section01">
+	<div class="container clearfix">
+		<div class="icon-text pull-left">购物到极成</div>
+		<div class="pull-right icon-box-right">
+			<div class="icon-box pull-left clearfix">
+				<img src="../../images/bottom_icon01.png" class="pull-left" />
+				<h1 class="pull-left"><span>安全</span><p>商信可鉴 体制安全</p></h1>
+			</div>
+			<div class="icon-box pull-left clearfix">
+				<img src="../../images/bottom_icon02.png" class="pull-left" />
+				<h1 class="pull-left"><span>省钱</span><p>核算精细 费用最低</p></h1>
+			</div>
+			<div class="icon-box pull-left clearfix">
+				<img src="../../images/bottom_icon03.png" class="pull-left" />
+				<h1 class="pull-left"><span>方便</span><p>共享资源 先进高效</p></h1>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="bottom-section02">
+	<div class="container clearfix">
+		<div class="left-menu pull-left">
+			<div class="left-menu-list pull-left">
+				<h1>购物指南</h1>
+				<a href="#">购物流程</a>
+				<a href="#">用户协议</a>
+				<a href="#">会员规则</a>
+				<a href="#">订单状态</a>
+				<a href="#">常见问题</a>				
+			</div>
+			<div class="left-menu-list pull-left">
+				<h1>配送方式</h1>
+				<a href="#">快递服务</a>
+				<a href="#">上门服务</a>
+				<a href="#">门店自取</a>			
+			</div>
+			<div class="left-menu-list pull-left">
+				<h1>支付方式</h1>
+				<a href="#">货到付款</a>
+				<a href="#">在线支付</a>
+				<a href="#">银行转账</a>
+				<a href="#">支票付款</a>			
+			</div>
+			<div class="left-menu-list pull-left">
+				<h1>售后服务</h1>
+				<a href="#">接收验货</a>
+				<a href="#">申请退款</a>
+				<a href="#">退换货规则</a>			
+			</div>
+			<div class="left-menu-list pull-left">
+				<h1>个性服务</h1>
+				<a href="#">医师服务</a>
+				<a href="#">药师服务</a>
+			</div>
+			<div class="left-menu-list pull-left">
+				<h1>企业服务</h1>
+				<a href="#">厂商合作</a>
+				<a href="#">厂商入口</a>
+				<a href="#">厂商入驻</a>
+			</div>
+		</div>
+		<div class="right-tel pull-right">
+			<div class="tel-box clearfix">
+				<h2 class="pull-left"><img src="../../images/bottom_icon04.png" /></h2>
+				<h1 class="pull-left"><span>加盟热线(固话)</span><span>400-123-6789</span></h1>
+			</div>
+			<div class="tel-box clearfix">
+				<h2 class="pull-left"><img src="../../images/bottom_icon05.png" /></h2>
+				<h1 class="pull-left">
+					<span>招商热线(手机)</span>
+					<span>曾先生：13998986666</span>
+					<span>朱先生：13998986666</span>
+					<span>朱先生：13998986666</span>
+				</h1>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="bottom-section03">
+	<div class="container bottom-menu clearfix">
+		<a href="#">关于我们</a>
+		<span>|</span>
+		<a href="#">联系我们</a>
+		<span>|</span>
+		<a href="#">联系客服</a>
+		<span>|</span>
+		<a href="#">合作招商</a>
+		<span>|</span>
+		<a href="#">商家帮助</a>
+		<span>|</span>
+		<a href="#">友情链接</a>
+		<span>|</span>
+		<a href="#">商家入驻</a>
+	</div>
+	<p><span>ICP 备案号：苏02-12345678号</span><span>苏公网安备：310115020022155号</span><span>增值电信业务经营许可证：浙B2-20080224</span></p>
+	<p><span>Copyright  2018-2047 南京极成信息公司版权所有，并保留一切权利</span><span>公司地址：江苏省秦淮区弓箭坊020号</span></p>
+	<div class="link-img">
+		<div class="container text-center">
+			<a href="#"><img src="../../images/bottom_link_pic01.png" /></a>
+			<a href="#"><img src="../../images/bottom_link_pic02.png" /></a>
+			<a href="#"><img src="../../images/bottom_link_pic03.png" /></a>
+			<a href="#"><img src="../../images/bottom_link_pic04.png" /></a>
+			<a href="#"><img src="../../images/bottom_link_pic05.png" /></a>
+			<a href="#"><img src="../../images/bottom_link_pic06.png" /></a>
+		</div>
+	</div>
+</div>
+<script src="../../js/jquery.min.js"></script>
+<script src="../../js/bootstrap.min.js"></script>
+<script src="../../js/bootstrap.min.js"></script>
+<script src="../../js/top_menu.js"></script>
+<script src="../../js/left_menu.js"></script>
+<script src="../../js/app.min.js"></script>
+<!--下拉菜单-->
+<script src="../../js/bootstrap-select/js/bootstrap-select.min.js" type="text/javascript"></script>
+<script src="../../js/components-bootstrap-select.min.js" type="text/javascript"></script>
+<!--下拉菜单-->
+<!--城市选择插件-->
+<script type="text/javascript" src="../../js/fixdiv.js"></script>
+<script type="text/javascript" src="../../js/address.js"></script>
+<!--城市选择插件-->
+<!--地址选择插件-->
+<script type="text/javascript" src="../../js/address/Popt.js"></script>
+<script type="text/javascript" src="../../js/address/city.json.js"></script>
+<script type="text/javascript" src="../../js/address/citySet.js"></script>
+<!--地址选择插件-->
+<!--点击变换数字-->
+<script src="../../js/bootstrap-touchspin/bootstrap.touchspin.js" type="text/javascript"></script>
+<script src="../../js/components-bootstrap-touchspin.min.js" type="text/javascript"></script>
+<script src="../../js/banner.js" type="text/javascript"></script>
+<script type="text/javascript" src="../../js/jquery.jqzoom-2.2.js"></script>
+<script>
+	$(function(){
+		$(".js-silder").silder({
+	        auto: true,//自动播放，传入任何可以转化为true的值都会自动轮播
+	        speed: 20,//轮播图运动速度
+	        sideCtrl: true,//是否需要侧边控制按钮
+	        bottomCtrl: true,//是否需要底部控制按钮
+	        defaultView: 0,//默认显示的索引
+	        interval: 4000,//自动轮播的时间，以毫秒为单位，默认3000毫秒
+	        activeClass: "active",//小的控制按钮激活的样式，不包括作用两边，默认active
+	    });
+		$(window).scroll(function(){
+		  if($(document).scrollTop()>=660){
+		    $(".right-nav").addClass("fixednav");
+		  }else{
+		   $(".right-nav").removeClass("fixednav");
+		  }
+		})
+		$(window).scroll(function(){
+		  if($(document).scrollTop()>=660){
+		    $('#myScrollspy ul.nav-pills').addClass("fixednav-left"); 
+		  }else{
+		   $('#myScrollspy ul.nav-pills').removeClass("fixednav-left"); 
+		  }
+		}) 
+		//      地区选择
+		$("#city").click(function (e) {
+			SelCity(this,e);
+		});
+		$("s").click(function (e) {
+			SelCity(document.getElementById("city"),e);
+		});
+		
+		$('.recipe-name').click(function(){
+			$('.recipe-name-info').toggle();
+			var thisStr =  $(this).find('img').attr('src');
+			console.log(thisStr.toString().indexOf('up'))
+			if(thisStr.toString().indexOf('up') !=-1){
+				$(this).find('img').attr('src','../../images/recipe_down02.png')
+			}
+			else{
+				$(this).find('img').attr('src','../../images/recipe_up02.png')
+			}
+			
+		})
+		$('.recipe-delace-down').click(function(){
+			$(this).siblings('p').removeClass('active');
+			$(this).hide();
+			$('.recipe-delace-up').show()
+		})
+		$('.recipe-delace-up').click(function(){
+			$(this).parent().addClass('active');
+			$(this).hide();
+			$('.recipe-delace-down').show()
+		})
+		$(".jqzoom").jqueryzoom({
+            xzoom: 200, 
+            yzoom: 200, 
+            offset: 10, 
+            position: "right",
+            preload: 1
+        });
+        $('.recipe-small img').hover(function(){
+          	$('.jqzoom img').attr('src',$(this).attr('src'));
+          	$('.jqzoom img').attr('jqimg',$(this).attr('src'));
+          	$(this).parent().addClass('active').siblings().removeClass('active');
+        },function(){
+          $.noop();
+        });
+        $('.recipe-like').find('img').eq(1).hide();
+        $('.recipe-like').click(function(){
+        	$(this).find('img').eq(1).toggle();
+        	$(this).find('img').eq(0).toggle();
+        })
+	})
+</script>
+</body>
+</html>

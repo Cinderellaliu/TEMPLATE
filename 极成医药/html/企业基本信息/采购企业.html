@@ -1,0 +1,821 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../js/bootstrap-select/css/bootstrap-select.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="../../css/banner.css" />
+    <!--复选框样式开始-->
+    <link href="../../js/icheck/skins/all.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="../../css/swiper.min.css">
+    <!--复选框样式结束-->
+    <link href="../../js/bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css" rel="stylesheet" type="text/css" />
+    <!-- 日期插件 -->
+    <link rel="stylesheet" type="text/css" href="../../css/webuploader.css" />
+    <!-- 上传图片 -->
+    <link href="../../css/main.css" rel="stylesheet">
+    <link href="../../css/media.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="../../js/html5shiv.min.js"></script>
+    <script src="../../js/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body class="bg-f">
+	<div class="top-bus">
+		<a href="#" class="add-bus">
+			<img src="../../images/add.png" alt="">
+			<span class="add-pic">新增</span>
+		</a>
+		<a href="#" class="add-bus add-change">
+			<img src="../../images/copy.png" alt="">
+			<span class="add-pic">复制</span>
+		</a>
+		<a href="#" class="add-bus add-change">
+			<img src="../../images/modify.png" alt="">
+			<span class="add-pic">修改</span>
+		</a>
+		<a href="#" class="add-bus add-change">
+			<img src="../../images/save.png" alt="">
+			<span class="add-pic">保存</span>
+		</a>
+		<a href="#" class="add-bus add-change">
+			<img src="../../images/give_up.png" alt="">
+			<span class="add-pic">放弃</span>
+		</a>
+		<a href="#" class="add-bus add-change">
+			<img src="../../images/delete.png" alt="">
+			<span class="add-pic">删除</span>
+		</a>
+		<a href="#" class="add-bus add-change">
+			<img src="../../images/to-examine.png" alt="">
+			<span class="add-pic">审核</span>
+		</a>
+		<a href="#" class="add-bus add-change">
+			<img src="../../images/counter-trial.png" alt="">
+			<span class="add-pic">反审</span>
+		</a>
+		<a href="#" class="add-bus add-change">
+			<img src="../../images/disable.png" alt="">
+			<span class="add-pic">禁用</span>
+		</a>
+		<a href="#" class="add-bus add-change">
+			<img src="../../images/lift_ban.png" alt="">
+			<span class="add-pic">解禁</span>
+		</a>
+		<a href="#" class="add-bus add-change">
+			<img src="../../images/add_shop.png" alt="">
+			<span class="add-pic">可购</span>
+		</a>
+		<a href="#" class="add-bus add-change">
+			<img src="../../images/stop_buying.png" alt="">
+			<span class="add-pic">停购</span>
+		</a>
+		<a href="#" class="add-bus add-change">
+			<img src="../../images/refresh.png" alt="">
+			<span class="add-pic">刷新</span>
+		</a>
+		<a href="#" class="add-bus add-change">
+			<img src="../../images/preview.png" alt="">
+			<span class="add-pic">预览</span>
+		</a>
+		<a href="#" class="add-bus add-change">
+			<img src="../../images/download.png" alt="">
+			<span class="add-pic">下载</span>
+		</a>
+		<a href="#" class="add-bus add-change">
+			<img src="../../images/enclosure.png" alt="">
+			<span class="add-pic">附件</span>
+		</a>
+		<a href="#" class="add-bus add-change">
+			<img src="../../images/sign_out.png" alt="">
+			<span class="add-pic">退出</span>
+		</a>
+	</div>
+	<div class="content-bus">
+		<div class="bus-in">
+			<a href="#bus-base01">企业基本信息</a>
+			<a href="#bus-base02">开票信息</a>
+			<a href="#bus-base03">企业法人营业执照信息</a>
+			<a href="#bus-base04">行政许可信息</a>
+			<a href="#bus-base05">质量认证信息</a>
+			<a href="#bus-base06">购货单位网站负责人信息</a>
+			<a href="#bus-base07">收货地址信息</a>
+			<a href="#bus-base08">标志</a>
+			<a href="#bus-base09">企业资质库</a>
+		</div>
+		<div class="bus-list">
+			<div id="bus-base01" class="bus-base">
+				<p class="red-ti">企业和基本信息</p>
+				<div class="all-from">
+					<div class="line-inp clearfix">
+						<div class="list-from form-group">
+							<label for="">采购企业编码：</label>
+							<input type="text" class="form-control" placeholder="请输入">
+						</div>
+						<div class="list-from form-group">
+							<label for="">采购企业类别：</label>
+							<input type="text" class="form-control" placeholder="请输入">
+						</div>
+						<div class="list-from form-group">
+							<label for="">档案编号：</label>
+							<input type="text" class="form-control" placeholder="请输入">
+						</div>
+					</div>
+					<div class="line-inp clearfix">
+						<div class="list-from form-group">
+							<label for="">采购企业名称：</label>
+							<input type="text" class="form-control" placeholder="请输入">
+						</div>	
+						<div class="list-from">
+							<label for="">分类属性：</label>
+							<select class="bs-select">
+								<option value="">请选择</option>
+								<option value="">日常用品</option>
+								<option value="">消费用品</option>
+								<option value="">生活用品</option>
+							</select>
+						</div>
+						<div class="list-from">
+							<label for="">默认结算方式：</label>
+							<select class="bs-select">
+								<option value="">请选择</option>
+								<option value="">微信</option>
+								<option value="">支付宝</option>
+								<option value="">银行卡</option>
+							</select>
+						</div>
+					</div>
+					<div class="line-inp clearfix">	
+						<div class="list-from form-group">
+							<label for="">客户性质：</label>
+							<select class="bs-select">
+								<option value="">请选择</option>
+								<option value="">日常用品</option>
+								<option value="">消费用品</option>
+								<option value="">生活用品</option>
+							</select>
+						</div>
+						<div class="list-from">
+							<label for="">所属机构：</label>
+							<select class="bs-select">
+								<option value="">请选择</option>
+								<option value="">日常用品</option>
+								<option value="">消费用品</option>
+								<option value="">生活用品</option>
+							</select>
+						</div>
+						<div class="list-from">
+							<label for="">采购企业邮政编码：</label>
+							<input type="text" class="form-control" placeholder="请输入">
+						</div>
+					</div>	
+					<div class="line-inp clearfix">	
+						<div class="list-from">
+							<label for="">联系人：</label>
+							<input type="text" class="form-control" placeholder="请输入">
+						</div>
+						<div class="list-from">
+							<label for="">邮件地址：</label>
+							<input type="text" class="form-control" placeholder="请输入">
+						</div>
+						<div class="list-from form-group">
+							<label for="">详细地址：</label>
+							<input type="text" class="form-control" placeholder="请输入">
+						</div>
+					</div>		
+					<div class="line-inp clearfix">
+						<div class="list-from form-group">
+							<label for="">手机号码：</label>
+							<input type="text" class="form-control" placeholder="请输入">
+						</div>
+						<div class="list-from">
+							<label for="">电话号码：</label>
+							<input type="text" class="form-control" placeholder="请输入">
+						</div>	
+						<div class="list-from">
+							<label for="">传真号码：</label>
+							<input type="text" class="form-control" placeholder="请输入">
+						</div>
+					</div>
+					<div class="line-inp clearfix">	
+						<div class="list-from date form_datetime">
+							<label for=""><i>*</i>更新日期：</label>
+							<input type="text"  readonly class="form-control" placeholder="请选择" />
+                            <span class="input-group-btn">
+                                <button class="btn default date-set" type="button">
+                                </button>
+                            </span>
+						</div>
+						<div class="list-from date form_datetime">
+							<label for=""><i>*</i>创建日期：</label>
+							<input type="text"  readonly class="form-control" placeholder="请选择" />
+                            <span class="input-group-btn">
+                                <button class="btn default date-set" type="button">
+                                </button>
+                            </span>
+						</div>
+						<div class="list-from form-group">
+							<label for="">制单人：</label>
+							<select class="bs-select">
+								<option value="">请选择</option>
+								<option value="">日常用品</option>
+								<option value="">消费用品</option>
+								<option value="">生活用品</option>
+							</select>
+						</div>
+					</div>
+					<div class="line-inp clearfix">	
+						<div class="list-from">
+							<label for="">备注1：</label>
+							<input type="text" class="form-control" placeholder="请输入">
+						</div>
+						<div class="list-from">
+							<label for="">备注2：</label>
+							<input type="text" class="form-control" placeholder="请输入">
+						</div>
+					</div>	
+				</div>
+				<div class="btn-save">
+					<button class="btn1">修改</button>
+					<button class="btn2">保存</button>
+				</div>	
+			</div>
+			<div id="bus-base02" class="bus-base">
+				<p class="red-ti">开票信息</p>
+				<div class="all-from">
+					<div class="line-inp clearfix">
+						<div class="list-from form-group">
+							<label for="">发票单位：</label>
+							<input type="text" class="form-control" placeholder="请输入">
+						</div>
+						<div class="list-from form-group">
+							<label for="">发票类型：</label>
+							<select class="bs-select">
+								<option value="">请选择</option>
+								<option value="">日常用品</option>
+								<option value="">消费用品</option>
+								<option value="">生活用品</option>
+							</select>
+						</div>
+						<div class="list-from form-group">
+							<label for="">开户许可证号：</label>
+							<input type="text" class="form-control" placeholder="请输入">
+						</div>
+					</div>
+					<div class="line-inp clearfix">
+						<div class="list-from form-group">
+							<label for="">开户行：</label>
+							<input type="text" class="form-control" placeholder="请输入">
+						</div>	
+						<div class="list-from">
+							<label for="">银行帐号：</label>
+							<input type="text" class="form-control" placeholder="请输入">
+						</div>
+						<div class="list-from">
+							<label for="">税号：</label>
+							<input type="text" class="form-control" placeholder="请输入">
+						</div>
+					</div>
+					<div class="line-inp clearfix">	
+						<div class="list-from form-group">
+							<label for="">电话号码（票）：</label>
+							<input type="text" class="form-control" placeholder="请输入">
+						</div>
+						<div class="list-from">
+							<label for="">注册地址（票）：</label>
+							<input type="text" class="form-control" placeholder="请输入">
+						</div>
+					</div>	
+					<div class="line-inp clearfix">	
+						<div class="list-from">
+							<label for="">备注1：</label>
+							<input type="text" class="form-control" placeholder="请输入">
+						</div>
+						<div class="list-from">
+							<label for="">备注2：</label>
+							<input type="text" class="form-control" placeholder="请输入">
+						</div>
+					</div>		
+				</div>
+				<div class="btn-save">
+					<button class="btn1">修改</button>
+					<button class="btn2">保存</button>
+				</div>	
+			</div>
+			<div id="bus-base03" class="bus-base">
+				<p class="red-ti">企业法人营业执照信息</p>
+				<div class="all-from">
+					<div class="line-inp clearfix">
+						<div class="list-from form-group">
+							<label for=""><i>*</i>营业执照号：</label>
+							<input type="text" class="form-control" placeholder="请输入">
+						</div>
+						<div class="list-from form-group">
+							<label for=""><i>*</i>营业执照期限：</label>
+							<input type="text" class="form-control" placeholder="请输入">
+						</div>
+						<div class="list-from form-group">
+							<label for="">经济性质：</label>
+							<select class="bs-select">
+								<option value="">请选择</option>
+								<option value="">日常用品</option>
+								<option value="">消费用品</option>
+								<option value="">生活用品</option>
+							</select>
+						</div>
+					</div>
+					<div class="line-inp clearfix">
+						<div class="list-from form-group">
+							<label for="">注册资本：</label>
+							<input type="text" class="form-control" placeholder="请输入">
+						</div>	
+						<div class="list-from">
+							<label for="">经营方式：</label>
+							<select class="bs-select">
+								<option value="">请选择</option>
+								<option value="">日常用品</option>
+								<option value="">消费用品</option>
+								<option value="">生活用品</option>
+							</select>
+						</div>
+						<div class="list-from">
+							<label for=""><i>*</i>营业地址：</label>
+							<input type="text" class="form-control" placeholder="请输入">
+						</div>
+					</div>
+					<div class="line-inp clearfix">	
+						<div class="list-from form-group">
+							<label for=""><i>*</i>企业年度报告：</label>
+							<input type="text" class="form-control" placeholder="请输入">
+						</div>
+						<div class="list-from">
+							<label for="">年报有效期：</label>
+							<select class="bs-select">
+								<option value="">请选择</option>
+								<option value="">日常用品</option>
+								<option value="">消费用品</option>
+								<option value="">生活用品</option>
+							</select>
+						</div>
+						<div class="list-from">
+							<label for=""><i>*</i>控制范围：</label>
+							<select class="bs-select">
+								<option value="">请选择</option>
+								<option value="">日常用品</option>
+								<option value="">消费用品</option>
+								<option value="">生活用品</option>
+							</select>
+						</div>
+					</div>	
+					<div class="line-inp clearfix">	
+						<div class="list-from">
+							<label for="">经营范围：</label>
+							<input type="text" class="form-control" placeholder="请输入">
+						</div>
+						<div class="list-from">
+							<label for="">备注1：</label>
+							<select class="bs-select">
+								<option value="">请选择</option>
+								<option value="">日常用品</option>
+								<option value="">消费用品</option>
+								<option value="">生活用品</option>
+							</select>
+						</div>
+						<div class="list-from">
+							<label for="">备注2：</label>
+							<input type="text" class="form-control" placeholder="请输入">
+						</div>
+					</div>		
+				</div>
+				<div class="btn-save">
+					<button class="btn1">修改</button>
+					<button class="btn2">保存</button>
+				</div>	
+			</div>
+			<div id="bus-base04" class="bus-base">
+				<p class="red-ti">行政许可信息</p>
+				<div class="all-from">
+					<div class="line-inp clearfix">
+						<div class="list-from form-group">
+							<label for="">经营许可证号：</label>
+							<input type="text" class="form-control" placeholder="请输入">
+						</div>
+						<div class="list-from form-group">
+							<label for="">经营许可证期限：</label>
+							<input type="text" class="form-control" placeholder="请输入">
+						</div>
+						<div class="list-from date form_datetime">
+							<label for=""><i>*</i>发证日期：</label>
+							<input type="text"  readonly class="form-control" placeholder="请选择" />
+                            <span class="input-group-btn">
+                                <button class="btn default date-set" type="button">
+                                </button>
+                            </span>
+						</div>
+					</div>
+					<div class="line-inp clearfix">
+						<div class="list-from form-group">
+							<label for="">法人代表：</label>
+							<input type="text" class="form-control" placeholder="请输入">
+						</div>	
+						<div class="list-from">
+							<label for="">企业负责人：</label>
+							<input type="text" class="form-control" placeholder="请输入">
+						</div>
+						<div class="list-from">
+							<label for="">质量负责人：</label>
+							<select class="bs-select">
+								<option value="">请选择</option>
+								<option value="">微信</option>
+								<option value="">支付宝</option>
+								<option value="">银行卡</option>
+							</select>
+						</div>
+					</div>
+					<div class="line-inp clearfix">	
+						<div class="list-from form-group">
+							<label for="">医疗器械许可证号：</label>
+							<input type="text" class="form-control" placeholder="请输入">
+						</div>
+						<div class="list-from">
+							<label for="">医疗器械许可期限：</label>
+							<input type="text" class="form-control" placeholder="请输入">
+						</div>
+						<div class="list-from">
+							<label for="">医疗器械类别：</label>
+							<select class="bs-select">
+								<option value="">请选择</option>
+								<option value="">日常用品</option>
+								<option value="">消费用品</option>
+								<option value="">生活用品</option>
+							</select>
+						</div>
+					</div>		
+					<div class="line-inp clearfix">
+						<div class="list-from form-group have-from-sp">
+							<label for=""><i>*</i>仓库地址：</label>
+							<input type="text" class="form-control" placeholder="请输入">
+						</div>
+					</div>
+					<div class="line-inp clearfix">	
+						<div class="list-from list-habuy">
+							<label for="">食品生产/<br/>经营许可证号：</label>
+							<input type="text" class="form-control" placeholder="请输入">
+						</div>
+						<div class="list-from list-habuy">
+							<label for="">食品生产/<br/>经营许可证期限：</label>
+							<input type="text" class="form-control" placeholder="请输入">
+						</div>
+						<div class="list-from form-group">
+							<label for="">许可范围：</label>
+							<input type="text" class="form-control" placeholder="请输入">
+						</div>
+					</div>
+					<div class="line-inp clearfix">	
+						<div class="list-from list-habuy">
+							<label for="">保健食品生产/<br/>经营许可证号：</label>
+							<input type="text" class="form-control" placeholder="请输入">
+						</div>
+						<div class="list-from list-habuy">
+							<label for="">保健食品生产/<br/>经营许可证期限：</label>
+							<input type="text" class="form-control" placeholder="请输入">
+						</div>
+						<div class="list-from">
+							<label for="">许可范围：</label>
+							<input type="text" class="form-control" placeholder="请输入">
+						</div>
+					</div>
+					<div class="line-inp line-mar clearfix">	
+						<div class="list-from">
+							<label for="">备注1：</label>
+							<input type="text" class="form-control" placeholder="请输入">
+						</div>
+						<div class="list-from">
+							<label for="">备注2：</label>
+							<input type="text" class="form-control" placeholder="请输入">
+						</div>
+					</div>	
+				</div>
+				<div class="btn-save">
+					<button class="btn1">修改</button>
+					<button class="btn2">保存</button>
+				</div>	
+			</div>
+			<div id="bus-base05" class="bus-base">
+				<p class="red-ti">质量认证信息</p>
+				<div class="all-from">
+					<div class="line-inp clearfix">
+						<div class="list-from form-group list-habuy">
+							<label for="">药品经营设置<br/>GSP证书号：</label>
+							<input type="text" class="form-control" placeholder="请输入">
+						</div>
+						<div class="list-from form-group">
+							<label for="">GSP证书期限：</label>
+							<input type="text" class="form-control" placeholder="请输入">
+						</div>
+						<div class="list-from form-group">
+							<label for="">认证范围：</label>
+							<input type="text" class="form-control" placeholder="请输入">
+						</div>
+					</div>	
+					<div class="line-inp clearfix">	
+						<div class="list-from">
+							<label for="">备注1：</label>
+							<input type="text" class="form-control" placeholder="请输入">
+						</div>
+						<div class="list-from">
+							<label for="">备注2：</label>
+							<input type="text" class="form-control" placeholder="请输入">
+						</div>
+					</div>		
+				</div>
+				<div class="btn-save">
+					<button class="btn1">增加</button>
+					<button class="btn1">修改</button>
+					<button class="btn2">保存</button>
+				</div>	
+			</div>
+			<div id="bus-base06" class="bus-base">
+				<p class="red-ti">购货单位网站负责人信息</p>
+				<div class="all-from">
+					<div class="line-inp clearfix">
+						<div class="list-from form-group list-habuy">
+							<label for=""><i>*</i> 购货单位网<br/>站负责人：</label>
+							<input type="text" class="form-control" placeholder="请输入">
+						</div>
+						<div class="list-from form-group">
+							<label for=""><i>*</i>身份证号：</label>
+							<input type="text" class="form-control" placeholder="请输入">
+						</div>
+						<div class="list-from form-group">
+							<label for=""><i>*</i>联系电话：</label>
+							<input type="text" class="form-control" placeholder="请输入">
+						</div>
+					</div>
+					<div class="line-inp clearfix">	
+						<div class="list-from">
+							<label for=""><i>*</i>授权品种：</label>
+							<select class="bs-select">
+								<option value="">请选择</option>
+								<option value="">日常用品</option>
+								<option value="">消费用品</option>
+								<option value="">生活用品</option>
+							</select>
+						</div>
+						<div class="list-from date form_datetime">
+							<label for=""><i>*</i>授权起始日期：</label>
+							<input type="text"  readonly class="form-control" placeholder="请选择" />
+                            <span class="input-group-btn">
+                                <button class="btn default date-set" type="button">
+                                </button>
+                            </span>
+						</div>
+						<div class="list-from date form_datetime">
+							<label for=""><i>*</i>授权结束日期：</label>
+							<input type="text"  readonly class="form-control" placeholder="请选择" />
+                            <span class="input-group-btn">
+                                <button class="btn default date-set" type="button">
+                                </button>
+                            </span>
+						</div>
+					</div>
+					<div class="line-inp line-mar clearfix">	
+						<div class="list-from form-group">
+							<label for=""><i>*</i>采购区域授权：</label>
+							<select class="bs-select">
+								<option value="">请选择</option>
+								<option value="">日常用品</option>
+								<option value="">消费用品</option>
+								<option value="">生活用品</option>
+							</select>
+						</div>
+						<div class="list-from">
+							<label for="">药监备案期限：</label>
+							<input type="text" class="form-control" placeholder="请输入">
+						</div>
+						<div class="list-from list-habuy">
+							<label for=""><i>*</i>采购商品生产<br/>日期要求：</label>
+							<input type="text" class="form-control" placeholder="请输入">
+						</div>
+					</div>	
+					<div class="line-inp clearfix">	
+						<div class="list-from list-habuy">
+							<label for="">采购商品有<br/>效期要求：</label>
+							<select class="bs-select">
+								<option value="">请选择</option>
+								<option value="">日常用品</option>
+								<option value="">消费用品</option>
+								<option value="">生活用品</option>
+							</select>
+						</div>
+						<div class="list-from">
+							<label for="">备注1：</label>
+							<input type="text" class="form-control" placeholder="请输入">
+						</div>
+						<div class="list-from">
+							<label for="">备注2：</label>
+							<input type="text" class="form-control" placeholder="请输入">
+						</div>
+					</div>		
+				</div>
+				<div class="btn-save">
+					<button class="btn1">修改</button>
+					<button class="btn2">保存</button>
+				</div>	
+			</div>
+			<div id="bus-base07" class="bus-base">
+				<p class="red-ti">收货地址信息</p>
+				<div class="all-from">
+					<div class="line-inp clearfix">
+						<div class="list-from form-group">
+							<label for="">收货地址：</label>
+							<input type="text" class="form-control" placeholder="请输入">
+						</div>
+						<div class="list-from form-group">
+							<label for="">发货类型：</label>
+							<select class="bs-select">
+								<option value="">请选择</option>
+								<option value="">日常用品</option>
+								<option value="">消费用品</option>
+								<option value="">生活用品</option>
+							</select>
+						</div>
+						<div class="list-from form-group">
+							<label for="">手机号码：</label>
+							<input type="text" class="form-control" placeholder="请输入">
+						</div>
+					</div>
+					<div class="line-inp clearfix">
+						<div class="list-from form-group">
+							<label for="">电话号码：</label>
+							<input type="text" class="form-control" placeholder="请输入">
+						</div>	
+						<div class="list-from">
+							<label for="">收货人：</label>
+							<input type="text" class="form-control" placeholder="请输入">
+						</div>
+						<div class="list-from">
+							<label for="">备注1：</label>
+							<input type="text" class="form-control" placeholder="请输入">
+						</div>
+					</div>
+					<div class="line-inp clearfix">	
+						<div class="list-from">
+							<label for="">备注2：</label>
+							<input type="text" class="form-control" placeholder="请输入">
+						</div>
+					</div>	
+				</div>
+				<div class="btn-save">
+					<button class="btn1">增加</button>
+					<button class="btn1">修改</button>
+					<button class="btn2">保存</button>
+				</div>	
+			</div>
+			<div id="bus-base08" class="bus-base">
+				<p class="red-ti">标志</p>
+				<div class="all-from have-sma">
+					<label><input type="checkbox" class="icheck" data-checkbox="icheckbox_square-red"><span class="all-goods">信用额度标志</span></label>
+                    <label><input type="checkbox" class="icheck" data-checkbox="icheckbox_square-red"><span class="all-goods">禁用标志</span></label>
+                    <label><input type="checkbox" class="icheck" data-checkbox="icheckbox_square-red"><span class="all-goods">停购标志</span></label>
+                    <label><input type="checkbox" class="icheck" data-checkbox="icheckbox_square-red"><span class="all-goods">不合格标志</span></label>
+                    <label><input type="checkbox" class="icheck" data-checkbox="icheckbox_square-red"><span class="all-goods">标志1</span></label>
+                    <label><input type="checkbox" class="icheck" data-checkbox="icheckbox_square-red"><span class="all-goods">标志2</span></label>
+                    <label><input type="checkbox" class="icheck" data-checkbox="icheckbox_square-red"><span class="all-goods">标志3</span></label>
+                    <label><input type="checkbox" class="icheck" data-checkbox="icheckbox_square-red"><span class="all-goods">标志4</span></label>
+                    <label><input type="checkbox" class="icheck" data-checkbox="icheckbox_square-red"><span class="all-goods">标志5</span></label>
+				</div>
+				<div class="btn-save">
+					<button class="btn1">修改</button>
+					<button class="btn2">保存</button>
+				</div>
+			</div> 
+			<div id="bus-base09" class="bus-base">
+				<p class="red-ti">企业资质库</p>
+				<div class="all-from pic-form">
+					<div class="list clearfix">
+						<img src="../../images/book_pic.png" alt="" class="imgul">
+						<p class="bo">企业经营许可证</p>
+						<div id="cover">
+							<img src="../../images/pic_x.png" alt="" class="btn-x">
+						</div>
+					</div>
+					<div class="list clearfix">
+						<img src="../../images/book_pic.png" alt="" class="imgul">
+						<p class="bo">企业经营许可证</p>
+						<div id="cover">
+							<img src="../../images/pic_x.png" alt="" class="btn-x">
+						</div>
+					</div>
+					<div class="list clearfix">
+						<img src="../../images/book_pic.png" alt="" class="imgul">
+						<p class="bo">企业经营许可证</p>
+						<div id="cover">
+							<img src="../../images/pic_x.png" alt="" class="btn-x">
+						</div>
+					</div>
+					<div class="list main-up clearfix">
+			            <div id="pic-list" class="main-up-list pull-left"></div>
+			            <div id="add-pic" class="pull-left"><img src="../../images/book_add.png" class="main-up-add pull-left" alt="添加图片"></div>
+			        </div>
+				</div>
+				<div class="btn-save end-btn">
+					<button class="btn1">全选</button>
+					<button class="btn1">反选</button>
+					<button class="btn1">下载</button>
+					<button class="btn1">保存</button>
+				</div>
+				<div class="sub">
+					<button class="examine">提交审核</button>
+				</div>
+			</div> 
+		</div>
+	</div>
+<script src="../../js/jquery.min.js"></script>
+<script src="../../js/bootstrap.min.js"></script>
+<script src="../../js/top_menu.js"></script>
+<script src="../../js/app.min.js"></script>
+<!--城市选择插件-->
+<script type="text/javascript" src="../../js/fixdiv.js"></script>
+<script type="text/javascript" src="../../js/address.js"></script>
+<!--城市选择插件-->
+<!--下拉菜单-->
+<script src="../../js/bootstrap-select/js/bootstrap-select.min.js" type="text/javascript"></script>
+<script src="../../js/components-bootstrap-select.min.js" type="text/javascript"></script>
+<!--下拉菜单-->
+<!--复选框插件开始-->
+<script src="../../js/icheck/icheck.min.js" type="text/javascript"></script>
+<script src="../../js/form-icheck.min.js" type="text/javascript"></script>
+<!--复选框插件结束-->
+<!-- 上传图片 -->
+<script src="../../js/webuploader.min.js" type="text/javascript"></script>
+<!-- 日期插件 -->
+<script src="../../js/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js" type="text/javascript"></script>
+<script src="../../js/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.zh-CN.js" type="text/javascript"></script>
+<!-- 日期插件 -->
+<script>
+	$(window).scroll(function(){
+	  if($(document).scrollTop()>=260){
+	    $(".right-nav").addClass("fixednav"); 
+	  }else{
+	   $(".right-nav").removeClass("fixednav");
+	  };
+	})  
+    $(function(){
+    		var num = 0;
+            var uploader = WebUploader.create({
+            auto:true,
+            swf: '../../css/Uploader.swf',
+            // server: '../js/up.php',
+            pick: '#add-pic',
+            resize: false,
+        });
+    
+        //上传时显示文件信息
+       uploader.on( 'fileQueued', function( file ) {
+        var item =$('<div class="main-up-box pull-left"><div id="'+file.id+'"class="file-item thumbnail">'+'<img class="main-up-pic">'+'</div>'+'<div class="info text-center">'+file.name+'</div></div>');
+        var img = item.find('img');
+        uploader.makeThumb(file,function(error,src){
+            str = file.name;
+             if (str != "") {
+                var pos = "." + str.replace(/.+\./, "");
+                if(pos == '.gif'||pos == '.jpg'||pos =='.jpeg'||pos =='.bmp'||pos =='.png'){
+                    img[0].src=src;
+                }
+                else{
+                    img[0].src= "../images/book_pic.png";
+                }
+                
+            }
+            
+        },169,169);//图片尺寸
+            $('#pic-list').append(item);
+        });
+    	uploader.on( 'uploadComplete', function( file ) {
+        $('.main-upload-num').text(++num);//上传增加图片
+    	})
+        $('.bus-in a:first-child').addClass('all-red');
+		$('.bus-in a').on('click',function(){
+			$(this).addClass('all-red');
+			$(this).siblings().removeClass('all-red');
+		})
+		$('.bus-list #bus-base p').addClass('border-red');
+		$('.list .btn-x').on('click',function(){
+			$(this).parent().parent().remove()
+		});
+		$('.bus-base p.red-ti').addClass('border-red');
+		//        日期控件效果
+        $(".form_datetime").datetimepicker({
+            language:'zh-CN',
+            autoclose: true,
+            isRTL: App.isRTL(),
+            format: "yyyy-mm-dd hh:ii",
+            pickerPosition: (App.isRTL() ? "bottom-right" : "bottom-left")
+        });
+    });
+</script>
+</body>
+</html>

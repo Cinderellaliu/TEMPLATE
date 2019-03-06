@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link href="../../../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../../css/swiper.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../css/city.min.css">
+    <link href="../../../css/main.css" rel="stylesheet">
+    <link href="../../../css/media.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="../../../js/html5shiv.min.js"></script>
+    <script src="../../../js/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="top-title top-list-fo">
+    <div class="clearfix">
+        <a href="#" class="back-btn" onclick="history.go(-1)"></a>
+        <div class="search-shop home-search-ma mid-ge sear-mi clearfix">
+            <img src="../../../images/big_pic02.png" alt="" class="magnifier">
+            <input type="text" class="form-group list-inp" placeholder="批准文号、通用名、商品名">
+        </div>
+        <a href="javascript:void(0);" class="top-rightmenu-btn"></a>
+        <div class="all-list-mess">
+            <div class="triangle_border_up"><span></span></div>
+            <div class="about-shop-mess">
+                <a href=""><img src="../../../images/mess01.png" alt=""><span>消息</span></a>
+                <a href=""><img src="../../../images/mess02.png" alt=""><span>首页</span></a>
+                <a href=""><img src="../../../images/mess03.png" alt=""><span>分享</span></a>
+                <a href="" class="no-bo"><span>店铺详情</span></a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="main-content no-padding">
+    <div class="nav nav-tabs inshop-list-tab" role="tablist">
+        <a href="" class="active">推荐</a>
+        <a href="">销量</a>
+        <a href="">新品</a>
+        <a href="">价格<span class="arrow"><i class="glyphicon glyphicon-triangle-top up"></i><i class="glyphicon glyphicon-triangle-bottom down"></i></span></a>
+        <a href=""><img src="../../../images/list01.png" alt=""></a>
+    </div>
+    <div class="tab-content sh-content">
+        <div class="tab-pane active" id="tab1">
+            <a class="list-page-show clearfix" href="">
+                <div class="left-page-show pull-left">
+                    <img src="../../../images/re_pic01.png" alt="">
+                </div>
+                <div class="right-page-show pull-left">
+                    <h3 class="list-ti">三九感冒灵颗粒冲剂9袋咽痛头痛流鼻涕鼻塞咳嗽</h3>
+                    <p class="piece pi show-pi show-pice">拆零单价 ￥<span class="pice-by-pr">8.00</span></p>
+                    <p class="piece home-pi show-pi show-pice-bo">中包单价 ￥<span class="pice-by-pr">6.00</span></p>
+                </div>
+            </a>
+            <a class="list-page-show clearfix" href="">
+                <div class="left-page-show pull-left">
+                    <img src="../../../images/re_pic02.png" alt="">
+                </div>
+                <div class="right-page-show pull-left">
+                    <h3 class="list-ti">三九感冒灵颗粒冲剂9袋咽痛头痛流鼻涕鼻塞咳嗽</h3>
+                    <p class="piece pi show-pi show-pice">拆零单价 ￥<span class="pice-by-pr">8.00</span></p>
+                    <p class="piece home-pi show-pi show-pice-bo">中包单价 ￥<span class="pice-by-pr">6.00</span></p>
+                </div>
+            </a>
+            <a class="list-page-show clearfix" href="">
+                <div class="left-page-show pull-left">
+                    <img src="../../../images/re_pic03.png" alt="">
+                </div>
+                <div class="right-page-show pull-left">
+                    <h3 class="list-ti">三九感冒灵颗粒冲剂9袋咽痛头痛流鼻涕鼻塞咳嗽</h3>
+                    <p class="piece pi show-pi show-pice">拆零单价 ￥<span class="pice-by-pr">8.00</span></p>
+                    <p class="piece home-pi show-pi show-pice-bo">中包单价 ￥<span class="pice-by-pr">6.00</span></p>
+                </div>
+            </a>
+            <a class="list-page-show clearfix" href="">
+                <div class="left-page-show pull-left">
+                    <img src="../../../images/re_pic04.png" alt="">
+                </div>
+                <div class="right-page-show pull-left">
+                    <h3 class="list-ti">三九感冒灵颗粒冲剂9袋咽痛头痛流鼻涕鼻塞咳嗽</h3>
+                    <p class="piece pi show-pi show-pice">拆零单价 ￥<span class="pice-by-pr">8.00</span></p>
+                    <p class="piece home-pi show-pi show-pice-bo">中包单价 ￥<span class="pice-by-pr">6.00</span></p>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+<script src="../../../js/jquery.min.js"></script>
+<script src="../../../js/bootstrap.min.js"></script>
+<script src="../../../js/menu.js"></script>
+<script src="../../../js/city.js"></script>
+<script>
+    $('.call-back-home').on('click',function(){
+        $('body,html').animate({scrollTop:0},500)
+    });
+    $('.right-se').hide();
+    $('.new-bg-bl').hide();
+    $('.new-bg-sn').hide();
+    $('.right-inf').on('click',function(){
+        $(this).hide();
+        $('.new-bg-bl').show();
+         $('.right-se').show();
+         setTimeout(function(){
+            $('.new-bg-bl').hide();
+         },3000);
+    });
+    $('.right-se').on('click',function(){
+         $('.new-bg-bl').hide(); 
+    });
+    $('.sure-can').on('click',function(){
+        $('#myModal').modal('hide');
+        $('.right-se').hide();
+        $('.right-inf').show();
+        setTimeout(function(){
+            $('.new-bg-sn').show();
+         },500);
+         setTimeout(function(){
+            $('.new-bg-sn').hide();
+         },3000);
+
+    })
+    $('.all-list-mess').hide();
+    $('.top-rightmenu-btn').on('click',function(){
+        $('.all-list-mess').toggle();
+    })
+</script>
+</body>
+</html>

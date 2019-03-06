@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link href="../../css/bootstrap.min.css" rel="stylesheet">
+	<link href="../../css/swiper.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="../../css/city.min.css">
+	 <link rel="stylesheet" type="text/css" href="../../css/webuploader.css" />
+    <!-- 上传图片 -->
+	<link href="../../css/main.css" rel="stylesheet">
+	<link href="../../css/media.css" rel="stylesheet">
+	<!--[if lt IE 9]>
+	<script src="../../js/html5shiv.min.js"></script>
+	<script src="../../js/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body class="grey-bg">
+<div class="title-top title-top01 clearfix">
+	<a href="#"  class="pull-left left" ><img src="../../images/top_left_arrow.png" alt=""></a>
+	<span>个人信息</span>
+	<a class="pull-right right">保存</a>
+</div>
+<div class="main-content no-padding no-margin">
+	<div class="person-img-box">
+		<div class="order-content-box content-addr">
+    		<div class="all-person-inf">
+    			<div class="pic-tou clearfix">
+        			<div class="userinfo-avatar">
+                        <img src="../../images/person_img.png" alt="默认头像" class="avatar-defalut">
+                    </div>
+        			<img src="" alt="" >
+        			<a data-toggle="modal" data-target=".bs-example-modal-sm"><div class="avatar-box  clearfix"><span class="user-info use-tou">点击修改头像</span></div></a>
+    			</div> 
+			</div>
+		</div> 
+	</div>
+	<div class="change-head-padding">
+		<div class="item-box clearfix">
+			<span class="pull-left">昵称</span>
+			<input class="pull-left name" type="text" value="小猪佩奇">
+		</div>
+		<div class="item-box clearfix">
+			<span class="pull-left">帐号</span>
+			<em class="pull-left">raohuiyuan@126.com</em>
+		</div>
+		<a class="item-box clearfix">
+			<span class="pull-left">性别</span>
+			<em class="pull-left">女</em>
+		</a>
+		<div class="item-box clearfix">
+			<span class="pull-left">手机</span>
+			<em class="pull-left">18025456654</em>
+			<a href="#" class="pull-right verify">未验证<img src="../../images/right_arrow.png" alt=""></a>
+		</div>
+		<div class="item-box clearfix">
+			<span class="pull-left">邮箱</span>
+			<em class="pull-left">raohuiyuan@126.com</em>
+			<a href="#" class="pull-right verify text-red">已验证<img src="../../images/right_arrow.png" alt=""></a>
+		</div>
+	</div>
+</div>
+<div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" id="Modal-head">
+  	<div class="modal-dialog modal-sm" role="document">
+    	<div class="modal-content model-in">
+      		<div class="modal-header">
+      			<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<h4 class="modal-title" id="myModalLabel">设置头像</h4>
+      		</div>
+      		<div class="modal-body modal-main">
+	      		<div class="main-modal-up">
+	           		<div class="main-modal-img" id="up-head">
+            			<img src="../../images/add_pic.png" alt="" class="webup-pic">
+            		</div>
+        			<p>支持jpg/png/gif</p>
+	        	</div>
+      		</div>
+      		<div class="modal-footer">
+		        <button type="button" class="btn btn1 modal-sure">确定</button>
+	      	</div>
+    	</div>
+  	</div>
+</div>
+<script src="../../js/jquery.min.js"></script>
+<script src="../../js/bootstrap.min.js"></script>
+<script src="../../js/menu.js"></script>
+<script src="../../js/city.js"></script>
+<script src="../../js/scrolltopcontrol.js"></script>
+<!-- 上传图片 -->
+<script src="../../js/webuploader.min.js" type="text/javascript"></script>
+<script>
+
+</script>
+</body>
+</html>
+<script>
+	var uploader = WebUploader.create({
+        auto:true,
+        swf: '../css/Uploader.swf',
+        // server: '../js/up.php',
+        pick: '#up-head',
+        resize: false,
+        accept: {
+            title: 'Images',
+            extensions: 'jpg,png',
+            mimeTypes: 'image/*',
+        }
+    });
+
+    uploader.on( 'fileQueued', function( file ) {
+        var item =$('<div class="main-head-box text-center">'+'<img class="main-head-pic">'+'</div>');
+        $img = item.find('img');
+        uploader.makeThumb(file,function(error,src){
+            $img.attr('src', src);
+        },60,60);
+        
+        $('.main-modal-up').append(item);
+        $('.main-modal-up p').hide();
+        $('.main-modal-img').hide();
+        $('.use-tou').on('click',function(){
+	    	$('.main-modal-up p').show();
+	        $('.main-modal-img').show();
+	        $img[0].remove();
+	    })
+    });
+
+    $('.modal-sure').click(function(){
+    	$('#Modal-head').modal('hide');
+    	$('.avatar-defalut').hide();
+    	$('.avatar-box').before($('.main-head-pic'));
+        $('.use-tou').show();
+    })
+    $('.person-img-box img.main-head-pic').on('click',function(){
+    	$('#Modal-head').modal('hide');
+    })
+    $('.main-modal-img').children().eq(1).addClass('label');
+</script>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link href="../../../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../../css/main.css" rel="stylesheet">
+    <link href="../../../css/media.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="../../js/html5shiv.min.js"></script>
+    <script src="../../js/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="title-top clearfix">
+    <a href="#"  class="pull-left left" ><img src="../../../images/top_left_arrow.png" alt=""></a>
+    <span>物流跟踪</span>
+</div>
+<div class="main-content no-padding main-content-bg no-margin">
+    <div class="logistics-top clearfix">
+        <span class="pull-left">开启消息通知，即时掌握物流信息</span>
+        <div class="pull-right">
+            <a href="#" class="pull-right"><img src="../../../images/delete_logi.png"  alt="" class="del"></a>
+            <a href="#" class="pull-right btn-logi">去开启</a>
+        </div>   
+    </div>
+    <div class="logistics-top01 clearfix">
+        <div class="pull-left box-left">
+            <img src="../../../images/wuliu.png" alt="">
+        </div>
+        <div class="pull-left box-right">
+            <h2>物流公司：<em>顺丰速递</em></h2>
+            <h2>物流单号：<em>4857657694557</em></h2>
+        </div>
+    </div>
+    <div class="logistics-t"></div>
+    <div class="logistics-content">
+        <div class="logi-con-top">
+            <span>订单跟踪</span>
+        </div>
+        <div class="logi-con-box">
+            <div class="item-box clearfix">
+                <div class="box-left pull-left">
+                    <img src="../../../images/dian01.png" alt="">
+                    <div class="border"></div>
+                </div>
+                <div class="box-right pull-left">
+                    <h4>【南京市】已签收，感谢使用顺丰快递～</h4>
+                    <span>2018-04-09 12:00:00</span>
+                </div>
+            </div>
+            <div class="item-box clearfix">
+                <div class="box-left pull-left">
+                    <img src="../../../images/dian01.png" alt="">
+                    <div class="border"></div>
+                </div>
+                <div class="box-right pull-left">
+                    <h4>【南京市】正在派送途中，派件人：祝本山，电话：183757586686</h4>
+                    <span>2018-04-09 12:00:00</span>
+                </div>
+            </div>
+            <div class="item-box clearfix">
+                <div class="box-left pull-left">
+                    <img src="../../../images/dian01.png" alt="">
+                    <div class="border"></div>
+                </div>
+                <div class="box-right pull-left">
+                    <h4>【南京市】快件到达【南京市小行营业点】</h4>
+                    <span>2018-04-09 12:00:00</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../../../js/jquery.min.js"></script>
+<script src="../../../js/bootstrap.min.js"></script>
+<script>
+    $(function(){
+        $('.logistics-top .del').click(function(){
+            $(this).parents('.logistics-top').remove();
+        })
+    })
+</script>
+</body>
+</html>

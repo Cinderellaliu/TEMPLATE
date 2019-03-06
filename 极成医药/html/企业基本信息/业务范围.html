@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../js/bootstrap-select/css/bootstrap-select.min.css" rel="stylesheet" type="text/css" />
+    <link href="../../js/bootstrap-touchspin/bootstrap.touchspin.css" rel="stylesheet" type="text/css" />
+    <!--点击变换数字-->
+    <!--复选框样式开始-->
+    <link href="../../js/icheck/skins/all.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="../../css/swiper.min.css">
+    <!--复选框样式结束-->
+    <link href="../../css/main.css" rel="stylesheet">
+    <link href="../../css/media.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="../../js/html5shiv.min.js"></script>
+    <script src="../../js/respond.min.js"></script>
+    <![endif]-->
+</head>
+<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+  Launch demo modal
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content busin-content">
+            <div class="modal-header clearfix">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">业务范围</h4>
+            </div>
+            <div class="modal-body clearfix">
+                <table>
+                    <tr>
+                        <td class="choose"></td>
+                        <td class="cate-num">类别编号</td>
+                        <td class="cate-name">类别名称</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" class="icheck" data-checkbox="icheckbox_square-red"></td>
+                        <td>01</td>
+                        <td class="bg-white">抗生素药</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" class="icheck" data-checkbox="icheckbox_square-red"></td>
+                        <td>02</td>
+                        <td class="bg-white">生化药品</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" class="icheck" data-checkbox="icheckbox_square-red"></td>
+                        <td>03</td>
+                        <td class="bg-white">生物制品</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" class="icheck" data-checkbox="icheckbox_square-red"></td>
+                        <td>04</td>
+                        <td class="bg-white">肽类激素</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" class="icheck" data-checkbox="icheckbox_square-red"></td>
+                        <td>05</td>
+                        <td class="bg-white">蛋白同化</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" class="icheck" data-checkbox="icheckbox_square-red"></td>
+                        <td>06</td>
+                        <td class="bg-white">进口药品</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" class="icheck" data-checkbox="icheckbox_square-red"></td>
+                        <td>07</td>
+                        <td class="bg-white">中成药品</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" class="icheck" data-checkbox="icheckbox_square-red"></td>
+                        <td>08</td>
+                        <td class="bg-white">中药饮片</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" class="icheck" data-checkbox="icheckbox_square-red"></td>
+                        <td>09</td>
+                        <td class="bg-white">保健食品</td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <td class="choose"></td>
+                        <td class="cate-num">类别编号</td>
+                        <td class="cate-name">类别名称</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" class="icheck" data-checkbox="icheckbox_square-red"></td>
+                        <td>24</td>
+                        <td class="bg-white">保健用品</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" class="icheck" data-checkbox="icheckbox_square-red"></td>
+                        <td>30</td>
+                        <td class="bg-white">化妆品</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" class="icheck" data-checkbox="icheckbox_square-red"></td>
+                        <td>40</td>
+                        <td class="bg-white">消毒用品</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" class="icheck" data-checkbox="icheckbox_square-red"></td>
+                        <td>41</td>
+                        <td class="bg-white">Ⅰ类器械</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" class="icheck" data-checkbox="icheckbox_square-red"></td>
+                        <td>42</td>
+                        <td class="bg-white">预包装食品</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" class="icheck" data-checkbox="icheckbox_square-red"></td>
+                        <td>43</td>
+                        <td class="bg-white">Ⅱ类器械</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" class="icheck" data-checkbox="icheckbox_square-red"></td>
+                        <td>44</td>
+                        <td class="bg-white">Ⅲ类器械</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" class="icheck" data-checkbox="icheckbox_square-red"></td>
+                        <td>51</td>
+                        <td class="bg-white">家用电器</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" class="icheck" data-checkbox="icheckbox_square-red"></td>
+                        <td>73</td>
+                        <td class="bg-white">日用百货</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="modal-footer clearfix">
+                <button t抗生素药ype="button" class="btn btn-primary">保存</button>
+            </div>
+        </div>
+    </div>
+</div>
+<body>
+<script src="../../js/jquery.min.js"></script>
+<script src="../../js/bootstrap.min.js"></script>
+<script src="../../js/top_menu.js"></script>
+<!--城市选择插件-->
+<script src="../../js/app.min.js"></script>
+<script type="text/javascript" src="../../js/fixdiv.js"></script>
+<script type="text/javascript" src="../../js/address.js"></script>
+<!--城市选择插件-->
+<!--下拉菜单-->
+<script src="../../js/bootstrap-select/js/bootstrap-select.min.js" type="text/javascript"></script>
+<script src="../../js/components-bootstrap-select.min.js" type="text/javascript"></script>
+<!--下拉菜单-->
+<!--点击变换数字-->
+<script src="../../js/bootstrap-touchspin/bootstrap.touchspin.js" type="text/javascript"></script>
+<script src="../../js/components-bootstrap-touchspin.min.js" type="text/javascript"></script>
+<!--复选框插件开始-->
+<script src="../../js/icheck/icheck.min.js" type="text/javascript"></script>
+<script src="../../js/form-icheck.min.js" type="text/javascript"></script>
+<!--复选框插件结束-->
+<script>
+    $("#city").click(function (e) {
+        SelCity(this,e);
+    });
+    $("s").click(function (e) {
+        SelCity(document.getElementById("city"),e);
+    });
+    $('.can-del img').on('click',function(){
+        $(this).parent().remove();
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link href="../../../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../../css/swiper.min.css" rel="stylesheet">
+    <link href="../../../css/city.min.css" rel="stylesheet">
+    <link href="../../../js/icheck/skins/all.css" rel="stylesheet" type="text/css" />
+    <link href="../../../js/bootstrap-touchspin/bootstrap.touchspin.css" type="text/css" />
+    <link href="../../../css/main.css" rel="stylesheet">
+    <link href="../../../css/media.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="../../../js/html5shiv.min.js"></script>
+    <script src="../../../js/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body class="grey-bg">
+<div class="top-title02 text-center">
+    <a href="#" class="back-btn" onclick="history.go(-1)"></a>发票信息<a href="#" class="car-save">保存</a>
+</div>
+<div class="main-content04 no-padding ">
+    <div class="bill">
+        <form class="white-bg clearfix">
+            <div class="form-group clearfix">
+                <label for="input01">*发票类型</label>
+                <input type="text" class="bill-type form-control text-left" id="input01" placeholder="请选择" data-toggle="modal" data-target=".bs-example-modal-sm" readonly>
+            </div>
+            <div class="form-group clearfix">
+                <label for="input02">*发票抬头</label>
+                <input type="text" class="form-control" id="input02" value="江苏某某某科技公司" readonly>
+            </div>
+            <div class="form-group clearfix">
+                <label for="input03">*企业税号</label>
+                <input type="text" class="form-control" id="input03" value="1234954988798" readonly>
+            </div>
+            <div class="form-group clearfix">
+                <label for="input04">发票内容</label>
+                <textarea placeholder="请输入内容"></textarea>
+            </div>
+        </form>
+        <form class="white-bg clearfix">
+            <div class="form-group clearfix">
+                <label for="input05">收票人手机</label>
+                <input type="text" class="form-control" id="input05" value="156 6498 4897" readonly>
+            </div>
+            <div class="form-group clearfix">
+                <label for="input06">收票人邮箱</label>
+                <input type="text" class="form-control" id="input06" value="545454846@163.com" readonly>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="modal fade bs-example-modal-sm bill-modal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+  <div class="modal-dialog modal-sm" role="document">
+    <div class="modal-content">
+        <ul>
+            <li>纸质发票</li>
+            <li>电子发票</li>
+        </ul>
+        <button data-dismiss="modal" aria-label="Close">取消</button>
+    </div>
+  </div>
+</div>
+<script src="../../../js/jquery.min.js"></script>
+<script src="../../../js/bootstrap.min.js"></script>
+<script src="../../../js/menu.js"></script>
+<script src="../../../js/city.js"></script>
+<script src="../../../js/scrolltopcontrol.js"></script>
+<script src="../../../js/app.min.js"></script>
+<script src="../../../js/icheck/icheck.min.js"></script>
+<script src="../../../js/form-icheck.min.js"></script>
+<script src="../../../js/bootstrap-touchspin/bootstrap.touchspin.js"></script>
+<script src="../../../js/components-bootstrap-touchspin.min.js"></script>
+<script>
+    $(function(){
+        $('.bill-modal ul').on('click','li',function(){
+            $('.bill-type').val($(this).text())
+            $('.bill-modal').modal('hide');
+        })
+    })
+    
+</script>
+</body>
+</html>

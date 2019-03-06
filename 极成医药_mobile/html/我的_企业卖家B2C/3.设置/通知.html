@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link href="../../../css/bootstrap.min.css" rel="stylesheet">
+	<link href="../../../css/main.css" rel="stylesheet">
+	<link href="../../../css/media.css" rel="stylesheet">
+	<!--[if lt IE 9]>
+	<script src="../../js/html5shiv.min.js"></script>
+	<script src="../../js/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body class="grey-bg">
+<div class="title-top clearfix">
+	<a href="#"  class="pull-left left" ><img src="../../../images/top_left_arrow.png" alt=""></a>
+	<span>消息通知设置</span>
+</div>
+<div class="main-content no-padding no-margin">
+     <div class="main-person-center main-person-center1 set-margin">
+        <a href="#" class="item-box clearfix">
+            <span class="pull-left left" >活动</span>
+            <span class="switch-bar01 switch-bar02 pull-right"><i></i></span>
+        </a>
+        <a href="#" class="item-box clearfix">
+            <span class="pull-left left" >系统通知</span>
+            <span class="switch-bar01 switch-bar02 pull-right"><i></i></span>
+        </a>
+    </div>
+</div>
+
+<script src="../../../js/jquery.min.js"></script>
+<script src="../../../js/bootstrap.min.js"></script>
+<script src="../../../js/slip_del03.js"></script>
+
+<script>
+    $(function(){
+        $(".switch-bar01").click(function(){
+            $(this).toggleClass("open");
+            $(this).children("i").toggleClass("open");
+        });
+//        开关效果
+    });
+</script>
+</body>
+</html>

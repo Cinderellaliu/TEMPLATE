@@ -1,0 +1,626 @@
+@media (max-width: 767px){
+    .bottom-menu{height:5rem;}
+    .main-content.no-padding{margin-bottom: 5rem;}
+    .main-content.m-bottom0{margin-bottom: 0;}
+    .top-title .top-rightmenu-btn{background-size:36%;}
+    .top-rightmenu-content{width:38%}
+    .top-rightmenu-content>a>img{width:13.5%}
+    .detail-bottom-menu{height:4.3rem;line-height: 4.3rem}
+    .msg-tab .attention-list a>img{right:20%;width:2%;}
+    /*.top-search-input{background: url("../images/top_search_bg.png") no-repeat 32% center #fff;background-size: 3.7%;}*/
+    .search-top-box02 .top-search-input{background: #fff}
+    .main-content-box .main-con-box>img{width:2.3%}
+    .main-con-box.con-box-border em{right:3rem}
+    a.add-address-btn img{width:36%;}
+    .main-clothes-item{width:48%;margin-right:4%}
+    .main-clothes-item:nth-child(3n){margin-right:4%;}
+    .main-clothes-item:nth-child(2n){margin-right:0;}
+    .main-custom-txt{margin-top:0;}
+    .login-top img{width:20%;}
+    .list-page1 .right-page{margin-top:0;}
+    .main-news-item>img{width: 29%}
+    .store-order .store-box-content .store-con-right{width:71%}
+    .list-page1 .right-page{width: calc(66% - 1rem)}
+    .screen-modal{width:67%;}
+    .main-car-shop>a>h3{background-size:5%}
+    .car-select-item>img{width:19%}
+    .main-car-detail{width: 44%}
+    .main-car-add{width:13.5%}
+    .main-car-btns{width: 55%}
+    .man-list{width:calc(50% - .5rem);}
+    .man-list:nth-child(2n){margin-right:0;}
+    .man-list:nth-child(3n){margin-right:.5rem;}
+    .main-evaluate-txt{margin-left:1.4rem;width:calc(88% - 1.4rem);}
+    .main-sure-price>img{width:19%;}
+    .main-sure-price>img.bla-top{width:14%;}
+    .flow-top>img{width:16%;}
+    .shop-list-top .go-into{margin-top:0.5rem;}
+    .login-away .qq img,.login-away .weixin img{width:47%;}
+    /*登录*/
+    .shop-list-top .go-into{margin-top:0.5rem;}
+    .login-away .qq img,.login-away .weixin img{width:47%;}
+    .num-inp img{width:5%;}
+    /*登录*/
+    /*我的个人买家*/
+    .main-person-top .person-top-middle .person-top-t>img{width: 12%;}
+    .main-person-center .person-con-top1 .item>img{width:33%}
+    /*我的个人买家*/
+    /* 物流记录*/
+    .logi-con-box .item-box .box-right{width: 80%}
+    .logi-con-box .item-box .box-right h4{}
+    /*物流记录*/
+    /* 我的订单详情*/
+    .order-bill-box .box-right img{ margin: -.2rem .8rem 0 .5rem;width: 3%;}
+    .order-detail-content .box-top .jc-goods img{margin:-.15rem 0 0 .8rem;width: 1.8%;}
+    .return-content .tong .left-tong{width:16%;}
+    /*我的订单详情*/
+    /*医药退款申请页面*/
+    .return-content .tong .right-tong h3{margin-top:0.6rem;}
+    .return-content .tong .right-tong .size{margin-top:0.5rem;}
+    .return-content .tong .right-tong .total{margin-top:0.6rem;}
+    /*店铺*/
+    .bottom-menu .shop-server span{display:block;margin:0.5rem 0 0.6rem;}
+    .main-content.main-content05{padding-top:10.5rem;margin-top:0;padding-bottom:0;}
+    .call-back-home{width:10%;}
+    .call-back{width:10%;}
+    .code img{width:45%;}
+    .search-shop .magnifier{width:5.5%;margin-top:0.9rem;}
+    .inshop-list-tab>li img{width:40%;}
+    .inshop-list-tab>a img{width:20%;margin-top:-0.15rem;}
+    .arrow .up{position:absolute;left:0;top:-0.3rem;}
+    .arrow .down{position:absolute;left:0;top:0.3rem;}
+    /* 店铺分类*/
+    .cate>.all-white-goods>img{float:right;width:2.7%;}
+    .classify-list .list-class .classify-pic img{width:50%;}
+
+    /*荀敏*/
+    /*购物车*/
+    .car-bottom,.order-bottom{bottom:5rem;}
+    .car-item-left,.car-panel-left,.car-panel-input{width:6.2%;}
+    .car-item-right,.car-panel-info{width:calc(92.8% - 11rem);}
+    /*购物车*/
+    /*订单确认页*/
+    .order-dress{background:url(../images/order_bg.png);background-size:contain;}
+    .joint-group>li>p>img{width:1.5%;margin-top:1.2rem;}
+    /*订单确认页*/
+    /*医药产品详情*/
+    .detail-right{width:1%;}
+    .detail-down{width:2%;}
+    .detail-banner img{width:40%;}
+    .detail-shop-logo{width:18%;}
+    /*医药产品详情*/
+    /*荀敏*/
+    /*我的订单列表*/
+    .order-list-content .box-top .jc-goods img{
+        width: 4.5%;
+    }
+    .order-ul-list li .number{right:28%;}
+    /*我的订单列表*/
+    /*医药退款申请页面*/
+    .return-content .tong .right-tong h3{margin-top:0.6rem;}
+    .return-content .tong .right-tong .size{margin-top:0.5rem;}
+    .return-content .tong .right-tong .total{margin-top:0.6rem;}
+    /*店铺*/
+    .bottom-menu .shop-server span{display:block;margin:0.5rem 0 0.6rem;}
+    .main-content.main-content05{padding-top:10.5rem;margin-top:0;padding-bottom:0;}
+    .call-back-home{width:10%;}
+    .call-back{width:10%;}
+    .code img{width:45%;}
+    .search-shop .magnifier{width:5.5%;margin-top:0.7rem;}
+    .inshop-list-tab>li img{width:40%;}
+    .inshop-list-tab>a img{width:20%;margin-top:-0.15rem;}
+    /* 店铺分类*/
+    .cate>.all-white-goods>img{float:right;width:2.7%;}
+    .classify-list .list-class .classify-pic img{width:50%;}
+}
+@media (max-width: 710px){
+    /*荀敏*/
+    /*我的收藏*/
+    .collect-item-info{width:calc(80% - 11rem);}
+    .collect-item i{width:15%;padding:3.9rem 4rem;}
+    .collect-group .collect-item-info{width:calc(77% - 8.5rem);}
+    .collect-group .collect-item i{padding:2.3rem 4rem;}
+    /*我的收藏*/
+    /*购物车*/
+    .car-like-item{width:32%;}
+    .car-item-left,.car-panel-left,.car-panel-input{width:6.2%;}
+    .car-item-right,.car-panel-info{width:calc(92.8% - 11rem);}
+    /*购物车*/
+    /*荀敏*/
+}
+@media (max-width: 650px){
+    /*荀敏*/
+    /*我的收藏*/
+    .collect-group .collect-item i{padding:2.1rem 3.5rem;}
+    /*我的收藏*/
+    /*我的足迹*/
+    .collect-item i{padding:4.5rem 2.5rem;}
+    .collect-panel .collect-item-info{width:calc(40% - 2.5rem);}
+    /*我的足迹*/
+    /*荀敏*/
+}
+@media (max-width: 640px){
+    /*荀敏*/
+    /*我的足迹*/
+    .collect-item i{padding:3.9rem 3.5rem;}
+    /*我的足迹*/
+    /*荀敏*/
+}
+@media (max-width: 630px){
+    .top-select{background-size:12%}
+    .detail-bottom-menu-left a>img{width:25%;}
+    .safe-box-top a.safe-item:nth-child(2)>img{width:8.5%;}
+    .safe-box-top a.safe-item:nth-child(1)>img{width:9%;}
+    .receive-box .control-a img{width:2%}
+    .account-box .account-box-left>img{width: 16%;}
+    .about-box a.about-box-item img{width:1.6%}
+    .main-addcard>img{width:9%;}
+    .detail-icon-share{width:3.6%;}
+    .detail-icon-love{width:4.4%;}
+    .main-evaluate-item>img{width:8%;}
+    .detail-shop-content>img{width:10%;}
+    .pic-size1 img{width:22%;}
+    .pic-size2 img,.pic-size3 img{width:32%;}
+    .all-pic{width:20%;}
+    .main-sure-icon{width:2.6%;margin:0 1rem 0 0;}
+    .main-sure-arrow{width:1.4%;}
+    /*.top-title03 .top-search-input{background: url("../images/top_search_bg.png") no-repeat 36% center #fff;background-size: 3.7%}*/
+    .main-method>li>img,.main-cash>img,.main-card>img{width:7%;}
+    .main-sure-price>img.bla-top{width:16%;}
+    .flow-top>img{width:19%;}
+    /*我的个人买家*/
+    .main-person-top .person-top-middle .person-top-t>img{width: 14%;}
+    .main-person-center .person-con-top1 .item>img{width:36%}
+    /*我的个人买家*/
+
+    /*荀敏*/
+    /*购物车*/
+    .car-item-left,.car-panel-left,.car-panel-input{width:5%;}
+    .car-item-right,.car-panel-info{width:calc(94% - 11rem);}
+    .car-like-item{width:32%;}
+    /*购物车*/
+    /*订单确认页*/
+    .order-dress-icon{width:4%;margin:-1rem 1rem 0 0;}
+    .order-dress-arrow{width:1.5%;margin-top:0;}
+    .joint-group>li>p>img{width:1.6%;margin-top:1.2rem;}
+    /*订单确认页*/
+    /*我的收藏*/
+    .collect-item-info{width:calc(85% - 11rem);}
+    .collect-item i{width:15%;padding:3.9rem 3.5rem;}
+    .collect-group .collect-item-info{width:calc(76% - 3.7rem);}
+    .collect-group .collect-item i{padding:2.4rem 3.5rem;}
+    /*我的收藏*/
+    /*医药产品详情*/
+    .detail-right{width:1%;}
+    .detail-down{width:2%;}
+    .detail-banner img{width:42%;}
+    /*医药产品详情*/
+    /* 我的订单详情*/
+    .return-content .tong .left-tong{width:18%;}
+    /*我的订单详情*/
+    /*荀敏*/
+    /*我的订单列表*/
+    .order-ul-list li .number{right:23%;}
+    /*我的订单列表*/
+}
+@media (max-width: 623px){
+    /*荀敏*/
+    /*购物车*/
+    .car-like-item{width:31.9%;}
+    .car-item-left,.car-panel-left,.car-panel-input{width:6.2%;}
+    .car-item-right,.car-panel-info{width:calc(91.8% - 11rem);}
+    /*购物车*/
+    /*荀敏*/
+}
+@media (max-width: 586px){
+    /*荀敏*/
+    /*我的足迹*/
+    .collect-item i{padding:3.9rem 3rem;}
+    /*我的足迹*/
+    /*荀敏*/
+}
+@media (max-width: 581px){
+    /*荀敏*/
+    /*我的收藏*/
+    .collect-item i{padding:3.9rem 3rem;}
+    .collect-group .collect-item i{padding:2rem 3rem;}
+    /*我的收藏*/
+    /*购物车*/
+    .car-like-item{width:31.8%;}
+    .car-item-left,.car-panel-left,.car-panel-input{width:6%;}
+    .car-item-right,.car-panel-info{width:calc(91% - 11rem);}
+    /*购物车*/
+    /*荀敏*/
+}
+@media (max-width: 545px){
+    /*荀敏*/
+    /*购物车*/
+    .car-like-item{width:31.7%;}
+    /*购物车*/
+    /*荀敏*/
+}
+@media (max-width: 530px){
+    .bottom-menu>a>img{width:25%;}
+    .top-select{background-size:15%}
+    .main-con-box.con-box-border img{width:1.86%}
+    .safe-box-top a.safe-item:nth-child(2)>img{width:10.5%;}
+    .safe-box-top a.safe-item:nth-child(1)>img{width:10%;}
+    .receive-box .control-a img{width:2.4%}
+    .store-order .store-box-content>img{width:18%;}
+    .account-box .account-box-left>img{width: 20%;}
+    .about-box a.about-box-item img{width:1.8%}
+    .main-addcard>img{width:11%;}
+    .main-home-goods>img{width:20%;}
+    .left-page{width:20%;}
+    .page-car{width:6%;}
+    .detail-icon-share{width:4%;}
+    .detail-icon-love{width:5%;}
+    .main-evaluate-item>img{width:10%;}
+    .detail-shop-content>img{width:13%;}
+    .detail-bottom-menu-left a>img{width:30%;}
+    .pic-size1 img{width:24%;}
+    .pic-size2 img,.pic-size3 img{width:36%;}
+    .all-pic{width:24%;}
+    .main-sure-icon{width:3.6%;margin:0.4rem 1rem 0 0;}
+    .main-sure-arrow{width:2.2%;}
+    /*.top-title03 .top-search-input{background: url("../images/top_search_bg.png") no-repeat 32% center #fff;background-size: 4.7%}*/
+    .main-method>li>img,.main-cash>img,.main-card>img{width:8%;}
+    .main-sure-price>img.bla-top{width:18%;}
+    .flow-top>img{width:22%;}
+
+    /*我的个人买家*/
+    .main-person-top .person-top-middle .person-top-t>img{width: 16%;}
+    .main-person-center .person-con-top1 .item>img{width:39%}
+    /*我的个人买家*/
+    /* 我的订单详情*/
+    .return-content .tong .left-tong{width:20%;}
+    /*我的订单详情*/
+    /*荀敏*/
+    /*购物车*/
+    .car-item-left,.car-panel-left,.car-panel-input{width:7%;}
+    .car-item-right,.car-panel-info{width:calc(72% - 11rem);}
+    .car-like-item{width:31.5%;}
+    /*购物车*/
+    /*订单确认页*/
+    .order-dress-icon{width:4%;margin:-0.6rem 1rem 0 0;}
+    .order-dress-arrow{width:1.5%;margin-top:0.3rem;}
+    .joint-group>li>p>img{width:1.6%;margin-top:1.4rem;}
+    /*订单确认页*/
+    /*用药人信息填写*/
+    .human-up .thumbnail{margin-right: 3.8rem!important;margin-bottom:1.5rem!important;}
+    /*用药人信息填写*/
+    /*百货产品详情*/
+    .detail-tab>li{margin-left:12%;}
+    .detail-tab01>li{margin-left:22%;}
+    /*百货产品详情*/
+    /*我的收藏*/
+    .collect-group .collect-item-info{width:calc(73% - 8.5rem);}
+    .collect-group .collect-item i{padding:2.4rem 3rem;}
+    /*我的收藏*/
+    /*医药产品详情*/
+    .detail-banner img{width:44%;}
+    .detail-shop-logo{width:20%;}
+    /*医药产品详情*/
+    /*我的足迹*/
+    .collect-item i{padding:3.9rem 2.5rem;}
+    /*我的足迹*/
+    /*投诉列表*/
+    .let-item-img{width:1.8%;}
+    .let-item-info{float:left;color:black;width:98.2%}
+    .unread .let-item-info{width:calc(98.2% - 2.6rem);}
+    /*投诉列表*/
+    /*荀敏*/
+    /*我的订单列表*/
+    .order-ul-list li .number{right:20%;}
+    /*我的订单列表*/
+}
+@media (max-width: 520px){
+    /*荀敏*/
+    /*我的收藏*/
+    .collect-item i{padding:3.9rem 2.5rem;}
+    .collect-group .collect-item i{padding:2.5rem 2.5rem;}
+    /*我的收藏*/
+    /*购物车*/
+    .car-item-left,.car-panel-left,.car-panel-input{width:8.2%;}
+    /*购物车*/
+    /*荀敏*/
+}
+@media (max-width: 470px){
+    /*荀敏*/
+    /*我的收藏*/
+    .collect-item i{padding:4rem 2rem;}
+    .collect-group .collect-item i{padding:2.5rem 2rem;}
+    /*我的收藏*/
+    /*购物车*/
+    .car-item-left,.car-panel-left,.car-panel-input{width:8%;}
+    .car-item-right,.car-panel-info{width:calc(90% - 11rem);}
+    /*购物车*/
+    /*荀敏*/
+}
+@media (max-width: 460px){
+    /*荀敏*/
+    /*购物车*/
+    .car-like-item{width:31.4%;}
+    /*购物车*/
+    /*荀敏*/
+}
+@media (max-width: 440px){
+    /*荀敏*/
+    /*我的收藏*/
+    .collect-item i{padding:3.9rem 2rem;}
+    .collect-group .collect-item i{padding:1.9rem 2rem;}
+    /*我的收藏*/
+    /*购物车*/
+    .car-like-item{width:31.2%;}
+    .car-item-right,.car-panel-info{width:calc(90% - 11rem);}
+    /*购物车*/
+    /*荀敏*/
+}
+@media (max-width: 430px){
+    .top-select{background-size:17%}
+    .safe-box-top a.safe-item:nth-child(2)>img{width:12.5%;}
+    .safe-box-top a.safe-item:nth-child(1)>img{width:13%;}
+    .receive-box .control-a img{width:2.6%}
+    .store-order .store-box-content>img{width:23%;}
+    .account-box .account-box-left>img{width: 23%;}
+    .about-box a.about-box-item img{width:2.5%}
+    .main-addcard>img{width:12%;}
+    .bottom-menu>a>img{width:30%;}
+    .main-home-goods>img{width:26%;}
+    .left-page{width:27%;}
+    .page-car{width:7%;}
+    .detail-icon-share{width:4.6%;}
+    .detail-icon-love{width:5.4%;}
+    .main-evaluate-item>img{width:12%;}
+    .detail-shop-content>img{width:15%;}
+    .detail-bottom-menu-left a>img{width:35%;}
+    .pic-size1 img{width:26%;}
+    .pic-size2 img,.pic-size3 img{width:40%;}
+    .all-pic{width:28%;}
+    /*.top-title03 .top-search-input{background: url("../images/top_search_bg.png") no-repeat 28% center #fff;background-size: 5%}*/
+    .main-method>li>img,.main-cash>img,.main-card>img{width:9%;}
+    .main-sure-price>img.bla-top{width:21%;}
+    .flow-top>img{width:25%;}
+
+    /*我的个人买家*/
+    .main-person-top .person-top-middle .person-top-t>img{width: 18%;}
+    .main-person-center .person-con-top1 .item>img{width:42%}
+    /*我的个人买家*/
+    /* 我的订单详情*/
+    .return-content .tong .left-tong{width:23%;}
+    /*我的订单详情*/
+    /*荀敏*/
+    /*购物车*/
+    .car-item-left,.car-panel-left,.car-panel-input{width:8%;}
+    .car-item-right,.car-panel-info{width:calc(89% - 11rem);}
+    .car-like-item{width:31.2%;}
+    /*购物车*/
+    /*订单确认页*/
+    .order-dress-icon{width:5%;margin:-0.6rem 1rem 0 0;}
+    .order-dress-arrow{width:1.8%;margin-top:0.3rem;}
+    .joint-group>li>p>img{width:1.9%;margin-top:1.4rem;}
+    /*订单确认页*/
+    /*用药人信息填写*/
+    .human-up .thumbnail{margin-right: 1.8rem!important;margin-bottom:1.5rem!important;}
+    /*用药人信息填写*/
+    /*医药产品详情*/
+    .detail-right{width:1.5%;}
+    .detail-down{width:3%;}
+    .detail-banner img{width:48%;}
+    /*医药产品详情*/
+    /*百货产品详情*/
+    .detail-tab>li{margin-left:10%;}
+    .detail-tab01>li{margin-left:20%;}
+    /*百货产品详情*/
+    /*回到顶部*/
+    .call-back{width:8%;}
+    .call-back-home{width:8%;}
+    /*回到顶部*/
+    /*我的收藏*/
+    .collect-item-info{width:calc(85% - 11rem);}
+    .collect-item i{width:15%;padding:3.9rem 2rem;}
+    .collect-group .collect-item-info{width:calc(73% - 8.5rem);}
+    .collect-group .collect-item i{padding:2.4rem 2rem;}
+    /*我的收藏*/
+    /*荀敏*/
+    /*我的订单列表*/
+    .order-ul-list li .number{right:13%;}
+    /*我的订单列表*/
+}
+@media (max-width: 400px){
+    /*荀敏*/
+    /*我的收藏*/
+    .collect-item i{width:15%;padding:3.9rem 1.5rem;}
+    .collect-group .collect-item-info{width:calc(72% - 8.5rem);}
+    .collect-group .collect-item i{padding:2rem 1.5rem;}
+    .detail-shop-logo{width:25%;}
+    /*我的收藏*/
+    /*购物车*/
+    .car-like-item{width:31%;}
+    .car-item-right,.car-panel-info{width:calc(88% - 11rem);}
+    /*购物车*/
+    /*投诉列表*/
+    .let-item-img{width:2.3%;}
+    .let-item-info{float:left;color:black;width:97.7%}
+    .unread .let-item-info{width:calc(97.7% - 2.6rem);}
+    /*投诉列表*/
+
+    /*荀敏*/
+}
+@media (max-width: 375px){
+    .safe-box-top a.safe-item:nth-child(2)>img{width:14.5%;}
+    .safe-box-top a.safe-item:nth-child(1)>img{width:15%;}
+    .receive-box .control-a img{width:3%}
+    .store-order .store-box-content>img{width:27%;}
+    .main-addcard>img{width:13%;}
+    .detail-shop-content>img{width:17%;}
+    .detail-bottom-menu-left a>img{width:40%;}
+    .pic-size1 img{width:27%;}
+    .pic-size2 img,.pic-size3 img{width:45%;}
+    .main-sure-icon{width:5%;margin:0.4rem 1rem 0 0;}
+    .main-sure-arrow{width:2%;}
+    /*.top-title03 .top-search-input{background: url("../images/top_search_bg.png") no-repeat 24% center #fff;background-size: 5.7%}*/
+    .main-method>li>img,.main-cash>img,.main-card>img{width:10%;}
+    .main-sure-price>img.bla-top{width:23%;}
+    .flow-top>img{width:27%;}
+    /*我的个人买家*/
+    .main-person-top .person-top-middle .person-top-t>img{width: 20%;}
+    .main-person-center .person-con-top1 .item>img{width:45%}
+    /*我的个人买家*/
+    /* 我的订单详情*/
+    .return-content .tong .left-tong{width:26%;}
+    /*我的订单详情*/
+    /*荀敏*/
+    /*购物车*/
+    .main-content03{margin-bottom:9.4rem;}
+    .car-item-left,.car-panel-left,.car-panel-input{width:8.8%;}
+    .car-item-right,.car-panel-info{width:calc(88% - 11rem);}
+    .car-like-item{width:48.2%;}
+    .car-like-item:nth-child(even){margin-right:0;}
+    .car-like-item:nth-child(odd){margin-right:1rem;}
+    .car-panel-num .input-group .form-control.car-touch{margin:.5rem 0.2rem 0;}
+    /*购物车*/
+    /*订单确认页*/
+    .order-dress-icon{width:6%;margin:-0.6rem 1rem 0 0;}
+    .order-dress-arrow{width:2%;margin-top:.3rem;}
+    .order-dress-title{padding:0 3.5rem;}
+    .order-dress{background:url(../images/order_bg.png);background-size:cover;}
+    .joint-group>li>p>img{width:2.2%;margin-top:1.4rem;}
+    /*订单确认页*/
+    /*用药人信息填写*/
+    .human-up .thumbnail{margin-right: 3.2rem!important;margin-bottom:1.5rem!important;}
+    /*用药人信息填写*/
+    /*医药产品详情*/
+    .detail-right{width:2%;}
+    .detail-down{width:4%;}
+    .detail-shop-logo{width:30%;}
+    /*医药产品详情*/
+    /*百货产品详情*/
+    .detail-tab>li{margin-left:8%;}
+    .detail-tab01>li{margin-left:18%;}
+    /*百货产品详情*/
+    /*回到顶部*/
+    .call-back{width:10%;}
+    .call-back-home{width:10%;}
+    /*回到顶部*/
+    /*我的收藏*/
+    .collect-item-info{width:calc(80% - 11rem);}
+    .collect-item i{width:20%;padding:3.9rem 2.5rem;}
+    .collect-group .collect-item-info{width:calc(80% - 8.5rem);margin-top:1rem;}
+    .collect-group .collect-item i{padding:1.8rem 2.5rem;}
+    /*我的收藏*/
+    /*医药产品详情*/
+    .detail-banner img{width:50%;}
+    /*医药产品详情*/
+    /*我的足迹*/
+    .collect-panel .collect-item-info{width:calc(50% - 2.5rem);}
+    /*我的足迹*/
+    /*投诉列表*/
+    .let-item-img{width:2.8%;}
+    .let-item-info{float:left;color:black;width:97.2%}
+    .unread .let-item-info{width:calc(97.2% - 2.6rem);}
+    /*投诉列表*/
+    /*荀敏*/
+    /*我的订单列表*/
+    .order-ul-list li .number{right:8%;}
+    /*我的订单列表*/
+}
+@media (max-width: 352px){
+    /*我的订单详情*/
+    .title-top-box{margin-left: .5rem;}
+    /*我的订单详情*/
+    /*荀敏*/
+    /*我的足迹*/
+    .collect-item i{padding:3.9rem 2rem;}
+    /*我的足迹*/
+    /*荀敏*/
+}
+@media (max-width: 346px){
+    .attention-list i{padding:2% 3%;}
+    .attention-list a>h1,.attention-list a>img{margin-top:2%}
+    .attention-list{padding-left:1rem;}
+    .attention-list a{padding-bottom: 1rem;}
+    .msg-tab .attention-list i{padding:1.5rem 1rem;}
+    .msg-tab .attention-list a{padding-bottom: 0}
+    .detail-recommed-txt,.detail-recommed-tit{font-size: 1.2rem}
+    /* 物流记录*/
+    .logistics-top div{float: left !important;}
+    /*物流记录*/
+    /*荀敏*/
+    /*购物车*/
+    .car-item-left,.car-panel-left,.car-panel-input{width:10%;}
+    .car-item-right,.car-panel-info{width:calc(88% - 11rem);}
+    .car-panel-unit,.car-panel-num{padding:0;}
+    .car-item .car-item-txt{min-height:5rem;}
+    .car-like-item{width:47.9%;}
+    .car-check{width:25%;}
+    .car-total{width:75%;}
+    .car-total>a{width:6rem;}
+    .car-total>p>b{margin: 0 .4rem 0 .6rem;}
+    /*购物车*/
+    /*订单确认页*/
+    .order-dress-icon{width:6.5%;margin:-0.5rem 1rem 0 0;}
+    .order-dress-arrow{width:2.3%;margin-top:0.3rem;}
+    .joint-group>li>p>img{width:2.4%;margin-top:1.5rem;}
+    /*订单确认页*/
+    /*用药人信息填写*/
+    .human-up .thumbnail{margin-right: 1.7rem!important;margin-bottom:1.5rem!important;}
+    /*用药人信息填写*/
+    /*百货产品详情*/
+    .detail-tab>li{margin-left:0;}
+    .detail-tab01>li{margin-left:14%;}
+    .detail-icon{width:calc(100% - 14rem)}
+    .detail-btn{width:14rem}
+    .detail-btn>a{width:7rem;}
+    /*百货产品详情*/
+    /*我的收藏*/
+    .collect-item i{width:20%;padding:3.9rem 2rem;}
+    .collect-group .collect-item-info{width:calc(63% - 8.5rem);}
+    .collect-group .collect-item i{padding:2.4rem 2rem;}
+    /*我的收藏*/
+    /*荀敏*/
+    /*我的订单列表*/
+    .order-ul-list li .number{right:8%;}
+    /*我的订单列表*/
+}
+@media (max-width: 338px){
+    /*荀敏*/
+    /*医药产品详情*/
+    .detail-shop-right a{margin-top:.4rem;margin-right:.5rem;}
+    .detail-shop-right a:first-child{margin-right:.5rem;margin-bottom:1rem}
+    /*医药产品详情*/
+    /*我的足迹*/
+    .collect-item i{padding:3.9rem 2rem;}
+    /*我的足迹*/
+    /*荀敏*/
+    /*我的订单列表*/
+    .order-ul-list li .number{right:3%;}
+    /*我的订单列表*/
+}
+@media (max-width: 328px){
+    /*荀敏*/
+    /*我的足迹*/
+    .collect-panel .collect-item-info{width:calc(45% - 2.5rem);}
+    /*我的足迹*/
+    /*荀敏*/
+}
+@media (max-width: 320px){
+    /*荀敏*/
+    /*医药产品详情*/
+    .detail-shop-left{width:70%;}
+    .detail-shop-right{width:30%;}
+    .detail-shop-right a{margin-top:0;margin-right:.5rem;}
+    .detail-shop-right a:first-child{margin-right:.5rem;margin-bottom:1rem}
+    .detail-btn>a{line-height:3.2rem;}
+    .detail-shop-logo{width:32%;}
+    .detail-provo>ul>li>p>span{width:2rem;}
+    .detail-provo>ul>li>p>b{margin:0 1rem;}
+    /*医药产品详情*/
+    /*我的收藏*/
+    .collect-item i{padding:3.9rem 2rem;}
+    /*我的收藏*/
+    /*我的足迹*/
+    .collect-panel .collect-item-info{width:calc(40% - 2.5rem);}
+    /*我的足迹*/
+    /*荀敏*/
+}
